@@ -1,5 +1,5 @@
 # DHCE Website — Claude Reference Document
-> Use this file at the start of every new chat to ensure consistency across all pages.
+> Paste this file at the start of every new chat session to ensure full consistency.
 
 ---
 
@@ -27,7 +27,7 @@ Dark footer:         #012f37
 
 ## Typography Rules — CRITICAL
 **DO NOT hardcode font-family or base font-size in any page code.**
-Fonts and base sizes are controlled globally via Astra → Appearance → Customize.
+Fonts and base sizes are controlled globally via Astra → Appearance → Customize → Typography.
 Only hardcode font-weight, letter-spacing, text-transform, and color where needed for DHCE-specific styling.
 
 ---
@@ -146,41 +146,106 @@ line-height: 1.75;
 
 ---
 
-## Pages Status
-| Page | Status |
-|------|--------|
-| Homepage (index.html) | ✅ Complete — approved by Dr Umar |
-| About DHCE | 🔄 In progress |
-| Certification | ⬜ To build |
-| Training | ⬜ To build |
-| Contact / Apply | ⬜ To build |
-| FAQs | ⬜ To build |
+## Site Navigation Structure
+
+### Main Header Nav
+| Label | Type | Notes |
+|-------|------|-------|
+| Home | Page | ✅ Done |
+| About DHCE | Page | About + History merged into one page |
+| Certification | Dropdown parent | — |
+| → Halal Certification Schemes | Sub-page | |
+| → Certification Requirements | Sub-page | |
+| → Halal Certification Procedure | Sub-page | |
+| → Scopes of Certification | Sub-page | |
+| What is Halal? | Page | |
+| Training | Page | |
+| Verify Certificate | Page | |
+| Downloads | Page | |
+| FAQs | Page | |
+| News | WordPress blog archive | |
+| Contact | Page | |
+| Apply Now | CTA button | Styled differently in nav |
+
+### Footer Links Structure
+**Col 1** — Brand + tagline + logo
+
+**Col 2 — Quick Links**
+- About DHCE
+- Certification
+- What is Halal?
+- Verify Certificate
+- Gallery
+- Apply Now
+
+**Col 3 — Our Services**
+- Food Certification
+- Cosmetics Certification
+- Pharmaceuticals
+- Halal Auditing
+- Halal Training
+- Downloads
+
+**Col 4 — Contact Us**
+- Address, Phone, Email
+
+**Footer Bottom Bar**
+- © DHCE
+- Islamic Centre of Ireland (link)
+- Irish Muslim Council (link)
+- Appeal & Complaints (link)
+- DHCE Impartiality Policy (link)
+- Privacy Policy (link)
+- Terms & Conditions (link)
+
+> ⚠️ The homepage footer needs to be updated to reflect this new bottom bar structure before inner pages are finalised.
 
 ---
 
-## Homepage Sections (for reference/consistency)
-1. `#dhce-hero` — Dark teal, two-col, image slideshow, trust logos
-2. `#dhce-process` — White bg, vertical step timeline
+## Pages Status
+| Page | Status |
+|------|--------|
+| Homepage | ✅ Complete — approved by Dr Umar |
+| Footer (homepage) | 🔄 Needs bottom bar update |
+| About DHCE | 🔄 Next to build |
+| Halal Certification Schemes | ⬜ To build |
+| Certification Requirements | ⬜ To build |
+| Halal Certification Procedure | ⬜ To build |
+| Scopes of Certification | ⬜ To build |
+| What is Halal? | ⬜ To build |
+| Training | ⬜ To build |
+| Verify Certificate | ⬜ To build |
+| Downloads | ⬜ To build |
+| FAQs | ⬜ To build |
+| News / Blog | ⬜ WordPress native — styling only |
+| Contact | ⬜ To build |
+| Apply Now | ⬜ To build |
+
+---
+
+## Homepage Sections (approved — do not change without Dr Umar sign-off)
+1. `#dhce-hero` — Dark teal, two-col, image slideshow, trust logos (EIAC + IHAF)
+2. `#dhce-process` — White bg, vertical 7-step timeline
 3. `#dhce-why` — Light green bg `#f4f9f4`, 3-col cards, bottom CTA banner
-4. `#dhce-logos` — Dark teal, recognition logos row
-5. `#dhce-footer` — Dark `#012f37`, 4-col grid
+4. `#dhce-logos` — Dark teal, recognition logos row (JAKIM, MUIS, EIAC, WHFC, IHAF)
+5. `#dhce-footer` — Dark `#012f37`, 4-col grid — bottom bar needs update
 
 ---
 
 ## Key Client Info
 - **Client**: Department of Halal Certification Europe (DHCE)
-- **Authority figure**: Dr Umar (approves designs)
-- **Supervised by**: Islamic Centre of Ireland (formerly Al-Mustafa Islamic Centre)
-- **Founded**: 2008
+- **Authority figure**: Dr Umar (approves all designs)
+- **Supervised by**: Islamic Centre of Ireland (formerly Al-Mustafa Islamic Centre — do not use old name)
+- **Founded**: 2008 (old site says 2010 — use 2008 per project brief)
 - **Markets**: Ireland, UK, Mainland Europe
-- **Recognised by**: JAKIM, MUIS, EIAC, WHFC and IHAF
+- **Recognised by**: JAKIM, MUIS, EIAC, WHFC, IHAF
 - **Target audience**: Food, cosmetics, and pharmaceutical businesses seeking halal certification
 
 ---
 
 ## WordPress Delivery Notes
 - Each page = one Custom HTML block pasted into WordPress
-- Footer and header are global — do NOT repeat in inner page code
-- Test in WordPress/Astra, not in browser directly
-- GitHub repo is for internal code reference only, not live hosting
-- Font changes go through Appearance → Customize → Typography only
+- Header and footer are global — do NOT include in inner page code
+- Font changes go through Appearance → Customize → Typography only — never hardcode fonts
+- GitHub repo is for internal reference only, not live hosting
+- Always tell the developer exactly which page/block to paste the code into
