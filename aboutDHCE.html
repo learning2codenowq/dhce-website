@@ -1,0 +1,682 @@
+<!-- DHCE ABOUT PAGE -->
+<style>
+#dhce-about-hero *,
+#dhce-about-hero *::before,
+#dhce-about-hero *::after,
+#dhce-about-who *,
+#dhce-about-who *::before,
+#dhce-about-who *::after,
+#dhce-about-stats *,
+#dhce-about-stats *::before,
+#dhce-about-stats *::after,
+#dhce-about-market *,
+#dhce-about-market *::before,
+#dhce-about-market *::after,
+#dhce-about-history *,
+#dhce-about-history *::before,
+#dhce-about-history *::after,
+#dhce-about-values *,
+#dhce-about-values *::before,
+#dhce-about-values *::after,
+#dhce-about-cta *,
+#dhce-about-cta *::before,
+#dhce-about-cta *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+/* ── SHARED ─────────────────────────────────────────────── */
+.dhce-ab-inner {
+  max-width: 1060px;
+  margin: 0 auto;
+}
+
+.dhce-ab-label {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  color: #82bb41;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+
+.dhce-ab-label--center {
+  display: block;
+  text-align: center;
+}
+
+.dhce-ab-heading {
+  font-size: clamp(1.7rem, 3.5vw, 2.4rem);
+  font-weight: 800;
+  color: #006271;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+
+.dhce-ab-heading--white { color: #fefeff; }
+.dhce-ab-sub { font-size: 1rem; line-height: 1.75; color: #666; }
+.dhce-ab-sub--white { color: rgba(254,254,255,0.68); }
+
+.dhce-fullwidth {
+  position: relative;
+  width: 100vw;
+  left: 50%;
+  transform: translateX(-50%);
+  overflow: hidden;
+}
+
+/* ══ 1. HERO ════════════════════════════════════════════════ */
+#dhce-about-hero {
+  background: #006271;
+  padding: 80px 24px;
+  text-align: center;
+}
+
+#dhce-about-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    radial-gradient(circle at 20% 50%, rgba(130,187,65,0.10) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(255,255,255,0.04) 0%, transparent 40%);
+  pointer-events: none;
+}
+
+#dhce-about-hero .dhce-ab-inner { position: relative; z-index: 1; }
+
+#dhce-about-hero h1 {
+  font-size: clamp(2rem, 4.5vw, 3.2rem);
+  font-weight: 800;
+  color: #fefeff;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+  margin-bottom: 20px;
+  max-width: 760px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#dhce-about-hero h1 em {
+  font-style: normal;
+  color: #82bb41;
+}
+
+#dhce-about-hero p {
+  font-size: 1.05rem;
+  color: rgba(254,254,255,0.7);
+  max-width: 580px;
+  margin: 0 auto;
+  line-height: 1.75;
+}
+
+/* ══ 2. WHO WE ARE ══════════════════════════════════════════ */
+#dhce-about-who {
+  background: #fefeff;
+  padding: 90px 24px;
+}
+
+.dhce-who-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 72px;
+  align-items: center;
+}
+
+.dhce-who-text .dhce-ab-heading { margin-bottom: 24px; }
+
+.dhce-who-text p {
+  font-size: 0.95rem;
+  color: #666;
+  line-height: 1.8;
+  margin-bottom: 16px;
+}
+
+.dhce-who-text p:last-of-type { margin-bottom: 0; }
+
+.dhce-who-image { position: relative; }
+
+.dhce-who-image::after {
+  content: '';
+  position: absolute;
+  bottom: -16px;
+  right: -16px;
+  width: 65%;
+  height: 65%;
+  background: #82bb41;
+  border-radius: 10px;
+  z-index: 0;
+  opacity: 0.15;
+}
+
+.dhce-who-image img {
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+  object-fit: cover;
+  position: relative;
+  z-index: 1;
+  box-shadow: 0 16px 48px rgba(0,0,0,0.15);
+}
+
+/* ══ 3. STATS BAR ═══════════════════════════════════════════ */
+#dhce-about-stats {
+  background: #006271;
+  padding: 64px 24px;
+}
+
+.dhce-stats-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  max-width: 1060px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.dhce-stat {
+  padding: 0 16px;
+  border-right: 1px solid rgba(254,254,255,0.12);
+}
+
+.dhce-stat:last-child { border-right: none; }
+
+.dhce-stat-number {
+  font-size: clamp(2rem, 3.5vw, 2.8rem);
+  font-weight: 800;
+  color: #82bb41;
+  letter-spacing: -0.02em;
+  line-height: 1;
+  margin-bottom: 8px;
+}
+
+.dhce-stat-desc {
+  font-size: 0.85rem;
+  color: rgba(254,254,255,0.65);
+  line-height: 1.5;
+}
+
+/* ══ 4. MARKET OPPORTUNITY ══════════════════════════════════ */
+#dhce-about-market {
+  background: #f4f9f4;
+  padding: 90px 24px;
+}
+
+.dhce-market-intro {
+  text-align: center;
+  max-width: 640px;
+  margin: 0 auto 56px;
+}
+
+.dhce-market-intro .dhce-ab-heading { margin-bottom: 16px; }
+
+.dhce-market-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.dhce-market-card {
+  background: #fefeff;
+  border-radius: 10px;
+  padding: 36px 32px;
+  border: 1px solid rgba(0,98,113,0.1);
+  border-left: 4px solid #006271;
+  box-shadow: 0 2px 16px rgba(0,98,113,0.06);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.dhce-market-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 32px rgba(0,98,113,0.1);
+}
+
+.dhce-market-card:nth-child(even) { border-left-color: #82bb41; }
+
+.dhce-market-card h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #006271;
+  margin-bottom: 10px;
+  letter-spacing: -0.01em;
+}
+
+.dhce-market-card p {
+  font-size: 0.88rem;
+  color: #666;
+  line-height: 1.75;
+}
+
+/* ══ 5. HISTORY TIMELINE ════════════════════════════════════ */
+#dhce-about-history {
+  background: #fefeff;
+  padding: 90px 24px;
+}
+
+.dhce-history-intro {
+  text-align: center;
+  margin-bottom: 56px;
+}
+
+.dhce-timeline {
+  position: relative;
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.dhce-timeline::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(to bottom, #82bb41, #006271);
+  transform: translateX(-50%);
+  z-index: 0;
+}
+
+.dhce-tl-item {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: calc(50% + 32px);
+  margin-bottom: 48px;
+  position: relative;
+  z-index: 1;
+}
+
+.dhce-tl-item:nth-child(even) {
+  justify-content: flex-start;
+  padding-right: 0;
+  padding-left: calc(50% + 32px);
+}
+
+.dhce-tl-item:last-child { margin-bottom: 0; }
+
+.dhce-tl-item::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 18px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #82bb41;
+  border: 3px solid #fefeff;
+  box-shadow: 0 0 0 2px #82bb41;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+
+.dhce-tl-card {
+  background: #fefeff;
+  border: 1px solid rgba(0,98,113,0.12);
+  border-radius: 10px;
+  padding: 22px 24px;
+  box-shadow: 0 2px 16px rgba(0,98,113,0.07);
+  max-width: 300px;
+  width: 100%;
+}
+
+.dhce-tl-year {
+  font-size: 11px;
+  font-weight: 700;
+  color: #82bb41;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+
+.dhce-tl-card h3 {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #006271;
+  margin-bottom: 6px;
+  line-height: 1.3;
+}
+
+.dhce-tl-card p {
+  font-size: 0.83rem;
+  color: #666;
+  line-height: 1.7;
+}
+
+/* ══ 6. VALUES ══════════════════════════════════════════════ */
+#dhce-about-values {
+  background: #f4f9f4;
+  padding: 90px 24px;
+}
+
+.dhce-values-intro {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.dhce-values-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  max-width: 1060px;
+  margin: 0 auto;
+}
+
+.dhce-value-card {
+  background: #fefeff;
+  border-radius: 10px;
+  padding: 40px 32px;
+  border: 1px solid rgba(0,98,113,0.1);
+  border-top: 3px solid #82bb41;
+  box-shadow: 0 2px 16px rgba(0,98,113,0.06);
+  text-align: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.dhce-value-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(0,98,113,0.1);
+}
+
+.dhce-value-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 14px;
+  background: rgba(0,98,113,0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+}
+
+.dhce-value-icon svg {
+  width: 26px;
+  height: 26px;
+  stroke: #006271;
+  fill: none;
+  stroke-width: 1.75;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.dhce-value-card h3 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #006271;
+  margin-bottom: 12px;
+  letter-spacing: -0.01em;
+}
+
+.dhce-value-card p {
+  font-size: 0.88rem;
+  color: #666;
+  line-height: 1.75;
+}
+
+/* ══ 7. CTA ═════════════════════════════════════════════════ */
+#dhce-about-cta {
+  background: #012f37;
+  padding: 90px 24px;
+  text-align: center;
+}
+
+#dhce-about-cta .dhce-ab-heading {
+  margin-bottom: 20px;
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#dhce-about-cta .dhce-ab-sub {
+  max-width: 520px;
+  margin: 0 auto 40px;
+}
+
+.dhce-cta-btns {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.dhce-btn-primary {
+  display: inline-block;
+  background: #82bb41;
+  color: #fefeff;
+  font-size: 0.9rem;
+  font-weight: 700;
+  padding: 14px 30px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.dhce-btn-primary:hover {
+  background: #74a938;
+  transform: translateY(-2px);
+  color: #fefeff;
+  text-decoration: none;
+}
+
+.dhce-btn-secondary {
+  display: inline-block;
+  background: transparent;
+  color: #fefeff;
+  font-size: 0.9rem;
+  font-weight: 700;
+  padding: 14px 30px;
+  border-radius: 6px;
+  border: 2px solid rgba(254,254,255,0.3);
+  text-decoration: none;
+  transition: border-color 0.2s, background 0.2s, transform 0.2s;
+}
+
+.dhce-btn-secondary:hover {
+  border-color: rgba(254,254,255,0.65);
+  background: rgba(255,255,255,0.07);
+  transform: translateY(-2px);
+  color: #fefeff;
+  text-decoration: none;
+}
+
+/* ── RESPONSIVE ─────────────────────────────────────────── */
+@media (max-width: 860px) {
+  .dhce-who-grid { grid-template-columns: 1fr; gap: 40px; }
+  .dhce-who-image { order: -1; max-width: 480px; margin: 0 auto; }
+  .dhce-stats-row { grid-template-columns: repeat(2, 1fr); }
+  .dhce-stat { border-right: none; border-bottom: 1px solid rgba(254,254,255,0.12); padding-bottom: 24px; }
+  .dhce-stat:nth-child(3), .dhce-stat:last-child { border-bottom: none; }
+  .dhce-market-grid { grid-template-columns: 1fr; }
+  .dhce-values-grid { grid-template-columns: 1fr; max-width: 480px; }
+  .dhce-timeline::before { left: 16px; transform: none; }
+  .dhce-tl-item,
+  .dhce-tl-item:nth-child(even) { justify-content: flex-start; padding-right: 0; padding-left: 48px; }
+  .dhce-tl-item::after { left: 16px; transform: translateX(-50%); }
+  .dhce-tl-card { max-width: 100%; }
+}
+
+@media (max-width: 560px) {
+  .dhce-cta-btns { flex-direction: column; align-items: center; }
+  .dhce-btn-primary, .dhce-btn-secondary { width: 100%; max-width: 280px; text-align: center; }
+}
+</style>
+
+<!-- ══ 1. HERO ═══════════════════════════════════════════════ -->
+<section id="dhce-about-hero" class="dhce-fullwidth">
+  <div class="dhce-ab-inner">
+    <span class="dhce-ab-label">About DHCE</span>
+    <h1>Ireland's Only <em>Internationally Accredited</em><br>Halal Certification Authority</h1>
+    <p>Since 2008, DHCE has been the trusted partner for businesses across Ireland, the UK, and Europe seeking credible, internationally recognised halal certification.</p>
+  </div>
+</section>
+
+<!-- ══ 2. WHO WE ARE ═════════════════════════════════════════ -->
+<section id="dhce-about-who" class="dhce-fullwidth">
+  <div class="dhce-ab-inner">
+    <div class="dhce-who-grid">
+      <div class="dhce-who-text">
+        <span class="dhce-ab-label">Who We Are</span>
+        <h2 class="dhce-ab-heading">Built on Authority.<br>Driven by Integrity.</h2>
+        <p>The Department of Halal Certification Europe (DHCE) is the only internationally accredited halal certification body based in Ireland. We operate under the supervision of the Islamic Centre of Ireland — one of Ireland's most respected Islamic authorities, established in 2004.</p>
+        <p>DHCE specialises in the supervision, inspection, auditing, and certification of halal principles across the food, cosmetics, and pharmaceutical industries. Every certification we issue is grounded in Islamic jurisprudence and aligned with applicable EU regulations.</p>
+        <p>We currently operate across Ireland, the UK, and a growing number of European countries — supervising and certifying abattoirs, food processing companies, cosmetics manufacturers, and pharmaceutical companies to the highest halal standards.</p>
+      </div>
+      <div class="dhce-who-image">
+        <img
+          src="https://halalcertification.ie/wp-content/uploads/2018/05/thumbnail_IMG_6434.jpg"
+          alt="DHCE auditors conducting an on-site halal certification inspection"
+          loading="lazy"
+        >
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ 3. STATS BAR ══════════════════════════════════════════ -->
+<section id="dhce-about-stats" class="dhce-fullwidth">
+  <div class="dhce-stats-row">
+    <div class="dhce-stat">
+      <div class="dhce-stat-number">2B+</div>
+      <div class="dhce-stat-desc">Muslim consumers worldwide</div>
+    </div>
+    <div class="dhce-stat">
+      <div class="dhce-stat-number">$2.7T</div>
+      <div class="dhce-stat-desc">Global halal market value in 2025</div>
+    </div>
+    <div class="dhce-stat">
+      <div class="dhce-stat-number">112+</div>
+      <div class="dhce-stat-desc">Countries in the halal marketplace</div>
+    </div>
+    <div class="dhce-stat">
+      <div class="dhce-stat-number">1,000+</div>
+      <div class="dhce-stat-desc">Products certified by DHCE across Europe</div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ 4. MARKET OPPORTUNITY ═════════════════════════════════ -->
+<section id="dhce-about-market" class="dhce-fullwidth">
+  <div class="dhce-ab-inner">
+    <div class="dhce-market-intro">
+      <span class="dhce-ab-label dhce-ab-label--center">The Halal Opportunity</span>
+      <h2 class="dhce-ab-heading">A Market Too Large to Ignore</h2>
+      <p class="dhce-ab-sub">The global halal market is one of the fastest-growing economic sectors in the world. For businesses in food, cosmetics, and pharmaceuticals, halal certification is no longer optional — it is a commercial imperative.</p>
+    </div>
+    <div class="dhce-market-grid">
+      <div class="dhce-market-card">
+        <h3>A $6 Trillion Market by 2034</h3>
+        <p>The global halal food market alone is valued at $2.7 trillion in 2025 and projected to reach $6 trillion by 2034, growing at a CAGR of over 9%. This makes halal one of the most significant growth sectors in global trade.</p>
+      </div>
+      <div class="dhce-market-card">
+        <h3>Beyond Religion — A Global Quality Standard</h3>
+        <p>Halal certification is increasingly recognised by non-Muslim consumers as a symbol of quality, hygiene, and ethical production. In Europe, 12% of halal food purchases are now made by non-Muslims — a figure that continues to grow.</p>
+      </div>
+      <div class="dhce-market-card">
+        <h3>European Businesses Have a Clear Advantage</h3>
+        <p>Ireland and Europe are ideally positioned to export to Muslim-majority markets in Southeast Asia and the Middle East. DHCE certification — recognised by JAKIM, MUIS, and EIAC — is your direct access point to these high-value markets.</p>
+      </div>
+      <div class="dhce-market-card">
+        <h3>Halal Certification Is Now a Trade Requirement</h3>
+        <p>Major importers, retailers, and distributors in Muslim-majority markets increasingly require halal certification before listing products. Without it, Irish and European businesses are locked out of some of the world's fastest-growing consumer markets.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ 5. HISTORY TIMELINE ════════════════════════════════════ -->
+<section id="dhce-about-history" class="dhce-fullwidth">
+  <div class="dhce-ab-inner">
+    <div class="dhce-history-intro">
+      <span class="dhce-ab-label dhce-ab-label--center">Our History</span>
+      <h2 class="dhce-ab-heading">Over a Decade of Halal Excellence</h2>
+    </div>
+    <div class="dhce-timeline">
+
+      <div class="dhce-tl-item">
+        <div class="dhce-tl-card">
+          <p class="dhce-tl-year">2004</p>
+          <h3>Islamic Centre of Ireland Founded</h3>
+          <p>The Islamic Centre of Ireland is established, becoming one of Ireland's leading Islamic authorities and the future supervisory body of DHCE.</p>
+        </div>
+      </div>
+
+      <div class="dhce-tl-item">
+        <div class="dhce-tl-card">
+          <p class="dhce-tl-year">2008</p>
+          <h3>DHCE Established</h3>
+          <p>The Department of Halal Certification Europe is founded under the supervision of the Islamic Centre of Ireland to formalise halal certification for food products produced in Ireland.</p>
+        </div>
+      </div>
+
+      <div class="dhce-tl-item">
+        <div class="dhce-tl-card">
+          <p class="dhce-tl-year">Early Years</p>
+          <h3>Expanding Beyond Meat</h3>
+          <p>Initially focused on Irish slaughterhouses and meat factories, DHCE rapidly expanded its scope to cover processed foods, cosmetics, and pharmaceutical products.</p>
+        </div>
+      </div>
+
+      <div class="dhce-tl-item">
+        <div class="dhce-tl-card">
+          <p class="dhce-tl-year">Growth Phase</p>
+          <h3>European Expansion</h3>
+          <p>DHCE extends operations into the UK and across Europe, certifying businesses in Belgium, Denmark, Spain, Germany, France, Portugal, Norway, Poland, Czech Republic, Italy, the Netherlands, and beyond.</p>
+        </div>
+      </div>
+
+      <div class="dhce-tl-item">
+        <div class="dhce-tl-card">
+          <p class="dhce-tl-year">Today</p>
+          <h3>Ireland's Accredited Authority</h3>
+          <p>DHCE stands as Ireland's only internationally accredited halal certification body — recognised by JAKIM, MUIS, EIAC, and WHFC — with over 1,000 certified products across 14+ countries.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══ 6. VALUES ═════════════════════════════════════════════ -->
+<section id="dhce-about-values" class="dhce-fullwidth">
+  <div class="dhce-ab-inner">
+    <div class="dhce-values-intro">
+      <span class="dhce-ab-label dhce-ab-label--center">What We Stand For</span>
+      <h2 class="dhce-ab-heading">Our Core Principles</h2>
+    </div>
+    <div class="dhce-values-grid">
+
+      <div class="dhce-value-card">
+        <div class="dhce-value-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
+        </div>
+        <h3>Authority</h3>
+        <p>As Ireland's only internationally accredited halal certification body, our certificates carry global recognition — accepted by the world's most demanding halal authorities including JAKIM, MUIS, and EIAC.</p>
+      </div>
+
+      <div class="dhce-value-card">
+        <div class="dhce-value-icon">
+          <svg viewBox="0 0 24 24"><path d="M9 5H7a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2"/><rect x="9" y="3" width="6" height="4" rx="1"/><path d="M9 12l2 2 4-4"/></svg>
+        </div>
+        <h3>Integrity</h3>
+        <p>Every certification is grounded in Islamic jurisprudence and aligned with EU regulatory standards. We never compromise on compliance — giving businesses, Muslim consumers, and international markets full confidence in our certificates.</p>
+      </div>
+
+      <div class="dhce-value-card">
+        <div class="dhce-value-icon">
+          <svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+        </div>
+        <h3>Animal Welfare</h3>
+        <p>DHCE actively promotes the highest standards of animal welfare throughout the certification process — ensuring certified practices are ethical, humane, and consistent with both Islamic teachings and EU animal welfare law.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══ 7. CTA ═════════════════════════════════════════════════ -->
+<section id="dhce-about-cta" class="dhce-fullwidth">
+  <div class="dhce-ab-inner">
+    <span class="dhce-ab-label">Get Started</span>
+    <h2 class="dhce-ab-heading dhce-ab-heading--white">Ready to Access the Global Halal Market?</h2>
+    <p class="dhce-ab-sub dhce-ab-sub--white">Join the businesses across Ireland and Europe that trust DHCE to certify their products and open doors to 2 billion Muslim consumers worldwide.</p>
+    <div class="dhce-cta-btns">
+      <a href="/enterprise/apply/" class="dhce-btn-primary">Start Your Application</a>
+      <a href="/enterprise/contact/" class="dhce-btn-secondary">Talk to Our Team</a>
+    </div>
+  </div>
+</section>
