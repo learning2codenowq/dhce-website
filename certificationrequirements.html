@@ -1,0 +1,927 @@
+<!-- DHCE CERTIFICATION REQUIREMENTS PAGE -->
+
+<!-- ══ 1. HERO ═══════════════════════════════════════════════ -->
+<style>
+#dhce-req-hero *,
+#dhce-req-hero *::before,
+#dhce-req-hero *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+#dhce-req-hero {
+  position: relative;
+  width: 100vw;
+  left: 50%;
+  transform: translateX(-50%);
+  overflow: hidden;
+  background: #006271;
+  padding: 90px 24px;
+  text-align: center;
+}
+
+#dhce-req-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    radial-gradient(circle at 20% 50%, rgba(130,187,65,0.10) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(255,255,255,0.04) 0%, transparent 40%);
+  pointer-events: none;
+}
+
+#dhce-req-hero .dhce-rh-inner {
+  position: relative;
+  z-index: 1;
+  width: 92%;
+  max-width: 1060px;
+  margin: 0 auto;
+}
+
+#dhce-req-hero .dhce-rh-label {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  color: #82bb41;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+
+#dhce-req-hero h1 {
+  font-size: clamp(2rem, 4.5vw, 3.2rem);
+  font-weight: 800;
+  color: #fefeff;
+  letter-spacing: -0.03em;
+  line-height: 1.15;
+  margin-bottom: 20px;
+  max-width: 760px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#dhce-req-hero h1 em {
+  font-style: normal;
+  color: #82bb41;
+}
+
+#dhce-req-hero p {
+  font-size: 1.05rem;
+  color: rgba(254,254,255,0.7);
+  max-width: 580px;
+  margin: 0 auto;
+  line-height: 1.75;
+}
+</style>
+
+<section id="dhce-req-hero">
+  <div class="dhce-rh-inner">
+    <span class="dhce-rh-label">Certification</span>
+    <h1>Halal Certification Requirements</h1>
+    <p>Before applying for DHCE halal certification, understand what halal compliance means in practice and what your business needs to have in place to qualify.</p>
+  </div>
+</section>
+
+
+<!-- ══ 2. WHAT MAKES FOOD HALAL ══════════════════════════════ -->
+<style>
+#dhce-req-halal *,
+#dhce-req-halal *::before,
+#dhce-req-halal *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+#dhce-req-halal {
+  position: relative;
+  width: 100vw;
+  left: 50%;
+  transform: translateX(-50%);
+  overflow: hidden;
+  background: #fefeff;
+  padding: 90px 24px;
+}
+
+#dhce-req-halal .dhce-rhl-inner {
+  width: 92%;
+  max-width: 1060px;
+  margin: 0 auto;
+}
+
+#dhce-req-halal .dhce-rhl-intro {
+  max-width: 720px;
+  margin: 0 auto 56px;
+  text-align: center;
+}
+
+#dhce-req-halal .dhce-rhl-label {
+  display: block;
+  font-size: 11px;
+  font-weight: 700;
+  color: #82bb41;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+
+#dhce-req-halal h2 {
+  font-size: clamp(1.7rem, 3.5vw, 2.4rem);
+  font-weight: 800;
+  color: #006271;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+  margin-bottom: 16px;
+}
+
+#dhce-req-halal .dhce-rhl-intro p {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.75;
+}
+
+#dhce-req-halal .dhce-rhl-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+#dhce-req-halal .dhce-rhl-card {
+  background: #fefeff;
+  border-radius: 10px;
+  padding: 36px 32px;
+  border: 1px solid rgba(0,98,113,0.1);
+  box-shadow: 0 2px 16px rgba(0,98,113,0.06);
+}
+
+#dhce-req-halal .dhce-rhl-card h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #006271;
+  margin-bottom: 20px;
+  letter-spacing: -0.01em;
+  padding-bottom: 12px;
+  border-bottom: 2px solid #82bb41;
+  display: inline-block;
+}
+
+#dhce-req-halal .dhce-rhl-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+#dhce-req-halal .dhce-rhl-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 0.88rem;
+  color: #555;
+  line-height: 1.65;
+}
+
+#dhce-req-halal .dhce-rhl-list li::before {
+  content: '';
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #82bb41;
+  flex-shrink: 0;
+  margin-top: 6px;
+}
+
+#dhce-req-halal .dhce-rhl-note {
+  margin-top: 32px;
+  background: rgba(0,98,113,0.05);
+  border-left: 4px solid #006271;
+  border-radius: 0 8px 8px 0;
+  padding: 20px 24px;
+  font-size: 0.88rem;
+  color: #555;
+  line-height: 1.75;
+  grid-column: 1 / -1;
+}
+
+#dhce-req-halal .dhce-rhl-note strong {
+  color: #006271;
+  font-weight: 700;
+}
+
+@media (max-width: 760px) {
+  #dhce-req-halal .dhce-rhl-grid { grid-template-columns: 1fr; }
+}
+</style>
+
+<section id="dhce-req-halal">
+  <div class="dhce-rhl-inner">
+    <div class="dhce-rhl-intro">
+      <span class="dhce-rhl-label">Halal Food Principles</span>
+      <h2>What Makes a Product Halal?</h2>
+      <p>Under Islamic Law, all food is considered halal unless it falls into a prohibited category. Understanding these principles is the foundation of halal certification and determines what DHCE will assess during your audit.</p>
+    </div>
+    <div class="dhce-rhl-grid">
+
+      <div class="dhce-rhl-card">
+        <h3>Prohibited Ingredients — Animal Origin</h3>
+        <ul class="dhce-rhl-list">
+          <li>Pigs, boars, and all pork-derived products including gelatine</li>
+          <li>Dogs, snakes, monkeys, and similar animals</li>
+          <li>Carnivorous animals with claws or fangs (lions, tigers, bears)</li>
+          <li>Birds of prey with claws (eagles, vultures)</li>
+          <li>Pests such as rats, centipedes, scorpions, lice, and maggots</li>
+          <li>Amphibious animals such as frogs, crocodiles, and similar</li>
+          <li>Animals not slaughtered according to Islamic Law</li>
+          <li>Blood, and all blood-derived products</li>
+          <li>Any by-product of the human body (e.g. human hair in L-Cysteine)</li>
+        </ul>
+      </div>
+
+      <div class="dhce-rhl-card">
+        <h3>Prohibited Ingredients — Other Sources</h3>
+        <ul class="dhce-rhl-list">
+          <li>Alcoholic drinks including wine, ethyl alcohol, and spirits</li>
+          <li>All intoxicating or hazardous drinks</li>
+          <li>Intoxicating and hazardous plants (unless toxin is eliminated in processing)</li>
+          <li>Food additives or ingredients of uncertain origin (mashbooh); including certain enzymes, emulsifiers, flavours, and gelatine unless source is verified as halal</li>
+          <li>Any ingredient derived from a prohibited source, regardless of how small the quantity or what form it takes or whether as an additive, colour, processing aid, or glazing agent</li>
+        </ul>
+      </div>
+
+      <div class="dhce-rhl-note">
+        <strong>Important for manufacturers:</strong> The prohibition applies not only to finished products but to all raw materials, ingredients, sub-ingredients, processing aids, and packaging materials that come into contact with your product. All suppliers in your chain must be able to confirm the halal status of their inputs. DHCE will assess this during your audit.
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ══ 3. SLAUGHTER REQUIREMENTS ════════════════════════════ -->
+<style>
+#dhce-req-slaughter *,
+#dhce-req-slaughter *::before,
+#dhce-req-slaughter *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+#dhce-req-slaughter {
+  position: relative;
+  width: 100vw;
+  left: 50%;
+  transform: translateX(-50%);
+  overflow: hidden;
+  background: #f4f9f4;
+  padding: 90px 24px;
+}
+
+#dhce-req-slaughter .dhce-rs-inner {
+  width: 92%;
+  max-width: 1060px;
+  margin: 0 auto;
+}
+
+#dhce-req-slaughter .dhce-rs-intro {
+  text-align: center;
+  max-width: 640px;
+  margin: 0 auto 48px;
+}
+
+#dhce-req-slaughter .dhce-rs-label {
+  display: block;
+  font-size: 11px;
+  font-weight: 700;
+  color: #82bb41;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+
+#dhce-req-slaughter h2 {
+  font-size: clamp(1.7rem, 3.5vw, 2.4rem);
+  font-weight: 800;
+  color: #006271;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+  margin-bottom: 16px;
+}
+
+#dhce-req-slaughter .dhce-rs-intro p {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.75;
+}
+
+#dhce-req-slaughter .dhce-rs-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+#dhce-req-slaughter .dhce-rs-card {
+  background: #fefeff;
+  border-radius: 10px;
+  padding: 28px 24px;
+  border: 1px solid rgba(0,98,113,0.1);
+  box-shadow: 0 2px 16px rgba(0,98,113,0.06);
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+#dhce-req-slaughter .dhce-rs-num {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #006271;
+  color: #fefeff;
+  font-size: 0.85rem;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+#dhce-req-slaughter .dhce-rs-card p {
+  font-size: 0.88rem;
+  color: #555;
+  line-height: 1.7;
+  padding-top: 6px;
+}
+
+@media (max-width: 860px) {
+  #dhce-req-slaughter .dhce-rs-grid { grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 560px) {
+  #dhce-req-slaughter .dhce-rs-grid { grid-template-columns: 1fr; }
+}
+</style>
+
+<section id="dhce-req-slaughter">
+  <div class="dhce-rs-inner">
+    <div class="dhce-rs-intro">
+      <span class="dhce-rs-label">For Meat & Poultry Businesses</span>
+      <h2>Islamic Slaughter Requirements</h2>
+      <p>For abattoirs, meat processors, and poultry businesses, halal certification requires that the slaughter process meets specific Islamic conditions. DHCE auditors will verify each of these during your on-site inspection.</p>
+    </div>
+    <div class="dhce-rs-grid">
+
+      <div class="dhce-rs-card">
+        <div class="dhce-rs-num">1</div>
+        <p>The slaughterman must be a mentally sound Muslim, knowledgeable in Islamic slaughter procedures.</p>
+      </div>
+
+      <div class="dhce-rs-card">
+        <div class="dhce-rs-num">2</div>
+        <p>The animal must be a species lawfully permitted for consumption under Islamic Law.</p>
+      </div>
+
+      <div class="dhce-rs-card">
+        <div class="dhce-rs-num">3</div>
+        <p>The animal must be alive and deemed healthy at the time of slaughter.</p>
+      </div>
+
+      <div class="dhce-rs-card">
+        <div class="dhce-rs-num">4</div>
+        <p>The phrase "Bismillah" (In the Name of Allah) must be invoked immediately before each slaughter.</p>
+      </div>
+
+      <div class="dhce-rs-card">
+        <div class="dhce-rs-num">5</div>
+        <p>The slaughtering instrument must be sharp and must not be lifted from the animal mid-act.</p>
+      </div>
+
+      <div class="dhce-rs-card">
+        <div class="dhce-rs-num">6</div>
+        <p>The slaughter must sever the trachea, oesophagus, and both jugular veins in a single continuous motion.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ══ 4. WHAT DHCE REQUIRES ═════════════════════════════════ -->
+<style>
+#dhce-req-business *,
+#dhce-req-business *::before,
+#dhce-req-business *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+#dhce-req-business {
+  position: relative;
+  width: 100vw;
+  left: 50%;
+  transform: translateX(-50%);
+  overflow: hidden;
+  background: #fefeff;
+  padding: 90px 24px;
+}
+
+#dhce-req-business .dhce-rb-inner {
+  width: 92%;
+  max-width: 1060px;
+  margin: 0 auto;
+}
+
+#dhce-req-business .dhce-rb-intro {
+  text-align: center;
+  max-width: 640px;
+  margin: 0 auto 56px;
+}
+
+#dhce-req-business .dhce-rb-label {
+  display: block;
+  font-size: 11px;
+  font-weight: 700;
+  color: #82bb41;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+
+#dhce-req-business h2 {
+  font-size: clamp(1.7rem, 3.5vw, 2.4rem);
+  font-weight: 800;
+  color: #006271;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+  margin-bottom: 16px;
+}
+
+#dhce-req-business .dhce-rb-intro p {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.75;
+}
+
+#dhce-req-business .dhce-rb-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+#dhce-req-business .dhce-rb-card {
+  background: #fefeff;
+  border-radius: 10px;
+  padding: 32px 28px;
+  border: 1px solid rgba(0,98,113,0.1);
+  border-top: 3px solid #82bb41;
+  box-shadow: 0 2px 16px rgba(0,98,113,0.06);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+#dhce-req-business .dhce-rb-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(0,98,113,0.1);
+}
+
+#dhce-req-business .dhce-rb-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 10px;
+  background: rgba(0,98,113,0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 18px;
+}
+
+#dhce-req-business .dhce-rb-icon svg {
+  width: 24px;
+  height: 24px;
+  stroke: #006271;
+  fill: none;
+  stroke-width: 1.75;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+#dhce-req-business .dhce-rb-card h3 {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #006271;
+  margin-bottom: 10px;
+  letter-spacing: -0.01em;
+  line-height: 1.3;
+}
+
+#dhce-req-business .dhce-rb-card p {
+  font-size: 0.87rem;
+  color: #666;
+  line-height: 1.75;
+}
+
+@media (max-width: 860px) {
+  #dhce-req-business .dhce-rb-grid { grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 560px) {
+  #dhce-req-business .dhce-rb-grid { grid-template-columns: 1fr; }
+}
+</style>
+
+<section id="dhce-req-business">
+  <div class="dhce-rb-inner">
+    <div class="dhce-rb-intro">
+      <span class="dhce-rb-label">What DHCE Requires</span>
+      <h2>What Your Business Must Have in Place</h2>
+      <p>Beyond ingredient compliance, DHCE auditors will assess your facility, processes, documentation, and supply chain. Here is what you need to have in place before applying.</p>
+    </div>
+    <div class="dhce-rb-grid">
+
+      <div class="dhce-rb-card">
+        <div class="dhce-rb-icon">
+          <svg viewBox="0 0 24 24"><path d="M9 5H7a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2"/><rect x="9" y="3" width="6" height="4" rx="1"/><path d="M9 12l2 2 4-4"/></svg>
+        </div>
+        <h3>Ingredient Documentation & Traceability</h3>
+        <p>All ingredients must be sourced from verified halal suppliers with proper certification documentation. A full traceability system must be in place from raw material to finished product, with records available for audit.</p>
+      </div>
+
+      <div class="dhce-rb-card">
+        <div class="dhce-rb-icon">
+          <svg viewBox="0 0 24 24"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+        </div>
+        <h3>Documented Production Processes</h3>
+        <p>Your full production process must be documented with standard operating procedures (SOPs). Equipment, surfaces, and utensils must be cleaned and sanitised before halal production begins, with records maintained.</p>
+      </div>
+
+      <div class="dhce-rb-card">
+        <div class="dhce-rb-icon">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/></svg>
+        </div>
+        <h3>Cross-Contamination Prevention</h3>
+        <p>Strict segregation must be in place at every stage: raw material storage, production lines, semi-finished goods, and finished product storage. Halal and non-halal products must never come into contact.</p>
+      </div>
+
+      <div class="dhce-rb-card">
+        <div class="dhce-rb-icon">
+          <svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+        </div>
+        <h3>Compliant Storage & Handling</h3>
+        <p>Halal raw materials and finished products must be stored in clearly designated, labelled areas separate from non-halal goods. FIFO inventory management and proper environmental controls must be demonstrated.</p>
+      </div>
+
+      <div class="dhce-rb-card">
+        <div class="dhce-rb-icon">
+          <svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+        </div>
+        <h3>Halal-Compliant Cleaning Agents & Packaging</h3>
+        <p>All detergents, disinfectants, and lubricants used in the facility must not compromise halal status. Primary packaging must be free from any non-halal materials and must not introduce contamination risk.</p>
+      </div>
+
+      <div class="dhce-rb-card">
+        <div class="dhce-rb-icon">
+          <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        </div>
+        <h3>Staff Training & Audit Readiness</h3>
+        <p>All relevant staff must be trained on halal handling procedures and segregation protocols. Your team must be prepared to demonstrate compliance during DHCE's on-site audit and provide access to all records requested.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ══ 5. INGREDIENTS TABLE ══════════════════════════════════ -->
+<style>
+#dhce-req-table *,
+#dhce-req-table *::before,
+#dhce-req-table *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+#dhce-req-table {
+  position: relative;
+  width: 100vw;
+  left: 50%;
+  transform: translateX(-50%);
+  overflow: hidden;
+  background: #f4f9f4;
+  padding: 90px 24px;
+}
+
+#dhce-req-table .dhce-rt-inner {
+  width: 92%;
+  max-width: 1060px;
+  margin: 0 auto;
+}
+
+#dhce-req-table .dhce-rt-intro {
+  text-align: center;
+  max-width: 640px;
+  margin: 0 auto 48px;
+}
+
+#dhce-req-table .dhce-rt-label {
+  display: block;
+  font-size: 11px;
+  font-weight: 700;
+  color: #82bb41;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+
+#dhce-req-table h2 {
+  font-size: clamp(1.7rem, 3.5vw, 2.4rem);
+  font-weight: 800;
+  color: #006271;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+  margin-bottom: 16px;
+}
+
+#dhce-req-table .dhce-rt-intro p {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.75;
+}
+
+#dhce-req-table .dhce-rt-table-wrap {
+  background: #fefeff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 16px rgba(0,98,113,0.07);
+  border: 1px solid rgba(0,98,113,0.1);
+}
+
+#dhce-req-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#dhce-req-table thead tr {
+  background: #006271;
+}
+
+#dhce-req-table thead th {
+  padding: 16px 24px;
+  text-align: left;
+  font-size: 11px;
+  font-weight: 700;
+  color: #fefeff;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+#dhce-req-table tbody tr {
+  border-bottom: 1px solid rgba(0,98,113,0.08);
+  transition: background 0.15s;
+}
+
+#dhce-req-table tbody tr:last-child { border-bottom: none; }
+
+#dhce-req-table tbody tr:hover { background: rgba(0,98,113,0.03); }
+
+#dhce-req-table tbody td {
+  padding: 14px 24px;
+  font-size: 0.87rem;
+  color: #555;
+  line-height: 1.6;
+  vertical-align: top;
+}
+
+#dhce-req-table tbody td:first-child {
+  font-weight: 700;
+  color: #006271;
+  width: 180px;
+}
+
+#dhce-req-table tbody td:nth-child(2) {
+  width: 40%;
+}
+
+#dhce-req-table .dhce-status-halal {
+  display: inline-block;
+  background: rgba(130,187,65,0.12);
+  color: #4a7c1f;
+  font-size: 0.78rem;
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: 100px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+#dhce-req-table .dhce-status-haram {
+  display: inline-block;
+  background: rgba(180,30,30,0.1);
+  color: #9b1c1c;
+  font-size: 0.78rem;
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: 100px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+#dhce-req-table .dhce-status-cond {
+  display: inline-block;
+  background: rgba(0,98,113,0.1);
+  color: #006271;
+  font-size: 0.78rem;
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: 100px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+@media (max-width: 640px) {
+  #dhce-req-table tbody td:nth-child(2) { display: none; }
+  #dhce-req-table thead th:nth-child(2) { display: none; }
+}
+</style>
+
+<section id="dhce-req-table">
+  <div class="dhce-rt-inner">
+    <div class="dhce-rt-intro">
+      <span class="dhce-rt-label">Reference Guide</span>
+      <h2>Common Food Ingredients & Additives</h2>
+      <p>Many common food ingredients and additives can be derived from animal, plant, or synthetic sources. The halal status depends on the origin. Use this table as a reference guide when reviewing your formulations.</p>
+    </div>
+    <div class="dhce-rt-table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Ingredient</th>
+            <th>Description</th>
+            <th>Halal Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Acetic Acid</td>
+            <td>Occurs naturally in plant juices; can also be obtained from animal tissues or produced synthetically.</td>
+            <td><span class="dhce-status-cond">Conditional</span></td>
+          </tr>
+          <tr>
+            <td>Adipic Acid</td>
+            <td>Occurs naturally in beets; typically prepared synthetically.</td>
+            <td><span class="dhce-status-halal">Halal</span></td>
+          </tr>
+          <tr>
+            <td>Agar Agar</td>
+            <td>Naturally derived from seaweed; used as a plant-based alternative to gelatine.</td>
+            <td><span class="dhce-status-halal">Halal</span></td>
+          </tr>
+          <tr>
+            <td>Beta-apo-8-Carotenal (E160e)</td>
+            <td>Orange/yellow colour from plants; may use gelatine or lard as a carrier to dissolve in water.</td>
+            <td><span class="dhce-status-cond">Conditional</span></td>
+          </tr>
+          <tr>
+            <td>Carmine / Cochineal (E120)</td>
+            <td>A red colour obtained from dried female cochineal insects.</td>
+            <td><span class="dhce-status-haram">Not Halal</span></td>
+          </tr>
+          <tr>
+            <td>Casein</td>
+            <td>A milk protein used in cheese manufacture; precipitated by acid or animal/vegetable enzymes.</td>
+            <td><span class="dhce-status-cond">Conditional</span></td>
+          </tr>
+          <tr>
+            <td>Chocolate Liquor</td>
+            <td>A syrup made from chocolate, not an alcoholic liquor. The term refers to its liquid form.</td>
+            <td><span class="dhce-status-halal">Halal</span></td>
+          </tr>
+          <tr>
+            <td>Dextrose (Corn Syrup)</td>
+            <td>Derived from starch; used as a sweetener or colouring agent.</td>
+            <td><span class="dhce-status-halal">Halal</span></td>
+          </tr>
+          <tr>
+            <td>E153 Carbon Black</td>
+            <td>A colour obtained by charring bones, meat, blood, wood, or vegetables.</td>
+            <td><span class="dhce-status-cond">Conditional</span></td>
+          </tr>
+          <tr>
+            <td>E322 Lecithin</td>
+            <td>An emulsifier originally from egg yolk; commercially prepared from soya bean oil.</td>
+            <td><span class="dhce-status-halal">Halal</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══ 6. CTA ═════════════════════════════════════════════════ -->
+<style>
+#dhce-req-cta *,
+#dhce-req-cta *::before,
+#dhce-req-cta *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+#dhce-req-cta {
+  position: relative;
+  width: 100vw;
+  left: 50%;
+  transform: translateX(-50%);
+  overflow: hidden;
+  background: #006271;
+  padding: 90px 24px;
+}
+
+#dhce-req-cta .dhce-rc-inner {
+  width: 92%;
+  max-width: 1060px;
+  margin: 0 auto;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 12px;
+  padding: 56px 48px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+#dhce-req-cta .dhce-rc-text .dhce-rc-label {
+  display: block;
+  font-size: 11px;
+  font-weight: 700;
+  color: #82bb41;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+#dhce-req-cta .dhce-rc-text h2 {
+  font-size: clamp(1.4rem, 2.5vw, 1.9rem);
+  font-weight: 800;
+  color: #fefeff;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+  margin-bottom: 12px;
+}
+
+#dhce-req-cta .dhce-rc-text p {
+  font-size: 0.95rem;
+  color: rgba(254,254,255,0.7);
+  line-height: 1.75;
+  max-width: 480px;
+}
+
+#dhce-req-cta .dhce-rc-btns {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  flex-shrink: 0;
+}
+
+#dhce-req-cta .dhce-btn-primary {
+  display: inline-block;
+  background: #82bb41;
+  color: #fefeff;
+  font-size: 0.9rem;
+  font-weight: 700;
+  padding: 14px 30px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background 0.2s, transform 0.2s;
+  box-shadow: 0 4px 18px rgba(130,187,65,0.35);
+  white-space: nowrap;
+}
+
+#dhce-req-cta .dhce-btn-primary:hover {
+  background: #74a938;
+  transform: translateY(-2px);
+  color: #fefeff;
+  text-decoration: none;
+}
+
+#dhce-req-cta .dhce-btn-secondary {
+  display: inline-block;
+  background: transparent;
+  color: #fefeff;
+  font-size: 0.9rem;
+  font-weight: 700;
+  padding: 14px 30px;
+  border-radius: 6px;
+  border: 2px solid rgba(254,254,255,0.3);
+  text-decoration: none;
+  transition: border-color 0.2s, background 0.2s, transform 0.2s;
+  white-space: nowrap;
+}
+
+#dhce-req-cta .dhce-btn-secondary:hover {
+  border-color: rgba(254,254,255,0.65);
+  background: rgba(255,255,255,0.07);
+  transform: translateY(-2px);
+  color: #fefeff;
+  text-decoration: none;
+}
+
+@media (max-width: 760px) {
+  #dhce-req-cta .dhce-rc-inner { flex-direction: column; padding: 40px 28px; text-align: center; }
+  #dhce-req-cta .dhce-rc-btns { justify-content: center; }
+  #dhce-req-cta .dhce-rc-text p { max-width: 100%; }
+}
+</style>
+
+<section id="dhce-req-cta">
+  <div class="dhce-rc-inner">
+    <div class="dhce-rc-text">
+      <span class="dhce-rc-label">Ready to Apply?</span>
+      <h2>Our Team Will Guide You Through Every Requirement</h2>
+      <p>Not sure if your business is ready? Contact our team for a no-obligation assessment. We'll review your processes, identify any gaps, and guide you through every step of the certification journey.</p>
+    </div>
+    <div class="dhce-rc-btns">
+      <a href="/enterprise/apply/" class="dhce-btn-primary">Start Your Application</a>
+      <a href="/enterprise/contact/" class="dhce-btn-secondary">Talk to Our Team</a>
+    </div>
+  </div>
+</section>

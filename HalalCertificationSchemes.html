@@ -1,0 +1,669 @@
+<!-- DHCE HALAL CERTIFICATION SCHEMES PAGE -->
+
+<!-- ══ 1. HERO ═══════════════════════════════════════════════ -->
+<style>
+#dhce-schemes-hero *,
+#dhce-schemes-hero *::before,
+#dhce-schemes-hero *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+#dhce-schemes-hero {
+  position: relative;
+  width: 100vw;
+  left: 50%;
+  transform: translateX(-50%);
+  overflow: hidden;
+  background: #006271;
+  padding: 90px 24px;
+  text-align: center;
+}
+
+#dhce-schemes-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    radial-gradient(circle at 20% 50%, rgba(130,187,65,0.10) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(255,255,255,0.04) 0%, transparent 40%);
+  pointer-events: none;
+}
+
+#dhce-schemes-hero .dhce-sh-inner {
+  position: relative;
+  z-index: 1;
+  width: 92%;
+  max-width: 1060px;
+  margin: 0 auto;
+}
+
+#dhce-schemes-hero .dhce-sh-label {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  color: #82bb41;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+
+#dhce-schemes-hero h1 {
+  font-size: clamp(2rem, 4.5vw, 3.2rem);
+  font-weight: 800;
+  color: #fefeff;
+  letter-spacing: -0.03em;
+  line-height: 1.15;
+  margin-bottom: 20px;
+  max-width: 760px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#dhce-schemes-hero h1 em {
+  font-style: normal;
+  color: #82bb41;
+}
+
+#dhce-schemes-hero p {
+  font-size: 1.05rem;
+  color: rgba(254,254,255,0.7);
+  max-width: 580px;
+  margin: 0 auto;
+  line-height: 1.75;
+}
+</style>
+
+<section id="dhce-schemes-hero">
+  <div class="dhce-sh-inner">
+    <span class="dhce-sh-label">Certification</span>
+    <h1>Halal Certification <em>Schemes</em></h1>
+    <p>Whether you produce food, cosmetics, pharmaceuticals, or run a logistics operation, DHCE has an internationally recognised halal certification scheme designed for your business.</p>
+  </div>
+</section>
+
+
+<!-- ══ 2. SCHEMES CARDS ══════════════════════════════════════ -->
+<style>
+#dhce-schemes-cards *,
+#dhce-schemes-cards *::before,
+#dhce-schemes-cards *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+#dhce-schemes-cards {
+  position: relative;
+  width: 100vw;
+  left: 50%;
+  transform: translateX(-50%);
+  overflow: hidden;
+  background: #fefeff;
+  padding: 90px 24px;
+}
+
+#dhce-schemes-cards .dhce-sc-inner {
+  width: 92%;
+  max-width: 1060px;
+  margin: 0 auto;
+}
+
+#dhce-schemes-cards .dhce-sc-intro {
+  text-align: center;
+  max-width: 640px;
+  margin: 0 auto 56px;
+}
+
+#dhce-schemes-cards .dhce-sc-label {
+  display: block;
+  font-size: 11px;
+  font-weight: 700;
+  color: #82bb41;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+
+#dhce-schemes-cards h2 {
+  font-size: clamp(1.7rem, 3.5vw, 2.4rem);
+  font-weight: 800;
+  color: #006271;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+  margin-bottom: 16px;
+}
+
+#dhce-schemes-cards .dhce-sc-intro p {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.75;
+}
+
+#dhce-schemes-cards .dhce-sc-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+#dhce-schemes-cards .dhce-sc-card {
+  background: #fefeff;
+  border-radius: 10px;
+  padding: 36px 28px;
+  border: 1px solid rgba(0,98,113,0.1);
+  box-shadow: 0 2px 16px rgba(0,98,113,0.07);
+  transition: transform 0.2s, box-shadow 0.2s;
+  position: relative;
+  overflow: hidden;
+}
+
+#dhce-schemes-cards .dhce-sc-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 3px;
+  background: #82bb41;
+}
+
+#dhce-schemes-cards .dhce-sc-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(0,98,113,0.12);
+}
+
+#dhce-schemes-cards .dhce-sc-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 12px;
+  background: rgba(0,98,113,0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+#dhce-schemes-cards .dhce-sc-icon svg {
+  width: 26px;
+  height: 26px;
+  stroke: #006271;
+  fill: none;
+  stroke-width: 1.75;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+#dhce-schemes-cards .dhce-sc-card h3 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #006271;
+  margin-bottom: 10px;
+  letter-spacing: -0.01em;
+}
+
+#dhce-schemes-cards .dhce-sc-card p {
+  font-size: 0.88rem;
+  color: #666;
+  line-height: 1.75;
+  margin-bottom: 16px;
+}
+
+#dhce-schemes-cards .dhce-sc-benefit {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  background: rgba(130,187,65,0.08);
+  border-radius: 6px;
+  padding: 10px 12px;
+}
+
+#dhce-schemes-cards .dhce-sc-benefit-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #82bb41;
+  flex-shrink: 0;
+  margin-top: 5px;
+}
+
+#dhce-schemes-cards .dhce-sc-benefit span {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #006271;
+  line-height: 1.5;
+}
+
+@media (max-width: 860px) {
+  #dhce-schemes-cards .dhce-sc-grid { grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 560px) {
+  #dhce-schemes-cards .dhce-sc-grid { grid-template-columns: 1fr; }
+}
+</style>
+
+<section id="dhce-schemes-cards">
+  <div class="dhce-sc-inner">
+    <div class="dhce-sc-intro">
+      <span class="dhce-sc-label">What We Certify</span>
+      <h2>Choose the Right Scheme for Your Business</h2>
+      <p>DHCE offers halal certification across six product and service categories. Each scheme is designed to meet the specific compliance requirements of that sector — ensuring your certificate is credible, defensible, and globally recognised.</p>
+    </div>
+    <div class="dhce-sc-grid">
+
+      <!-- Food Products -->
+      <div class="dhce-sc-card">
+        <div class="dhce-sc-icon">
+          <svg viewBox="0 0 24 24"><path d="M3 2l1.5 14.5a2 2 0 0 0 2 1.5h11a2 2 0 0 0 2-1.5L21 2"/><path d="M3 2h18"/><path d="M12 2v16"/></svg>
+        </div>
+        <h3>Food Products</h3>
+        <p>Covers all food and beverage manufacturing, including ingredients, processing, packaging, and contamination controls. Applies to FMCG manufacturers, food processors, ingredient suppliers, abattoirs, and dairy producers.</p>
+        <div class="dhce-sc-benefit">
+          <div class="dhce-sc-benefit-dot"></div>
+          <span>Unlock access to Muslim-majority retail markets across Southeast Asia, the Middle East, and beyond.</span>
+        </div>
+      </div>
+
+      <!-- Cosmetics -->
+      <div class="dhce-sc-card">
+        <div class="dhce-sc-icon">
+          <svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+        </div>
+        <h3>Cosmetics</h3>
+        <p>Certifies skincare, makeup, haircare, and personal care products. Verifies that raw materials, formulations, and production processes are free from prohibited animal derivatives and non-compliant alcohol-based ingredients.</p>
+        <div class="dhce-sc-benefit">
+          <div class="dhce-sc-benefit-dot"></div>
+          <span>Position your brand in the fast-growing global halal beauty market, valued at over $100 billion.</span>
+        </div>
+      </div>
+
+      <!-- Pharmaceuticals -->
+      <div class="dhce-sc-card">
+        <div class="dhce-sc-icon">
+          <svg viewBox="0 0 24 24"><path d="M9 3H5a2 2 0 0 0-2 2v4m6-6h10a2 2 0 0 1 2 2v4M9 3v18m0 0h10a2 2 0 0 0 2-2v-4M9 21H5a2 2 0 0 1-2-2v-4m0 0h18"/></svg>
+        </div>
+        <h3>Pharmaceuticals</h3>
+        <p>Covers medicinal products, supplements, vaccines, OTC products, and pharmaceutical ingredients. Verifies gelatin sources, production line integrity, and contamination controls against halal standards.</p>
+        <div class="dhce-sc-benefit">
+          <div class="dhce-sc-benefit-dot"></div>
+          <span>Meet the growing demand from Muslim patients and healthcare providers who require halal-verified medicines.</span>
+        </div>
+      </div>
+
+      <!-- Non-Food Items -->
+      <div class="dhce-sc-card">
+        <div class="dhce-sc-icon">
+          <svg viewBox="0 0 24 24"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+        </div>
+        <h3>Non-Food Items</h3>
+        <p>Applies to materials used in halal production lines, including lubricants, filters, cleaning agents, packaging, and processing aids. This certification ensures these inputs do not compromise the halal integrity of the final product.</p>
+        <div class="dhce-sc-benefit">
+          <div class="dhce-sc-benefit-dot"></div>
+          <span>Become a preferred supplier to halal-certified food and pharma manufacturers who require compliant inputs.</span>
+        </div>
+      </div>
+
+      <!-- Animal Feed -->
+      <div class="dhce-sc-card">
+        <div class="dhce-sc-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 22V12"/><path d="M5 12H2a10 10 0 0 0 20 0h-3"/><path d="M8 12a4 4 0 0 1 8 0"/><path d="M12 2v4"/></svg>
+        </div>
+        <h3>Animal Feed</h3>
+        <p>Certifies feed products, supplements, and additives used in halal livestock and poultry farming. Ensures the entire halal husbandry chain remains compliant, from feed through to slaughter and processing.</p>
+        <div class="dhce-sc-benefit">
+          <div class="dhce-sc-benefit-dot"></div>
+          <span>Support the integrity of the halal supply chain and become a trusted supplier to halal meat producers.</span>
+        </div>
+      </div>
+
+      <!-- Services -->
+      <div class="dhce-sc-card">
+        <div class="dhce-sc-icon">
+          <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        </div>
+        <h3>Services</h3>
+        <p>Covers logistics, transport, storage, catering, cleaning, and Islamic financial services. Certifies that service operations are conducted in accordance with halal principles from end to end.</p>
+        <div class="dhce-sc-benefit">
+          <div class="dhce-sc-benefit-dot"></div>
+          <span>Differentiate your service business and become a compliant partner within certified halal supply chains.</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ══ 3. SCOPES TABLE ═══════════════════════════════════════ -->
+<style>
+#dhce-schemes-scopes *,
+#dhce-schemes-scopes *::before,
+#dhce-schemes-scopes *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+#dhce-schemes-scopes {
+  position: relative;
+  width: 100vw;
+  left: 50%;
+  transform: translateX(-50%);
+  overflow: hidden;
+  background: #f4f9f4;
+  padding: 90px 24px;
+}
+
+#dhce-schemes-scopes .dhce-ss-inner {
+  width: 92%;
+  max-width: 1060px;
+  margin: 0 auto;
+}
+
+#dhce-schemes-scopes .dhce-ss-intro {
+  text-align: center;
+  max-width: 640px;
+  margin: 0 auto 48px;
+}
+
+#dhce-schemes-scopes .dhce-ss-label {
+  display: block;
+  font-size: 11px;
+  font-weight: 700;
+  color: #82bb41;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+
+#dhce-schemes-scopes h2 {
+  font-size: clamp(1.7rem, 3.5vw, 2.4rem);
+  font-weight: 800;
+  color: #006271;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+  margin-bottom: 16px;
+}
+
+#dhce-schemes-scopes .dhce-ss-intro p {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.75;
+}
+
+#dhce-schemes-scopes .dhce-ss-table-wrap {
+  background: #fefeff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 16px rgba(0,98,113,0.07);
+  border: 1px solid rgba(0,98,113,0.1);
+}
+
+#dhce-schemes-scopes table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#dhce-schemes-scopes thead tr {
+  background: #006271;
+}
+
+#dhce-schemes-scopes thead th {
+  padding: 16px 24px;
+  text-align: left;
+  font-size: 11px;
+  font-weight: 700;
+  color: #fefeff;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+#dhce-schemes-scopes tbody tr {
+  border-bottom: 1px solid rgba(0,98,113,0.08);
+  transition: background 0.15s;
+}
+
+#dhce-schemes-scopes tbody tr:last-child {
+  border-bottom: none;
+}
+
+#dhce-schemes-scopes tbody tr:hover {
+  background: rgba(0,98,113,0.03);
+}
+
+#dhce-schemes-scopes tbody td {
+  padding: 14px 24px;
+  font-size: 0.88rem;
+  color: #555;
+  line-height: 1.6;
+  vertical-align: top;
+}
+
+#dhce-schemes-scopes tbody td:first-child {
+  font-weight: 700;
+  color: #006271;
+  font-size: 1rem;
+  width: 60px;
+}
+
+#dhce-schemes-scopes tbody td:nth-child(2) {
+  font-weight: 600;
+  color: #333;
+  width: 240px;
+}
+
+@media (max-width: 640px) {
+  #dhce-schemes-scopes thead th:last-child,
+  #dhce-schemes-scopes tbody td:last-child { display: none; }
+  #dhce-schemes-scopes tbody td:nth-child(2) { width: auto; }
+}
+</style>
+
+<section id="dhce-schemes-scopes">
+  <div class="dhce-ss-inner">
+    <div class="dhce-ss-intro">
+      <span class="dhce-ss-label">Scope Codes</span>
+      <h2>Full Scopes of Certification</h2>
+      <p>DHCE's certification scope follows internationally recognised classification codes. These codes define the precise category of activity your business operates in and will appear on your official DHCE halal certificate.</p>
+    </div>
+    <div class="dhce-ss-table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Code</th>
+            <th>Category</th>
+            <th>Examples of Sectors</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>A</td>
+            <td>Farming 1 — Animals</td>
+            <td>Fish farming; egg production; milk production; beekeeping; fishing; hunting</td>
+          </tr>
+          <tr>
+            <td>B</td>
+            <td>Farming 2 — Plants</td>
+            <td>Fruits; vegetables; cereals; spices; horticultural products</td>
+          </tr>
+          <tr>
+            <td>C</td>
+            <td>Processing 1 — Perishable Animal Products</td>
+            <td>Animal slaughtering; poultry processing; eggs; dairy; fish products</td>
+          </tr>
+          <tr>
+            <td>D</td>
+            <td>Processing 2 — Perishable Vegetable Products</td>
+            <td>Fresh juices; preserved fruits; fresh and preserved vegetables</td>
+          </tr>
+          <tr>
+            <td>E</td>
+            <td>Processing 3 — Long Shelf Life Products</td>
+            <td>Canned products; biscuits; snacks; beverages; pasta; flour; sugar; salt</td>
+          </tr>
+          <tr>
+            <td>F</td>
+            <td>Feed Production</td>
+            <td>Feed products; supplements and additives for livestock and poultry</td>
+          </tr>
+          <tr>
+            <td>G</td>
+            <td>Food Service</td>
+            <td>Hotels; restaurants; catering operations</td>
+          </tr>
+          <tr>
+            <td>H</td>
+            <td>Distribution</td>
+            <td>Retail outlets; shops; wholesalers; importers and distributors</td>
+          </tr>
+          <tr>
+            <td>I</td>
+            <td>Services</td>
+            <td>Water supply; cleaning; waste disposal; product development; veterinary services; Islamic financial services</td>
+          </tr>
+          <tr>
+            <td>J</td>
+            <td>Transport &amp; Storage</td>
+            <td>Logistics; cold chain transport; warehousing and storage facilities</td>
+          </tr>
+          <tr>
+            <td>K</td>
+            <td>Equipment Manufacturing</td>
+            <td>Industrial food processing equipment; vending machines</td>
+          </tr>
+          <tr>
+            <td>L</td>
+            <td>Chemical &amp; Biochemical Manufacturing</td>
+            <td>Food additives; dietary supplements; oils; cleaning agents; processing aids; microorganisms</td>
+          </tr>
+          <tr>
+            <td>M</td>
+            <td>Packaging &amp; Wrapping Materials</td>
+            <td>Food-contact packaging; wrapping materials for halal products</td>
+          </tr>
+          <tr>
+            <td>N</td>
+            <td>Other Materials Manufacturing</td>
+            <td>Cosmetics; textiles; leather products and other non-food manufactured goods</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══ 4. CTA ═════════════════════════════════════════════════ -->
+<style>
+#dhce-schemes-cta *,
+#dhce-schemes-cta *::before,
+#dhce-schemes-cta *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+#dhce-schemes-cta {
+  position: relative;
+  width: 100vw;
+  left: 50%;
+  transform: translateX(-50%);
+  overflow: hidden;
+  background: #006271;
+  padding: 90px 24px;
+}
+
+#dhce-schemes-cta .dhce-sct-inner {
+  width: 92%;
+  max-width: 1060px;
+  margin: 0 auto;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 12px;
+  padding: 56px 48px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+#dhce-schemes-cta .dhce-sct-text .dhce-sct-label {
+  display: block;
+  font-size: 11px;
+  font-weight: 700;
+  color: #82bb41;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+#dhce-schemes-cta .dhce-sct-text h2 {
+  font-size: clamp(1.4rem, 2.5vw, 1.9rem);
+  font-weight: 800;
+  color: #fefeff;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+  margin-bottom: 12px;
+}
+
+#dhce-schemes-cta .dhce-sct-text p {
+  font-size: 0.95rem;
+  color: rgba(254,254,255,0.7);
+  line-height: 1.75;
+  max-width: 480px;
+}
+
+#dhce-schemes-cta .dhce-sct-btns {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  flex-shrink: 0;
+}
+
+#dhce-schemes-cta .dhce-btn-primary {
+  display: inline-block;
+  background: #82bb41;
+  color: #fefeff;
+  font-size: 0.9rem;
+  font-weight: 700;
+  padding: 14px 30px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background 0.2s, transform 0.2s;
+  box-shadow: 0 4px 18px rgba(130,187,65,0.35);
+  white-space: nowrap;
+}
+
+#dhce-schemes-cta .dhce-btn-primary:hover {
+  background: #74a938;
+  transform: translateY(-2px);
+  color: #fefeff;
+  text-decoration: none;
+}
+
+#dhce-schemes-cta .dhce-btn-secondary {
+  display: inline-block;
+  background: transparent;
+  color: #fefeff;
+  font-size: 0.9rem;
+  font-weight: 700;
+  padding: 14px 30px;
+  border-radius: 6px;
+  border: 2px solid rgba(254,254,255,0.3);
+  text-decoration: none;
+  transition: border-color 0.2s, background 0.2s, transform 0.2s;
+  white-space: nowrap;
+}
+
+#dhce-schemes-cta .dhce-btn-secondary:hover {
+  border-color: rgba(254,254,255,0.65);
+  background: rgba(255,255,255,0.07);
+  transform: translateY(-2px);
+  color: #fefeff;
+  text-decoration: none;
+}
+
+@media (max-width: 760px) {
+  #dhce-schemes-cta .dhce-sct-inner { flex-direction: column; padding: 40px 28px; text-align: center; }
+  #dhce-schemes-cta .dhce-sct-btns { justify-content: center; }
+  #dhce-schemes-cta .dhce-sct-text p { max-width: 100%; }
+}
+</style>
+
+<section id="dhce-schemes-cta">
+  <div class="dhce-sct-inner">
+    <div class="dhce-sct-text">
+      <span class="dhce-sct-label">Get Started</span>
+      <h2>Not Sure Which Scheme Applies to Your Business?</h2>
+      <p>Our team will assess your products, processes, and supply chain and recommend the right certification scope for you. Getting started is simpler than you think.</p>
+    </div>
+    <div class="dhce-sct-btns">
+      <a href="/enterprise/apply/" class="dhce-btn-primary">Start Your Application</a>
+      <a href="/enterprise/contact/" class="dhce-btn-secondary">Talk to Our Team</a>
+    </div>
+  </div>
+</section>
