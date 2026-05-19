@@ -1,0 +1,810 @@
+<!-- DHCE HALAL CERTIFICATION PROCEDURE PAGE -->
+
+<!-- ══ 1. HERO ═══════════════════════════════════════════════ -->
+<style>
+#dhce-proc-hero *,
+#dhce-proc-hero *::before,
+#dhce-proc-hero *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+#dhce-proc-hero {
+  position: relative;
+  width: 100vw;
+  left: 50%;
+  transform: translateX(-50%);
+  overflow: hidden;
+  background: #006271;
+  padding: 90px 24px;
+  text-align: center;
+}
+
+#dhce-proc-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    radial-gradient(circle at 20% 50%, rgba(130,187,65,0.10) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(255,255,255,0.04) 0%, transparent 40%);
+  pointer-events: none;
+}
+
+#dhce-proc-hero .dhce-ph-inner {
+  position: relative;
+  z-index: 1;
+  width: 92%;
+  max-width: 1060px;
+  margin: 0 auto;
+}
+
+#dhce-proc-hero .dhce-ph-label {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  color: #82bb41;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+
+#dhce-proc-hero h1 {
+  font-size: clamp(2rem, 4.5vw, 3.2rem);
+  font-weight: 800;
+  color: #fefeff;
+  letter-spacing: -0.03em;
+  line-height: 1.15;
+  margin-bottom: 20px;
+  max-width: 760px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#dhce-proc-hero h1 em {
+  font-style: normal;
+  color: #82bb41;
+}
+
+#dhce-proc-hero p {
+  font-size: 1.05rem;
+  color: rgba(254,254,255,0.7);
+  max-width: 580px;
+  margin: 0 auto 36px;
+  line-height: 1.75;
+}
+
+#dhce-proc-hero .dhce-ph-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(130,187,65,0.15);
+  border: 1px solid rgba(130,187,65,0.35);
+  border-radius: 100px;
+  padding: 10px 24px;
+}
+
+#dhce-proc-hero .dhce-ph-badge span {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #82bb41;
+  letter-spacing: 0.04em;
+}
+</style>
+
+<section id="dhce-proc-hero">
+  <div class="dhce-ph-inner">
+    <span class="dhce-ph-label">Certification</span>
+    <h1>Halal Certification Procedure</h1>
+    <p>Our certification process is thorough, transparent, and internationally recognised. Designed to give your business a halal certificate that opens doors to global Muslim markets.</p>
+    <div class="dhce-ph-badge">
+      <span>21 Working Days from Application to Certificate</span>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══ 2. TIMELINE OVERVIEW BAR ══════════════════════════════ -->
+<style>
+#dhce-proc-overview *,
+#dhce-proc-overview *::before,
+#dhce-proc-overview *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+#dhce-proc-overview {
+  position: relative;
+  width: 100vw;
+  left: 50%;
+  transform: translateX(-50%);
+  overflow: hidden;
+  background: #fefeff;
+  padding: 72px 24px;
+}
+
+#dhce-proc-overview .dhce-po-inner {
+  width: 92%;
+  max-width: 1060px;
+  margin: 0 auto;
+}
+
+#dhce-proc-overview .dhce-po-intro {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto 48px;
+}
+
+#dhce-proc-overview .dhce-po-label {
+  display: block;
+  font-size: 11px;
+  font-weight: 700;
+  color: #82bb41;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+
+#dhce-proc-overview h2 {
+  font-size: clamp(1.7rem, 3.5vw, 2.4rem);
+  font-weight: 800;
+  color: #006271;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+
+#dhce-proc-overview .dhce-po-phases {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0;
+  position: relative;
+}
+
+#dhce-proc-overview .dhce-po-phases::before {
+  content: '';
+  position: absolute;
+  top: 28px;
+  left: 10%;
+  right: 10%;
+  height: 2px;
+  background: linear-gradient(to right, #82bb41, #006271);
+  z-index: 0;
+}
+
+#dhce-proc-overview .dhce-po-phase {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  padding: 0 12px;
+}
+
+#dhce-proc-overview .dhce-po-dot {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: #006271;
+  color: #fefeff;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+  border: 4px solid #fefeff;
+  box-shadow: 0 0 0 2px #006271;
+  flex-shrink: 0;
+}
+
+#dhce-proc-overview .dhce-po-phase:last-child .dhce-po-dot {
+  background: #82bb41;
+  box-shadow: 0 0 0 2px #82bb41;
+}
+
+#dhce-proc-overview .dhce-po-phase-title {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #006271;
+  margin-bottom: 6px;
+  line-height: 1.3;
+}
+
+#dhce-proc-overview .dhce-po-phase-days {
+  font-size: 0.8rem;
+  color: #82bb41;
+  font-weight: 700;
+}
+
+@media (max-width: 640px) {
+  #dhce-proc-overview .dhce-po-phases { grid-template-columns: 1fr 1fr; gap: 32px; }
+  #dhce-proc-overview .dhce-po-phases::before { display: none; }
+}
+</style>
+
+<section id="dhce-proc-overview">
+  <div class="dhce-po-inner">
+    <div class="dhce-po-intro">
+      <span class="dhce-po-label">Process Overview</span>
+      <h2>Four Phases to Your Halal Certificate</h2>
+    </div>
+    <div class="dhce-po-phases">
+
+      <div class="dhce-po-phase">
+        <div class="dhce-po-dot">1</div>
+        <p class="dhce-po-phase-title">Application and Documentation Review</p>
+        <p class="dhce-po-phase-days">Days 1 to 3</p>
+      </div>
+
+      <div class="dhce-po-phase">
+        <div class="dhce-po-dot">2</div>
+        <p class="dhce-po-phase-title">Level 1 Audit and Scheduling</p>
+        <p class="dhce-po-phase-days">Days 4 to 9</p>
+      </div>
+
+      <div class="dhce-po-phase">
+        <div class="dhce-po-dot">3</div>
+        <p class="dhce-po-phase-title">Level 2 On-Site Audit and Report</p>
+        <p class="dhce-po-phase-days">Days 10 to 18</p>
+      </div>
+
+      <div class="dhce-po-phase">
+        <div class="dhce-po-dot">4</div>
+        <p class="dhce-po-phase-title">Committee Review and Certificate Issued</p>
+        <p class="dhce-po-phase-days">Days 19 to 21</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ══ 3. STEP-BY-STEP PROCESS ═══════════════════════════════ -->
+<style>
+#dhce-proc-steps *,
+#dhce-proc-steps *::before,
+#dhce-proc-steps *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+#dhce-proc-steps {
+  position: relative;
+  width: 100vw;
+  left: 50%;
+  transform: translateX(-50%);
+  overflow: hidden;
+  background: #f4f9f4;
+  padding: 90px 24px;
+}
+
+#dhce-proc-steps .dhce-ps-inner {
+  width: 92%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+#dhce-proc-steps .dhce-ps-intro {
+  text-align: center;
+  margin-bottom: 64px;
+}
+
+#dhce-proc-steps .dhce-ps-label {
+  display: block;
+  font-size: 11px;
+  font-weight: 700;
+  color: #82bb41;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+
+#dhce-proc-steps h2 {
+  font-size: clamp(1.7rem, 3.5vw, 2.4rem);
+  font-weight: 800;
+  color: #006271;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+
+#dhce-proc-steps .dhce-steps-list {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+#dhce-proc-steps .dhce-steps-list::before {
+  content: '';
+  position: absolute;
+  left: 31px;
+  top: 32px;
+  bottom: 32px;
+  width: 2px;
+  background: linear-gradient(to bottom, #82bb41, #006271);
+  z-index: 0;
+}
+
+#dhce-proc-steps .dhce-step-row {
+  display: flex;
+  gap: 28px;
+  align-items: flex-start;
+  position: relative;
+  z-index: 1;
+  padding-bottom: 36px;
+}
+
+#dhce-proc-steps .dhce-step-row:last-child {
+  padding-bottom: 0;
+}
+
+#dhce-proc-steps .dhce-step-num {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: #006271;
+  color: #fefeff;
+  font-size: 1.2rem;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  border: 4px solid #f4f9f4;
+  box-shadow: 0 0 0 2px #006271, 0 4px 14px rgba(0,98,113,0.2);
+  transition: background 0.2s, box-shadow 0.2s;
+  position: relative;
+  z-index: 2;
+}
+
+#dhce-proc-steps .dhce-step-row:hover .dhce-step-num {
+  background: #82bb41;
+  box-shadow: 0 0 0 2px #82bb41, 0 4px 18px rgba(130,187,65,0.35);
+}
+
+#dhce-proc-steps .dhce-step-row:last-child .dhce-step-num {
+  background: #82bb41;
+  box-shadow: 0 0 0 2px #82bb41, 0 4px 18px rgba(130,187,65,0.35);
+}
+
+#dhce-proc-steps .dhce-step-card {
+  flex: 1;
+  background: #fefeff;
+  border: 1px solid rgba(0,98,113,0.1);
+  border-radius: 10px;
+  padding: 24px 28px;
+  margin-top: 6px;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+
+#dhce-proc-steps .dhce-step-row:hover .dhce-step-card {
+  box-shadow: 0 8px 28px rgba(0,98,113,0.09);
+  transform: translateX(4px);
+}
+
+#dhce-proc-steps .dhce-step-row:last-child .dhce-step-card {
+  background: rgba(130,187,65,0.07);
+  border-color: rgba(130,187,65,0.3);
+}
+
+#dhce-proc-steps .dhce-step-tag {
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #82bb41;
+  background: rgba(130,187,65,0.12);
+  border-radius: 100px;
+  padding: 2px 10px;
+  margin-bottom: 8px;
+}
+
+#dhce-proc-steps .dhce-step-timing {
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #006271;
+  background: rgba(0,98,113,0.08);
+  border-radius: 100px;
+  padding: 2px 10px;
+  margin-bottom: 8px;
+  margin-left: 6px;
+}
+
+#dhce-proc-steps .dhce-step-card h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #006271;
+  margin-bottom: 8px;
+  line-height: 1.3;
+}
+
+#dhce-proc-steps .dhce-step-row:last-child .dhce-step-card h3 {
+  color: #74a938;
+}
+
+#dhce-proc-steps .dhce-step-card p {
+  font-size: 0.88rem;
+  color: #666;
+  line-height: 1.75;
+}
+
+@media (max-width: 560px) {
+  #dhce-proc-steps .dhce-steps-list::before { left: 27px; }
+  #dhce-proc-steps .dhce-step-num { width: 56px; height: 56px; font-size: 1rem; }
+  #dhce-proc-steps .dhce-step-row { gap: 18px; }
+  #dhce-proc-steps .dhce-step-card { padding: 18px 18px; }
+}
+</style>
+
+<section id="dhce-proc-steps">
+  <div class="dhce-ps-inner">
+    <div class="dhce-ps-intro">
+      <span class="dhce-ps-label">Step by Step</span>
+      <h2>Your Path to Halal Certification</h2>
+    </div>
+    <div class="dhce-steps-list">
+
+      <div class="dhce-step-row">
+        <div class="dhce-step-num">1</div>
+        <div class="dhce-step-card">
+          <span class="dhce-step-tag">Getting Started</span>
+          <h3>Submit Your Application</h3>
+          <p>Begin by completing and submitting your halal certification application to DHCE. Provide details about your business, product range, ingredients, and production processes so our team can assess your requirements.</p>
+        </div>
+      </div>
+
+      <div class="dhce-step-row">
+        <div class="dhce-step-num">2</div>
+        <div class="dhce-step-card">
+          <span class="dhce-step-tag">Quotation</span>
+          <span class="dhce-step-timing">Within 3 Working Days</span>
+          <h3>Receive Your Certification Quote</h3>
+          <p>Following a review of your application and documentation, DHCE will issue a tailored quote for your certification. This covers the full scope of the audit and certification process specific to your business and product categories. If any documentation is incomplete, DHCE will contact you to resolve this before proceeding.</p>
+        </div>
+      </div>
+
+      <div class="dhce-step-row">
+        <div class="dhce-step-num">3</div>
+        <div class="dhce-step-card">
+          <span class="dhce-step-tag">Agreements</span>
+          <h3>Accept Quote and Sign Agreements</h3>
+          <p>Once you accept the quote, DHCE will issue a Halal Certification Agreement and a Confidentiality Agreement. These set out the terms of certification and protect your business information throughout the process.</p>
+        </div>
+      </div>
+
+      <div class="dhce-step-row">
+        <div class="dhce-step-num">4</div>
+        <div class="dhce-step-card">
+          <span class="dhce-step-tag">Audit Scheduling</span>
+          <span class="dhce-step-timing">Days 4 to 9</span>
+          <h3>Schedule Your On-Site Halal Audit</h3>
+          <p>DHCE will work with you to schedule a convenient date for your on-site audit. Two qualified DHCE auditors will be assigned to conduct a thorough inspection of your facilities, production processes, ingredients, and supply chain.</p>
+        </div>
+      </div>
+
+      <div class="dhce-step-row">
+        <div class="dhce-step-num">5</div>
+        <div class="dhce-step-card">
+          <span class="dhce-step-tag">Audit</span>
+          <span class="dhce-step-timing">Days 10 to 18</span>
+          <h3>On-Site Audit and Findings Report</h3>
+          <p>Two DHCE auditors conduct the on-site halal audit at your premises. Following the audit, a detailed Halal Audit Report is issued outlining any findings. Your business will be required to address and close all findings before proceeding to the next stage.</p>
+        </div>
+      </div>
+
+      <div class="dhce-step-row">
+        <div class="dhce-step-num">6</div>
+        <div class="dhce-step-card">
+          <span class="dhce-step-tag">Review</span>
+          <span class="dhce-step-timing">Days 19 to 21</span>
+          <h3>DHCE Decision Committee Review</h3>
+          <p>With all audit findings closed, your full application is reviewed by the DHCE internal Decision Committee. The committee rigorously assesses the audit report, findings closure, and your overall compliance before making a certification decision.</p>
+        </div>
+      </div>
+
+      <div class="dhce-step-row">
+        <div class="dhce-step-num">7</div>
+        <div class="dhce-step-card">
+          <span class="dhce-step-tag">Certified</span>
+          <h3>Halal Certificate Issued and Access to Global Markets</h3>
+          <p>Upon approval by the Decision Committee, your official DHCE Halal Certificate is issued. Globally recognised and accepted by major halal authorities worldwide, your certificate opens your business to Muslim consumers across international markets.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ══ 4. CORRECTIVE ACTION LOOP ════════════════════════════ -->
+<style>
+#dhce-proc-findings *,
+#dhce-proc-findings *::before,
+#dhce-proc-findings *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+#dhce-proc-findings {
+  position: relative;
+  width: 100vw;
+  left: 50%;
+  transform: translateX(-50%);
+  overflow: hidden;
+  background: #fefeff;
+  padding: 90px 24px;
+}
+
+#dhce-proc-findings .dhce-pf-inner {
+  width: 92%;
+  max-width: 1060px;
+  margin: 0 auto;
+}
+
+#dhce-proc-findings .dhce-pf-intro {
+  text-align: center;
+  max-width: 640px;
+  margin: 0 auto 48px;
+}
+
+#dhce-proc-findings .dhce-pf-label {
+  display: block;
+  font-size: 11px;
+  font-weight: 700;
+  color: #82bb41;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+
+#dhce-proc-findings h2 {
+  font-size: clamp(1.7rem, 3.5vw, 2.4rem);
+  font-weight: 800;
+  color: #006271;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+  margin-bottom: 16px;
+}
+
+#dhce-proc-findings .dhce-pf-intro p {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.75;
+}
+
+#dhce-proc-findings .dhce-pf-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+#dhce-proc-findings .dhce-pf-card {
+  background: #fefeff;
+  border-radius: 10px;
+  padding: 32px 28px;
+  border: 1px solid rgba(0,98,113,0.1);
+  box-shadow: 0 2px 16px rgba(0,98,113,0.06);
+  text-align: center;
+}
+
+#dhce-proc-findings .dhce-pf-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 12px;
+  background: rgba(0,98,113,0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 18px;
+}
+
+#dhce-proc-findings .dhce-pf-icon svg {
+  width: 26px;
+  height: 26px;
+  stroke: #006271;
+  fill: none;
+  stroke-width: 1.75;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+#dhce-proc-findings .dhce-pf-card h3 {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #006271;
+  margin-bottom: 10px;
+  line-height: 1.3;
+}
+
+#dhce-proc-findings .dhce-pf-card p {
+  font-size: 0.87rem;
+  color: #666;
+  line-height: 1.75;
+}
+
+#dhce-proc-findings .dhce-pf-note {
+  margin-top: 32px;
+  background: rgba(130,187,65,0.07);
+  border: 1px solid rgba(130,187,65,0.25);
+  border-radius: 10px;
+  padding: 24px 32px;
+  text-align: center;
+}
+
+#dhce-proc-findings .dhce-pf-note p {
+  font-size: 0.9rem;
+  color: #555;
+  line-height: 1.75;
+}
+
+#dhce-proc-findings .dhce-pf-note strong {
+  color: #006271;
+  font-weight: 700;
+}
+
+@media (max-width: 760px) {
+  #dhce-proc-findings .dhce-pf-grid { grid-template-columns: 1fr; max-width: 480px; margin: 0 auto; }
+}
+</style>
+
+<section id="dhce-proc-findings">
+  <div class="dhce-pf-inner">
+    <div class="dhce-pf-intro">
+      <span class="dhce-pf-label">What If Issues Are Raised</span>
+      <h2>Audit Findings Are a Normal Part of the Process</h2>
+      <p>If DHCE auditors identify findings during your audit, this does not mean your application has failed. It means areas of improvement have been identified. Here is what happens next.</p>
+    </div>
+    <div class="dhce-pf-grid">
+
+      <div class="dhce-pf-card">
+        <div class="dhce-pf-icon">
+          <svg viewBox="0 0 24 24"><path d="M9 5H7a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2"/><rect x="9" y="3" width="6" height="4" rx="1"/><path d="M9 12l2 2 4-4"/></svg>
+        </div>
+        <h3>Findings Report Issued</h3>
+        <p>Following the on-site audit, DHCE issues a detailed Halal Audit Report listing all findings. Each finding is clearly described so your team understands exactly what needs to be addressed.</p>
+      </div>
+
+      <div class="dhce-pf-card">
+        <div class="dhce-pf-icon">
+          <svg viewBox="0 0 24 24"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
+        </div>
+        <h3>Your Business Responds</h3>
+        <p>Your business submits a corrective action response addressing each finding raised. DHCE reviews your response and confirms whether the findings have been satisfactorily closed before proceeding.</p>
+      </div>
+
+      <div class="dhce-pf-card">
+        <div class="dhce-pf-icon">
+          <svg viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+        </div>
+        <h3>Process Continues</h3>
+        <p>Once all findings are closed and confirmed by DHCE, your application proceeds to the Decision Committee for final review. The process continues without needing to restart from the beginning.</p>
+      </div>
+
+    </div>
+    <div class="dhce-pf-note">
+      <p><strong>Our team is here to support you.</strong> If you are unsure how to address a finding, our auditors are available to provide guidance. Getting certified is a collaborative process and DHCE is committed to helping your business succeed.</p>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══ 5. CTA ═════════════════════════════════════════════════ -->
+<style>
+#dhce-proc-cta *,
+#dhce-proc-cta *::before,
+#dhce-proc-cta *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+#dhce-proc-cta {
+  position: relative;
+  width: 100vw;
+  left: 50%;
+  transform: translateX(-50%);
+  overflow: hidden;
+  background: #006271;
+  padding: 90px 24px;
+}
+
+#dhce-proc-cta .dhce-pc-inner {
+  width: 92%;
+  max-width: 1060px;
+  margin: 0 auto;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 12px;
+  padding: 56px 48px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+#dhce-proc-cta .dhce-pc-text .dhce-pc-label {
+  display: block;
+  font-size: 11px;
+  font-weight: 700;
+  color: #82bb41;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+#dhce-proc-cta .dhce-pc-text h2 {
+  font-size: clamp(1.4rem, 2.5vw, 1.9rem);
+  font-weight: 800;
+  color: #fefeff;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+  margin-bottom: 12px;
+}
+
+#dhce-proc-cta .dhce-pc-text p {
+  font-size: 0.95rem;
+  color: rgba(254,254,255,0.7);
+  line-height: 1.75;
+  max-width: 480px;
+}
+
+#dhce-proc-cta .dhce-pc-btns {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  flex-shrink: 0;
+}
+
+#dhce-proc-cta .dhce-btn-primary {
+  display: inline-block;
+  background: #82bb41;
+  color: #fefeff;
+  font-size: 0.9rem;
+  font-weight: 700;
+  padding: 14px 30px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background 0.2s, transform 0.2s;
+  box-shadow: 0 4px 18px rgba(130,187,65,0.35);
+  white-space: nowrap;
+}
+
+#dhce-proc-cta .dhce-btn-primary:hover {
+  background: #74a938;
+  transform: translateY(-2px);
+  color: #fefeff;
+  text-decoration: none;
+}
+
+#dhce-proc-cta .dhce-btn-secondary {
+  display: inline-block;
+  background: transparent;
+  color: #fefeff;
+  font-size: 0.9rem;
+  font-weight: 700;
+  padding: 14px 30px;
+  border-radius: 6px;
+  border: 2px solid rgba(254,254,255,0.3);
+  text-decoration: none;
+  transition: border-color 0.2s, background 0.2s, transform 0.2s;
+  white-space: nowrap;
+}
+
+#dhce-proc-cta .dhce-btn-secondary:hover {
+  border-color: rgba(254,254,255,0.65);
+  background: rgba(255,255,255,0.07);
+  transform: translateY(-2px);
+  color: #fefeff;
+  text-decoration: none;
+}
+
+@media (max-width: 760px) {
+  #dhce-proc-cta .dhce-pc-inner { flex-direction: column; padding: 40px 28px; text-align: center; }
+  #dhce-proc-cta .dhce-pc-btns { justify-content: center; }
+  #dhce-proc-cta .dhce-pc-text p { max-width: 100%; }
+}
+</style>
+
+<section id="dhce-proc-cta">
+  <div class="dhce-pc-inner">
+    <div class="dhce-pc-text">
+      <span class="dhce-pc-label">Get Started Today</span>
+      <h2>Ready to Begin Your Certification Journey?</h2>
+      <p>Starting your application takes minutes. Our team will guide you through every step of the process and ensure your business is fully prepared before your audit date.</p>
+    </div>
+    <div class="dhce-pc-btns">
+      <a href="/enterprise/apply/" class="dhce-btn-primary">Start Your Application</a>
+      <a href="/enterprise/contact/" class="dhce-btn-secondary">Talk to Our Team</a>
+    </div>
+  </div>
+</section>

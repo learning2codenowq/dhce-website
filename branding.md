@@ -154,8 +154,8 @@ line-height: 1.75;
 | Home | Page | ✅ Done |
 | About DHCE | Page | ✅ Done |
 | Certification | Dropdown parent | — |
-| → Halal Certification Schemes | Sub-page | |
-| → Certification Requirements | Sub-page | |
+| → Halal Certification Schemes | Sub-page | ✅ Done |
+| → Certification Requirements | Sub-page | ✅ Done |
 | → Halal Certification Procedure | Sub-page | |
 | → Verify Certificate | Sub-page | |
 | Training | Page | |
