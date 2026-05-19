@@ -152,15 +152,13 @@ line-height: 1.75;
 | Label | Type | Notes |
 |-------|------|-------|
 | Home | Page | ✅ Done |
-| About DHCE | Page | About + History merged into one page |
+| About DHCE | Page | ✅ Done |
 | Certification | Dropdown parent | — |
 | → Halal Certification Schemes | Sub-page | |
 | → Certification Requirements | Sub-page | |
 | → Halal Certification Procedure | Sub-page | |
-| → Scopes of Certification | Sub-page | |
-| What is Halal? | Page | |
+| → Verify Certificate | Sub-page | |
 | Training | Page | |
-| Verify Certificate | Page | |
 | Downloads | Page | |
 | FAQs | Page | |
 | News | WordPress blog archive | |
