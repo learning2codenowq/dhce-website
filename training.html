@@ -1,0 +1,680 @@
+<!-- DHCE TRAINING PAGE -->
+
+<!-- ══ 1. HERO ═══════════════════════════════════════════════ -->
+<style>
+#dhce-train-hero *,
+#dhce-train-hero *::before,
+#dhce-train-hero *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+#dhce-train-hero {
+  position: relative;
+  width: 100vw;
+  left: 50%;
+  transform: translateX(-50%);
+  overflow: hidden;
+  background: #006271;
+  padding: 90px 24px;
+  text-align: center;
+}
+
+#dhce-train-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    radial-gradient(circle at 20% 50%, rgba(130,187,65,0.10) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(255,255,255,0.04) 0%, transparent 40%);
+  pointer-events: none;
+}
+
+#dhce-train-hero .dhce-th-inner {
+  position: relative;
+  z-index: 1;
+  width: 92%;
+  max-width: 1060px;
+  margin: 0 auto;
+}
+
+#dhce-train-hero .dhce-th-label {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  color: #82bb41;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+
+#dhce-train-hero h1 {
+  font-size: clamp(2rem, 4.5vw, 3.2rem);
+  font-weight: 800;
+  color: #fefeff;
+  letter-spacing: -0.03em;
+  line-height: 1.15;
+  margin-bottom: 20px;
+  max-width: 760px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#dhce-train-hero h1 em {
+  font-style: normal;
+  color: #82bb41;
+}
+
+#dhce-train-hero p {
+  font-size: 1.05rem;
+  color: rgba(254,254,255,0.7);
+  max-width: 580px;
+  margin: 0 auto;
+  line-height: 1.75;
+}
+</style>
+
+<section id="dhce-train-hero">
+  <div class="dhce-th-inner">
+    <span class="dhce-th-label">Training</span>
+    <h1>Halal Training Programmes</h1>
+    <p>DHCE delivers expert halal training grounded in Islamic Law, designed to equip professionals, businesses, and individuals with the knowledge they need to operate confidently in the halal market.</p>
+  </div>
+</section>
+
+
+<!-- ══ 2. WHO IT IS FOR ══════════════════════════════════════ -->
+<style>
+#dhce-train-who *,
+#dhce-train-who *::before,
+#dhce-train-who *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+#dhce-train-who {
+  position: relative;
+  width: 100vw;
+  left: 50%;
+  transform: translateX(-50%);
+  overflow: hidden;
+  background: #fefeff;
+  padding: 90px 24px;
+}
+
+#dhce-train-who .dhce-tw-inner {
+  width: 92%;
+  max-width: 1060px;
+  margin: 0 auto;
+}
+
+#dhce-train-who .dhce-tw-intro {
+  text-align: center;
+  max-width: 640px;
+  margin: 0 auto 48px;
+}
+
+#dhce-train-who .dhce-tw-label {
+  display: block;
+  font-size: 11px;
+  font-weight: 700;
+  color: #82bb41;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+
+#dhce-train-who h2 {
+  font-size: clamp(1.7rem, 3.5vw, 2.4rem);
+  font-weight: 800;
+  color: #006271;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+  margin-bottom: 16px;
+}
+
+#dhce-train-who .dhce-tw-intro p {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.75;
+}
+
+#dhce-train-who .dhce-tw-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+#dhce-train-who .dhce-tw-card {
+  background: #fefeff;
+  border-radius: 10px;
+  padding: 36px 28px;
+  border: 1px solid rgba(0,98,113,0.1);
+  border-top: 3px solid #82bb41;
+  box-shadow: 0 2px 16px rgba(0,98,113,0.06);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+#dhce-train-who .dhce-tw-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(0,98,113,0.1);
+}
+
+#dhce-train-who .dhce-tw-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 12px;
+  background: rgba(0,98,113,0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+#dhce-train-who .dhce-tw-icon svg {
+  width: 26px;
+  height: 26px;
+  stroke: #006271;
+  fill: none;
+  stroke-width: 1.75;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+#dhce-train-who .dhce-tw-card h3 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #006271;
+  margin-bottom: 10px;
+  letter-spacing: -0.01em;
+}
+
+#dhce-train-who .dhce-tw-card p {
+  font-size: 0.88rem;
+  color: #666;
+  line-height: 1.75;
+}
+
+@media (max-width: 860px) {
+  #dhce-train-who .dhce-tw-grid { grid-template-columns: 1fr; max-width: 480px; margin: 0 auto; }
+}
+</style>
+
+<section id="dhce-train-who">
+  <div class="dhce-tw-inner">
+    <div class="dhce-tw-intro">
+      <span class="dhce-tw-label">Who It Is For</span>
+      <h2>Training Designed for Everyone in the Halal Industry</h2>
+      <p>Whether you are a food professional, a business looking to upskill your team, or an individual wanting to break into the halal market, DHCE has a training programme that fits your needs.</p>
+    </div>
+    <div class="dhce-tw-grid">
+
+      <div class="dhce-tw-card">
+        <div class="dhce-tw-icon">
+          <svg viewBox="0 0 24 24"><path d="M20 7H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+        </div>
+        <h3>Food and Halal Industry Professionals</h3>
+        <p>For professionals already working in the food, cosmetics, pharmaceutical, or halal sectors who want to deepen their knowledge of halal compliance, certification standards, and Islamic dietary law.</p>
+      </div>
+
+      <div class="dhce-tw-card">
+        <div class="dhce-tw-icon">
+          <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        </div>
+        <h3>Businesses and Corporate Teams</h3>
+        <p>For companies that want to train their employees on halal principles and internal compliance. Training can be delivered on-site at your premises, tailored to your specific products, processes, and team requirements.</p>
+      </div>
+
+      <div class="dhce-tw-card">
+        <div class="dhce-tw-icon">
+          <svg viewBox="0 0 24 24"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+        </div>
+        <h3>Individuals Entering the Halal Market</h3>
+        <p>For Muslims and non-Muslims who want to understand halal principles, enter the halal industry, or improve their existing knowledge of halal production standards and consumer requirements.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ══ 3. WHAT IT COVERS ═════════════════════════════════════ -->
+<style>
+#dhce-train-topics *,
+#dhce-train-topics *::before,
+#dhce-train-topics *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+#dhce-train-topics {
+  position: relative;
+  width: 100vw;
+  left: 50%;
+  transform: translateX(-50%);
+  overflow: hidden;
+  background: #f4f9f4;
+  padding: 90px 24px;
+}
+
+#dhce-train-topics .dhce-tt-inner {
+  width: 92%;
+  max-width: 1060px;
+  margin: 0 auto;
+}
+
+#dhce-train-topics .dhce-tt-intro {
+  text-align: center;
+  max-width: 640px;
+  margin: 0 auto 48px;
+}
+
+#dhce-train-topics .dhce-tt-label {
+  display: block;
+  font-size: 11px;
+  font-weight: 700;
+  color: #82bb41;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+
+#dhce-train-topics h2 {
+  font-size: clamp(1.7rem, 3.5vw, 2.4rem);
+  font-weight: 800;
+  color: #006271;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+  margin-bottom: 16px;
+}
+
+#dhce-train-topics .dhce-tt-intro p {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.75;
+}
+
+#dhce-train-topics .dhce-tt-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+#dhce-train-topics .dhce-tt-card {
+  background: #fefeff;
+  border-radius: 10px;
+  padding: 28px 24px;
+  border: 1px solid rgba(0,98,113,0.1);
+  box-shadow: 0 2px 16px rgba(0,98,113,0.06);
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+#dhce-train-topics .dhce-tt-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 3px;
+  background: #006271;
+}
+
+#dhce-train-topics .dhce-tt-card:nth-child(even)::before {
+  background: #82bb41;
+}
+
+#dhce-train-topics .dhce-tt-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 32px rgba(0,98,113,0.1);
+}
+
+#dhce-train-topics .dhce-tt-num {
+  font-size: 11px;
+  font-weight: 700;
+  color: #82bb41;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+#dhce-train-topics .dhce-tt-card h3 {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #006271;
+  margin-bottom: 8px;
+  line-height: 1.3;
+}
+
+#dhce-train-topics .dhce-tt-card p {
+  font-size: 0.87rem;
+  color: #666;
+  line-height: 1.7;
+}
+
+@media (max-width: 860px) {
+  #dhce-train-topics .dhce-tt-grid { grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 560px) {
+  #dhce-train-topics .dhce-tt-grid { grid-template-columns: 1fr; }
+}
+</style>
+
+<section id="dhce-train-topics">
+  <div class="dhce-tt-inner">
+    <div class="dhce-tt-intro">
+      <span class="dhce-tt-label">Programme Content</span>
+      <h2>What Our Training Covers</h2>
+      <p>DHCE training programmes are based on Islamic Law and cover the full spectrum of halal knowledge, from foundational principles through to practical certification and auditing skills.</p>
+    </div>
+    <div class="dhce-tt-grid">
+
+      <div class="dhce-tt-card">
+        <p class="dhce-tt-num">Module 01</p>
+        <h3>Halal and Haram Fundamentals</h3>
+        <p>A clear, practical breakdown of what is permissible and prohibited under Islamic Law, including food categories, ingredients, additives, and common areas of confusion in food manufacturing.</p>
+      </div>
+
+      <div class="dhce-tt-card">
+        <p class="dhce-tt-num">Module 02</p>
+        <h3>Islamic Law and Food Compliance</h3>
+        <p>An in-depth look at the Islamic principles underpinning halal food standards, including slaughter requirements, contamination rules, and the concept of mashbooh (doubtful) ingredients.</p>
+      </div>
+
+      <div class="dhce-tt-card">
+        <p class="dhce-tt-num">Module 03</p>
+        <h3>The Global Halal Market</h3>
+        <p>An overview of the halal market landscape, consumer trends, key importing regions, and why halal certification is increasingly a commercial necessity for food and pharmaceutical businesses.</p>
+      </div>
+
+      <div class="dhce-tt-card">
+        <p class="dhce-tt-num">Module 04</p>
+        <h3>Product Research and Development</h3>
+        <p>Guidance on how to develop and reformulate products to meet halal requirements, including ingredient sourcing, supplier verification, and maintaining halal integrity throughout the R&amp;D process.</p>
+      </div>
+
+      <div class="dhce-tt-card">
+        <p class="dhce-tt-num">Module 05</p>
+        <h3>Halal Certification Process</h3>
+        <p>A practical walkthrough of the DHCE certification process, including application requirements, what auditors look for, how to prepare for an audit, and how to maintain certification once achieved.</p>
+      </div>
+
+      <div class="dhce-tt-card">
+        <p class="dhce-tt-num">Module 06</p>
+        <h3>Internal Halal Auditing</h3>
+        <p>Training for businesses on how to conduct their own internal halal audits, identify compliance gaps, implement corrective actions, and maintain ongoing readiness for external DHCE audits.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ══ 4. TRAINING FORMATS ═══════════════════════════════════ -->
+<style>
+#dhce-train-formats *,
+#dhce-train-formats *::before,
+#dhce-train-formats *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+#dhce-train-formats {
+  position: relative;
+  width: 100vw;
+  left: 50%;
+  transform: translateX(-50%);
+  overflow: hidden;
+  background: #fefeff;
+  padding: 90px 24px;
+}
+
+#dhce-train-formats .dhce-tf-inner {
+  width: 92%;
+  max-width: 1060px;
+  margin: 0 auto;
+}
+
+#dhce-train-formats .dhce-tf-intro {
+  text-align: center;
+  max-width: 640px;
+  margin: 0 auto 48px;
+}
+
+#dhce-train-formats .dhce-tf-label {
+  display: block;
+  font-size: 11px;
+  font-weight: 700;
+  color: #82bb41;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+
+#dhce-train-formats h2 {
+  font-size: clamp(1.7rem, 3.5vw, 2.4rem);
+  font-weight: 800;
+  color: #006271;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+  margin-bottom: 16px;
+}
+
+#dhce-train-formats .dhce-tf-intro p {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.75;
+}
+
+#dhce-train-formats .dhce-tf-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+#dhce-train-formats .dhce-tf-card {
+  background: #fefeff;
+  border-radius: 10px;
+  padding: 36px 28px;
+  border: 1px solid rgba(0,98,113,0.1);
+  box-shadow: 0 2px 16px rgba(0,98,113,0.06);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+#dhce-train-formats .dhce-tf-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(0,98,113,0.1);
+}
+
+#dhce-train-formats .dhce-tf-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 12px;
+  background: rgba(0,98,113,0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+#dhce-train-formats .dhce-tf-icon svg {
+  width: 26px;
+  height: 26px;
+  stroke: #006271;
+  fill: none;
+  stroke-width: 1.75;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+#dhce-train-formats .dhce-tf-card h3 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #006271;
+  margin-bottom: 10px;
+  letter-spacing: -0.01em;
+}
+
+#dhce-train-formats .dhce-tf-card p {
+  font-size: 0.88rem;
+  color: #666;
+  line-height: 1.75;
+}
+
+@media (max-width: 860px) {
+  #dhce-train-formats .dhce-tf-grid { grid-template-columns: 1fr; max-width: 480px; margin: 0 auto; }
+}
+</style>
+
+<section id="dhce-train-formats">
+  <div class="dhce-tf-inner">
+    <div class="dhce-tf-intro">
+      <span class="dhce-tf-label">How We Deliver</span>
+      <h2>Flexible Training Formats to Suit Your Needs</h2>
+      <p>DHCE training is available in multiple formats, making it accessible for individuals and scalable for corporate teams of any size.</p>
+    </div>
+    <div class="dhce-tf-grid">
+
+      <div class="dhce-tf-card">
+        <div class="dhce-tf-icon">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M6 20v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2"/></svg>
+        </div>
+        <h3>Individual Training</h3>
+        <p>Open to professionals, students, and individuals looking to build their halal knowledge. Ideal for those entering the halal industry or wanting to strengthen their existing understanding of halal standards and compliance.</p>
+      </div>
+
+      <div class="dhce-tf-card">
+        <div class="dhce-tf-icon">
+          <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        </div>
+        <h3>Group and Corporate Training</h3>
+        <p>Designed for businesses that want to train their teams on halal compliance. Group bookings are available and training can be delivered on-site at your premises, tailored to your specific products, processes, and operational requirements.</p>
+      </div>
+
+      <div class="dhce-tf-card">
+        <div class="dhce-tf-icon">
+          <svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+        </div>
+        <h3>Site Visits</h3>
+        <p>As part of the training programme, DHCE can arrange visits to halal-certified abattoirs and food processing plants. These visits provide practical, real-world insight into how DHCE standards and procedures are implemented on the ground.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══ 5. CTA ═════════════════════════════════════════════════ -->
+<style>
+#dhce-train-cta *,
+#dhce-train-cta *::before,
+#dhce-train-cta *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+#dhce-train-cta {
+  position: relative;
+  width: 100vw;
+  left: 50%;
+  transform: translateX(-50%);
+  overflow: hidden;
+  background: #012f37;
+  padding: 90px 24px;
+}
+
+#dhce-train-cta .dhce-tc-inner {
+  width: 92%;
+  max-width: 1060px;
+  margin: 0 auto;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 12px;
+  padding: 56px 48px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+#dhce-train-cta .dhce-tc-text .dhce-tc-label {
+  display: block;
+  font-size: 11px;
+  font-weight: 700;
+  color: #82bb41;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+#dhce-train-cta .dhce-tc-text h2 {
+  font-size: clamp(1.4rem, 2.5vw, 1.9rem);
+  font-weight: 800;
+  color: #fefeff;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+  margin-bottom: 12px;
+}
+
+#dhce-train-cta .dhce-tc-text p {
+  font-size: 0.95rem;
+  color: rgba(254,254,255,0.7);
+  line-height: 1.75;
+  max-width: 480px;
+}
+
+#dhce-train-cta .dhce-tc-btns {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  flex-shrink: 0;
+}
+
+#dhce-train-cta .dhce-btn-primary {
+  display: inline-block;
+  background: #82bb41;
+  color: #fefeff;
+  font-size: 0.9rem;
+  font-weight: 700;
+  padding: 14px 30px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background 0.2s, transform 0.2s;
+  box-shadow: 0 4px 18px rgba(130,187,65,0.35);
+  white-space: nowrap;
+}
+
+#dhce-train-cta .dhce-btn-primary:hover {
+  background: #74a938;
+  transform: translateY(-2px);
+  color: #fefeff;
+  text-decoration: none;
+}
+
+#dhce-train-cta .dhce-btn-secondary {
+  display: inline-block;
+  background: transparent;
+  color: #fefeff;
+  font-size: 0.9rem;
+  font-weight: 700;
+  padding: 14px 30px;
+  border-radius: 6px;
+  border: 2px solid rgba(254,254,255,0.3);
+  text-decoration: none;
+  transition: border-color 0.2s, background 0.2s, transform 0.2s;
+  white-space: nowrap;
+}
+
+#dhce-train-cta .dhce-btn-secondary:hover {
+  border-color: rgba(254,254,255,0.65);
+  background: rgba(255,255,255,0.07);
+  transform: translateY(-2px);
+  color: #fefeff;
+  text-decoration: none;
+}
+
+@media (max-width: 760px) {
+  #dhce-train-cta .dhce-tc-inner { flex-direction: column; padding: 40px 28px; text-align: center; }
+  #dhce-train-cta .dhce-tc-btns { justify-content: center; }
+  #dhce-train-cta .dhce-tc-text p { max-width: 100%; }
+}
+</style>
+
+<section id="dhce-train-cta">
+  <div class="dhce-tc-inner">
+    <div class="dhce-tc-text">
+      <span class="dhce-tc-label">Enquire About Training</span>
+      <h2>Ready to Book a Training Programme?</h2>
+      <p>Contact our team to discuss your training requirements, group bookings, or on-site delivery options. We will work with you to put together a programme that fits your team and your business.</p>
+    </div>
+    <div class="dhce-tc-btns">
+      <a href="/enterprise/contact/" class="dhce-btn-primary">Enquire Now</a>
+      <a href="/enterprise/about/" class="dhce-btn-secondary">Learn About DHCE</a>
+    </div>
+  </div>
+</section>

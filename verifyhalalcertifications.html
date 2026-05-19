@@ -1,0 +1,679 @@
+<!-- DHCE VERIFY HALAL CERTIFICATES PAGE -->
+
+<!-- ══ 1. HERO ═══════════════════════════════════════════════ -->
+<style>
+#dhce-verify-hero *,
+#dhce-verify-hero *::before,
+#dhce-verify-hero *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+#dhce-verify-hero {
+  position: relative;
+  width: 100vw;
+  left: 50%;
+  transform: translateX(-50%);
+  overflow: hidden;
+  background: #006271;
+  padding: 90px 24px;
+  text-align: center;
+}
+
+#dhce-verify-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    radial-gradient(circle at 20% 50%, rgba(130,187,65,0.10) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(255,255,255,0.04) 0%, transparent 40%);
+  pointer-events: none;
+}
+
+#dhce-verify-hero .dhce-vh-inner {
+  position: relative;
+  z-index: 1;
+  width: 92%;
+  max-width: 1060px;
+  margin: 0 auto;
+}
+
+#dhce-verify-hero .dhce-vh-label {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  color: #82bb41;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+
+#dhce-verify-hero h1 {
+  font-size: clamp(2rem, 4.5vw, 3.2rem);
+  font-weight: 800;
+  color: #fefeff;
+  letter-spacing: -0.03em;
+  line-height: 1.15;
+  margin-bottom: 20px;
+  max-width: 760px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#dhce-verify-hero h1 em {
+  font-style: normal;
+  color: #82bb41;
+}
+
+#dhce-verify-hero p {
+  font-size: 1.05rem;
+  color: rgba(254,254,255,0.7);
+  max-width: 580px;
+  margin: 0 auto;
+  line-height: 1.75;
+}
+</style>
+
+<section id="dhce-verify-hero">
+  <div class="dhce-vh-inner">
+    <span class="dhce-vh-label">Certification</span>
+    <h1>Verify Halal Certificates</h1>
+    <p>Every DHCE halal certificate is issued with a unique certificate number and a QR code linked to our Certificate Register. Use this page to confirm the authenticity of any DHCE certificate instantly.</p>
+  </div>
+</section>
+
+
+<!-- ══ 2. HOW TO VERIFY ══════════════════════════════════════ -->
+<style>
+#dhce-verify-how *,
+#dhce-verify-how *::before,
+#dhce-verify-how *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+#dhce-verify-how {
+  position: relative;
+  width: 100vw;
+  left: 50%;
+  transform: translateX(-50%);
+  overflow: hidden;
+  background: #fefeff;
+  padding: 90px 24px;
+}
+
+#dhce-verify-how .dhce-vhw-inner {
+  width: 92%;
+  max-width: 1060px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 72px;
+  align-items: center;
+}
+
+#dhce-verify-how .dhce-vhw-label {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  color: #82bb41;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+
+#dhce-verify-how h2 {
+  font-size: clamp(1.7rem, 3.5vw, 2.4rem);
+  font-weight: 800;
+  color: #006271;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+  margin-bottom: 24px;
+}
+
+#dhce-verify-how .dhce-vhw-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 32px;
+}
+
+#dhce-verify-how .dhce-vhw-step {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+#dhce-verify-how .dhce-vhw-step-num {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #006271;
+  color: #fefeff;
+  font-size: 0.85rem;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+#dhce-verify-how .dhce-vhw-step-text h3 {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #006271;
+  margin-bottom: 4px;
+  line-height: 1.3;
+  padding-top: 6px;
+}
+
+#dhce-verify-how .dhce-vhw-step-text p {
+  font-size: 0.87rem;
+  color: #666;
+  line-height: 1.7;
+}
+
+#dhce-verify-how .dhce-vhw-note {
+  background: rgba(0,98,113,0.05);
+  border-left: 4px solid #006271;
+  border-radius: 0 8px 8px 0;
+  padding: 16px 20px;
+  font-size: 0.87rem;
+  color: #555;
+  line-height: 1.7;
+}
+
+#dhce-verify-how .dhce-vhw-note strong {
+  color: #006271;
+  font-weight: 700;
+}
+
+#dhce-verify-how .dhce-vhw-qr {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+#dhce-verify-how .dhce-vhw-qr-frame {
+  background: #fefeff;
+  border: 2px solid rgba(0,98,113,0.15);
+  border-radius: 12px;
+  padding: 28px;
+  box-shadow: 0 8px 32px rgba(0,98,113,0.10);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  max-width: 280px;
+  width: 100%;
+}
+
+#dhce-verify-how .dhce-vhw-qr-frame img {
+  width: 180px;
+  height: 180px;
+  display: block;
+}
+
+#dhce-verify-how .dhce-vhw-qr-label {
+  font-size: 11px;
+  font-weight: 700;
+  color: #006271;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+#dhce-verify-how .dhce-vhw-qr-sub {
+  font-size: 0.82rem;
+  color: #888;
+  text-align: center;
+  line-height: 1.5;
+}
+
+@media (max-width: 860px) {
+  #dhce-verify-how .dhce-vhw-inner { grid-template-columns: 1fr; gap: 48px; }
+  #dhce-verify-how .dhce-vhw-qr { order: -1; }
+}
+</style>
+
+<section id="dhce-verify-how">
+  <div class="dhce-vhw-inner">
+
+    <div class="dhce-vhw-text">
+      <span class="dhce-vhw-label">How It Works</span>
+      <h2>Instant Certificate Verification</h2>
+      <div class="dhce-vhw-steps">
+
+        <div class="dhce-vhw-step">
+          <div class="dhce-vhw-step-num">1</div>
+          <div class="dhce-vhw-step-text">
+            <h3>Locate the QR Code or Certificate Number</h3>
+            <p>Every genuine DHCE certificate carries a unique certificate number and a QR code printed directly on the document.</p>
+          </div>
+        </div>
+
+        <div class="dhce-vhw-step">
+          <div class="dhce-vhw-step-num">2</div>
+          <div class="dhce-vhw-step-text">
+            <h3>Scan the QR Code</h3>
+            <p>Use your smartphone camera or a QR code scanning app to scan the code. This will link directly to the certificate entry in the DHCE Certificate Register.</p>
+          </div>
+        </div>
+
+        <div class="dhce-vhw-step">
+          <div class="dhce-vhw-step-num">3</div>
+          <div class="dhce-vhw-step-text">
+            <h3>Confirm Authenticity</h3>
+            <p>If the certificate is genuine, the register will display the corresponding certificate details. If no record is found, the certificate may not be authentic.</p>
+          </div>
+        </div>
+
+      </div>
+      <div class="dhce-vhw-note">
+        <strong>Cannot find the certificate?</strong> If you scan a QR code or search a certificate number and no record appears in our register, the certificate is likely not genuine. Please contact DHCE immediately so we can investigate.
+      </div>
+    </div>
+
+    <div class="dhce-vhw-qr">
+      <div class="dhce-vhw-qr-frame">
+        <img
+          src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=https://halalcertification.ie/enterprise/"
+          alt="Sample DHCE QR Code for certificate verification"
+          loading="lazy"
+        >
+        <p class="dhce-vhw-qr-label">Sample Certificate QR Code</p>
+        <p class="dhce-vhw-qr-sub">Scan with your smartphone to verify certificate authenticity</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ══ 3. CERTIFICATE USAGE RULES ════════════════════════════ -->
+<style>
+#dhce-verify-rules *,
+#dhce-verify-rules *::before,
+#dhce-verify-rules *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+#dhce-verify-rules {
+  position: relative;
+  width: 100vw;
+  left: 50%;
+  transform: translateX(-50%);
+  overflow: hidden;
+  background: #f4f9f4;
+  padding: 90px 24px;
+}
+
+#dhce-verify-rules .dhce-vr-inner {
+  width: 92%;
+  max-width: 1060px;
+  margin: 0 auto;
+}
+
+#dhce-verify-rules .dhce-vr-intro {
+  text-align: center;
+  max-width: 640px;
+  margin: 0 auto 48px;
+}
+
+#dhce-verify-rules .dhce-vr-label {
+  display: block;
+  font-size: 11px;
+  font-weight: 700;
+  color: #82bb41;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+
+#dhce-verify-rules h2 {
+  font-size: clamp(1.7rem, 3.5vw, 2.4rem);
+  font-weight: 800;
+  color: #006271;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+  margin-bottom: 16px;
+}
+
+#dhce-verify-rules .dhce-vr-intro p {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.75;
+}
+
+#dhce-verify-rules .dhce-vr-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+#dhce-verify-rules .dhce-vr-card {
+  background: #fefeff;
+  border-radius: 10px;
+  padding: 28px 24px;
+  border: 1px solid rgba(0,98,113,0.1);
+  box-shadow: 0 2px 16px rgba(0,98,113,0.06);
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+}
+
+#dhce-verify-rules .dhce-vr-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #82bb41;
+  flex-shrink: 0;
+  margin-top: 6px;
+}
+
+#dhce-verify-rules .dhce-vr-card p {
+  font-size: 0.87rem;
+  color: #555;
+  line-height: 1.7;
+}
+
+@media (max-width: 860px) {
+  #dhce-verify-rules .dhce-vr-grid { grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 560px) {
+  #dhce-verify-rules .dhce-vr-grid { grid-template-columns: 1fr; }
+}
+</style>
+
+<section id="dhce-verify-rules">
+  <div class="dhce-vr-inner">
+    <div class="dhce-vr-intro">
+      <span class="dhce-vr-label">Certificate Holders</span>
+      <h2>Rules for Use of DHCE Halal Certificates</h2>
+      <p>All businesses holding a DHCE halal certificate must comply with the following rules governing the use and display of certificates and the DHCE halal mark. These rules are part of your certification agreement.</p>
+    </div>
+    <div class="dhce-vr-grid">
+
+      <div class="dhce-vr-card">
+        <div class="dhce-vr-dot"></div>
+        <p>The rightful owner of the halal certificate is DHCE at all times. The certificate must be returned to DHCE as and when deemed necessary.</p>
+      </div>
+
+      <div class="dhce-vr-card">
+        <div class="dhce-vr-dot"></div>
+        <p>The certificate holder must continue to fulfil all certification requirements set by DHCE to maintain their halal certification, including implementing changes communicated by DHCE.</p>
+      </div>
+
+      <div class="dhce-vr-card">
+        <div class="dhce-vr-dot"></div>
+        <p>If copies of certification documents are provided to third parties, the documents must be reproduced in their entirety and not in part.</p>
+      </div>
+
+      <div class="dhce-vr-card">
+        <div class="dhce-vr-dot"></div>
+        <p>Any reference to DHCE certification in marketing materials, brochures, or advertising must be submitted to DHCE for review prior to publication.</p>
+      </div>
+
+      <div class="dhce-vr-card">
+        <div class="dhce-vr-dot"></div>
+        <p>Incorrect references to the certification scheme, or misleading use of certificates, marks, or licences, must be avoided in all documentation and communications.</p>
+      </div>
+
+      <div class="dhce-vr-card">
+        <div class="dhce-vr-dot"></div>
+        <p>The display of licences, halal certificates, and halal marks of conformity must be prominent, accurate, and used only in their approved form and in entirety.</p>
+      </div>
+
+      <div class="dhce-vr-card">
+        <div class="dhce-vr-dot"></div>
+        <p>Certificate holders who fail to renew their halal certificates will not be permitted to continue using the DHCE halal mark on their premises, products, or marketing materials.</p>
+      </div>
+
+      <div class="dhce-vr-card">
+        <div class="dhce-vr-dot"></div>
+        <p>The halal certificate must not be reproduced in part or in any way that would reduce its legibility. Certificates must not be tampered with, altered, or translated without the written consent of DHCE.</p>
+      </div>
+
+      <div class="dhce-vr-card">
+        <div class="dhce-vr-dot"></div>
+        <p>Upon suspension, withdrawal, or termination of certification, the certificate holder must immediately discontinue all use of the certificate and halal mark and return all certification documents to DHCE.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ══ 4. REPORT SUSPICIOUS CERTIFICATE ═════════════════════ -->
+<style>
+#dhce-verify-report *,
+#dhce-verify-report *::before,
+#dhce-verify-report *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+#dhce-verify-report {
+  position: relative;
+  width: 100vw;
+  left: 50%;
+  transform: translateX(-50%);
+  overflow: hidden;
+  background: #fefeff;
+  padding: 72px 24px;
+}
+
+#dhce-verify-report .dhce-vrp-inner {
+  width: 92%;
+  max-width: 1060px;
+  margin: 0 auto;
+  background: #006271;
+  border-radius: 12px;
+  padding: 48px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+#dhce-verify-report .dhce-vrp-icon {
+  width: 72px;
+  height: 72px;
+  border-radius: 16px;
+  background: rgba(255,255,255,0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+#dhce-verify-report .dhce-vrp-icon svg {
+  width: 36px;
+  height: 36px;
+  stroke: #82bb41;
+  fill: none;
+  stroke-width: 1.75;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+#dhce-verify-report .dhce-vrp-text {
+  flex: 1;
+  min-width: 260px;
+}
+
+#dhce-verify-report .dhce-vrp-text h2 {
+  font-size: clamp(1.2rem, 2.5vw, 1.6rem);
+  font-weight: 800;
+  color: #fefeff;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+  margin-bottom: 10px;
+}
+
+#dhce-verify-report .dhce-vrp-text p {
+  font-size: 0.92rem;
+  color: rgba(254,254,255,0.72);
+  line-height: 1.75;
+}
+
+#dhce-verify-report .dhce-vrp-btn {
+  display: inline-block;
+  background: #82bb41;
+  color: #fefeff;
+  font-size: 0.9rem;
+  font-weight: 700;
+  padding: 14px 30px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background 0.2s, transform 0.2s;
+  box-shadow: 0 4px 18px rgba(130,187,65,0.35);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+#dhce-verify-report .dhce-vrp-btn:hover {
+  background: #74a938;
+  transform: translateY(-2px);
+  color: #fefeff;
+  text-decoration: none;
+}
+
+@media (max-width: 760px) {
+  #dhce-verify-report .dhce-vrp-inner { flex-direction: column; padding: 36px 28px; text-align: center; }
+  #dhce-verify-report .dhce-vrp-icon { margin: 0 auto; }
+}
+</style>
+
+<section id="dhce-verify-report">
+  <div class="dhce-vrp-inner">
+    <div class="dhce-vrp-icon">
+      <svg viewBox="0 0 24 24"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+    </div>
+    <div class="dhce-vrp-text">
+      <h2>Found a Certificate That Cannot Be Verified?</h2>
+      <p>If you scan a QR code or search a certificate number and cannot find a matching record in our register, please contact DHCE immediately. We take certificate fraud seriously and will investigate all reports promptly.</p>
+    </div>
+    <a href="/enterprise/contact/" class="dhce-vrp-btn">Contact DHCE</a>
+  </div>
+</section>
+
+
+<!-- ══ 5. CTA ═════════════════════════════════════════════════ -->
+<style>
+#dhce-verify-cta *,
+#dhce-verify-cta *::before,
+#dhce-verify-cta *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+#dhce-verify-cta {
+  position: relative;
+  width: 100vw;
+  left: 50%;
+  transform: translateX(-50%);
+  overflow: hidden;
+  background: #012f37;
+  padding: 90px 24px;
+}
+
+#dhce-verify-cta .dhce-vc-inner {
+  width: 92%;
+  max-width: 1060px;
+  margin: 0 auto;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 12px;
+  padding: 56px 48px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+#dhce-verify-cta .dhce-vc-text .dhce-vc-label {
+  display: block;
+  font-size: 11px;
+  font-weight: 700;
+  color: #82bb41;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+#dhce-verify-cta .dhce-vc-text h2 {
+  font-size: clamp(1.4rem, 2.5vw, 1.9rem);
+  font-weight: 800;
+  color: #fefeff;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+  margin-bottom: 12px;
+}
+
+#dhce-verify-cta .dhce-vc-text p {
+  font-size: 0.95rem;
+  color: rgba(254,254,255,0.7);
+  line-height: 1.75;
+  max-width: 480px;
+}
+
+#dhce-verify-cta .dhce-vc-btns {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  flex-shrink: 0;
+}
+
+#dhce-verify-cta .dhce-btn-primary {
+  display: inline-block;
+  background: #82bb41;
+  color: #fefeff;
+  font-size: 0.9rem;
+  font-weight: 700;
+  padding: 14px 30px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background 0.2s, transform 0.2s;
+  box-shadow: 0 4px 18px rgba(130,187,65,0.35);
+  white-space: nowrap;
+}
+
+#dhce-verify-cta .dhce-btn-primary:hover {
+  background: #74a938;
+  transform: translateY(-2px);
+  color: #fefeff;
+  text-decoration: none;
+}
+
+#dhce-verify-cta .dhce-btn-secondary {
+  display: inline-block;
+  background: transparent;
+  color: #fefeff;
+  font-size: 0.9rem;
+  font-weight: 700;
+  padding: 14px 30px;
+  border-radius: 6px;
+  border: 2px solid rgba(254,254,255,0.3);
+  text-decoration: none;
+  transition: border-color 0.2s, background 0.2s, transform 0.2s;
+  white-space: nowrap;
+}
+
+#dhce-verify-cta .dhce-btn-secondary:hover {
+  border-color: rgba(254,254,255,0.65);
+  background: rgba(255,255,255,0.07);
+  transform: translateY(-2px);
+  color: #fefeff;
+  text-decoration: none;
+}
+
+@media (max-width: 760px) {
+  #dhce-verify-cta .dhce-vc-inner { flex-direction: column; padding: 40px 28px; text-align: center; }
+  #dhce-verify-cta .dhce-vc-btns { justify-content: center; }
+  #dhce-verify-cta .dhce-vc-text p { max-width: 100%; }
+}
+</style>
+
+<section id="dhce-verify-cta">
+  <div class="dhce-vc-inner">
+    <div class="dhce-vc-text">
+      <span class="dhce-vc-label">Get Certified</span>
+      <h2>Want Your Products on the DHCE Certificate Register?</h2>
+      <p>Join the businesses across Ireland and Europe that hold genuine, internationally recognised DHCE halal certificates. Start your application today and give your customers confidence in every product.</p>
+    </div>
+    <div class="dhce-vc-btns">
+      <a href="/enterprise/apply/" class="dhce-btn-primary">Start Your Application</a>
+      <a href="/enterprise/contact/" class="dhce-btn-secondary">Talk to Our Team</a>
+    </div>
+  </div>
+</section>
