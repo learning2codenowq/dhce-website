@@ -1,0 +1,578 @@
+<!-- DHCE CONTACT PAGE -->
+
+<!-- ══ 1. HERO ═══════════════════════════════════════════════ -->
+<style>
+#dhce-contact-hero *,
+#dhce-contact-hero *::before,
+#dhce-contact-hero *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+#dhce-contact-hero {
+  position: relative;
+  width: 100vw;
+  left: 50%;
+  transform: translateX(-50%);
+  overflow: hidden;
+  background: #006271;
+  padding: 90px 24px;
+  text-align: center;
+}
+
+#dhce-contact-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    radial-gradient(circle at 20% 50%, rgba(130,187,65,0.10) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(255,255,255,0.04) 0%, transparent 40%);
+  pointer-events: none;
+}
+
+#dhce-contact-hero .dhce-ch-inner {
+  position: relative;
+  z-index: 1;
+  width: 92%;
+  max-width: 1060px;
+  margin: 0 auto;
+}
+
+#dhce-contact-hero .dhce-ch-label {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  color: #82bb41;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+
+#dhce-contact-hero h1 {
+  font-size: clamp(2rem, 4.5vw, 3.2rem);
+  font-weight: 800;
+  color: #fefeff;
+  letter-spacing: -0.03em;
+  line-height: 1.15;
+  margin-bottom: 20px;
+  max-width: 760px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#dhce-contact-hero h1 em {
+  font-style: normal;
+  color: #82bb41;
+}
+
+#dhce-contact-hero p {
+  font-size: 1.05rem;
+  color: rgba(254,254,255,0.7);
+  max-width: 560px;
+  margin: 0 auto;
+  line-height: 1.75;
+}
+</style>
+
+<section id="dhce-contact-hero">
+  <div class="dhce-ch-inner">
+    <span class="dhce-ch-label">Contact</span>
+    <h1>Get in Touch</h1>
+    <p>Whether you have a question about halal certification, want to discuss your business requirements, or are ready to start your application, our team is here to help.</p>
+  </div>
+</section>
+
+
+<!-- ══ 2. CONTACT DETAILS + FORM ════════════════════════════ -->
+<style>
+#dhce-contact-main *,
+#dhce-contact-main *::before,
+#dhce-contact-main *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+#dhce-contact-main {
+  position: relative;
+  width: 100vw;
+  left: 50%;
+  transform: translateX(-50%);
+  overflow: hidden;
+  background: #fefeff;
+  padding: 90px 24px;
+}
+
+#dhce-contact-main .dhce-cm-inner {
+  width: 92%;
+  max-width: 1060px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 72px;
+  align-items: start;
+}
+
+/* Left column */
+#dhce-contact-main .dhce-cm-label {
+  display: block;
+  font-size: 11px;
+  font-weight: 700;
+  color: #82bb41;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+
+#dhce-contact-main h2 {
+  font-size: clamp(1.7rem, 3vw, 2.2rem);
+  font-weight: 800;
+  color: #006271;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+  margin-bottom: 12px;
+}
+
+#dhce-contact-main .dhce-cm-sub {
+  font-size: 0.95rem;
+  color: #666;
+  line-height: 1.75;
+  margin-bottom: 36px;
+}
+
+#dhce-contact-main .dhce-cm-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+#dhce-contact-main .dhce-cm-card {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  background: #fefeff;
+  border: 1px solid rgba(0,98,113,0.1);
+  border-radius: 10px;
+  padding: 20px 22px;
+  box-shadow: 0 2px 12px rgba(0,98,113,0.06);
+}
+
+#dhce-contact-main .dhce-cm-card-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  background: rgba(0,98,113,0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+#dhce-contact-main .dhce-cm-card-icon svg {
+  width: 22px;
+  height: 22px;
+  stroke: #006271;
+  fill: none;
+  stroke-width: 1.75;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+#dhce-contact-main .dhce-cm-card-text h3 {
+  font-size: 11px;
+  font-weight: 700;
+  color: #82bb41;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+
+#dhce-contact-main .dhce-cm-card-text p {
+  font-size: 0.9rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+#dhce-contact-main .dhce-cm-card-text a {
+  color: #555;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+#dhce-contact-main .dhce-cm-card-text a:hover {
+  color: #006271;
+}
+
+/* Right column — form */
+#dhce-contact-main .dhce-cm-form-wrap {
+  background: #fefeff;
+  border: 1px solid rgba(0,98,113,0.1);
+  border-radius: 12px;
+  padding: 40px 36px;
+  box-shadow: 0 4px 24px rgba(0,98,113,0.08);
+}
+
+#dhce-contact-main .dhce-cm-form-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #006271;
+  margin-bottom: 6px;
+  letter-spacing: -0.01em;
+}
+
+#dhce-contact-main .dhce-cm-form-sub {
+  font-size: 0.87rem;
+  color: #888;
+  line-height: 1.6;
+  margin-bottom: 28px;
+}
+
+/* Contact Form 7 styling */
+#dhce-contact-main .wpcf7 input[type="text"],
+#dhce-contact-main .wpcf7 input[type="email"],
+#dhce-contact-main .wpcf7 input[type="tel"],
+#dhce-contact-main .wpcf7 select,
+#dhce-contact-main .wpcf7 textarea {
+  width: 100%;
+  padding: 12px 16px;
+  border: 1px solid rgba(0,98,113,0.2);
+  border-radius: 6px;
+  font-size: 0.9rem;
+  color: #333;
+  background: #fefeff;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  font-family: inherit;
+  box-sizing: border-box;
+  margin-bottom: 16px;
+}
+
+#dhce-contact-main .wpcf7 input[type="text"]:focus,
+#dhce-contact-main .wpcf7 input[type="email"]:focus,
+#dhce-contact-main .wpcf7 input[type="tel"]:focus,
+#dhce-contact-main .wpcf7 select:focus,
+#dhce-contact-main .wpcf7 textarea:focus {
+  outline: none;
+  border-color: #006271;
+  box-shadow: 0 0 0 3px rgba(0,98,113,0.08);
+}
+
+#dhce-contact-main .wpcf7 textarea {
+  min-height: 130px;
+  resize: vertical;
+}
+#dhce-contact-main .wpcf7 select {
+  height: auto;
+  min-height: 46px;
+  line-height: 1.5;
+  appearance: auto;
+  -webkit-appearance: auto;
+}
+
+#dhce-contact-main .wpcf7 input[type="submit"] {
+  width: 100%;
+  background: #82bb41;
+  color: #fefeff;
+  font-size: 0.95rem;
+  font-weight: 700;
+  padding: 14px 30px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+  font-family: inherit;
+  letter-spacing: 0.02em;
+}
+
+#dhce-contact-main .wpcf7 input[type="submit"]:hover {
+  background: #74a938;
+  transform: translateY(-1px);
+}
+
+#dhce-contact-main .wpcf7 .wpcf7-not-valid-tip {
+  color: #c0392b;
+  font-size: 0.8rem;
+  margin-top: -12px;
+  margin-bottom: 8px;
+  display: block;
+}
+
+#dhce-contact-main .wpcf7 .wpcf7-response-output {
+  margin-top: 16px;
+  padding: 12px 16px;
+  border-radius: 6px;
+  font-size: 0.88rem;
+  border: none;
+}
+
+#dhce-contact-main .wpcf7 .wpcf7-mail-sent-ok {
+  background: rgba(130,187,65,0.1);
+  color: #4a7c1f;
+  border: 1px solid rgba(130,187,65,0.3);
+}
+
+#dhce-contact-main .wpcf7 .wpcf7-mail-sent-ng,
+#dhce-contact-main .wpcf7 .wpcf7-spam-blocked {
+  background: rgba(192,57,43,0.08);
+  color: #c0392b;
+  border: 1px solid rgba(192,57,43,0.2);
+}
+
+#dhce-contact-main .wpcf7 label {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #444;
+  display: block;
+  margin-bottom: 6px;
+  letter-spacing: 0.02em;
+}
+
+@media (max-width: 860px) {
+  #dhce-contact-main .dhce-cm-inner { grid-template-columns: 1fr; gap: 48px; }
+  #dhce-contact-main .dhce-cm-form-wrap { padding: 28px 24px; }
+}
+</style>
+
+<section id="dhce-contact-main">
+  <div class="dhce-cm-inner">
+
+    <!-- Left: Contact details -->
+    <div class="dhce-cm-details">
+      <span class="dhce-cm-label">Contact Details</span>
+      <h2>We Would Love to Hear From You</h2>
+      <p class="dhce-cm-sub">Reach out to our team directly using any of the contact details below. We aim to respond to all enquiries within one working day.</p>
+
+      <div class="dhce-cm-cards">
+
+        <div class="dhce-cm-card">
+          <div class="dhce-cm-card-icon">
+            <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <div class="dhce-cm-card-text">
+            <h3>Office Address</h3>
+            <p>Coolmine Industrial Estate<br>Dublin 15, Ireland</p>
+          </div>
+        </div>
+
+        <div class="dhce-cm-card">
+          <div class="dhce-cm-card-icon">
+            <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          </div>
+          <div class="dhce-cm-card-text">
+            <h3>Phone</h3>
+            <p>
+              <a href="tel:+35319616211">+353 1 961 6211</a><br>
+              <a href="tel:+353876764122">+353 87 676 4122</a>
+            </p>
+          </div>
+        </div>
+
+        <div class="dhce-cm-card">
+          <div class="dhce-cm-card-icon">
+            <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </div>
+          <div class="dhce-cm-card-text">
+            <h3>Email</h3>
+            <p><a href="mailto:info@halalcertification.ie">info@halalcertification.ie</a></p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Right: Contact Form 7 -->
+    <div class="dhce-cm-form-wrap">
+      <p class="dhce-cm-form-title">Send Us a Message</p>
+      <p class="dhce-cm-form-sub">Fill in the form below and a member of our team will get back to you within one working day.</p>
+      [contact-form-7 id="7936" title="2026 Contact Form"]
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ══ 3. MAP ════════════════════════════════════════════════ -->
+<style>
+#dhce-contact-map *,
+#dhce-contact-map *::before,
+#dhce-contact-map *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+#dhce-contact-map {
+  position: relative;
+  width: 100vw;
+  left: 50%;
+  transform: translateX(-50%);
+  overflow: hidden;
+  background: #f4f9f4;
+  padding: 0;
+}
+
+#dhce-contact-map .dhce-cmap-label-bar {
+  width: 92%;
+  max-width: 1060px;
+  margin: 0 auto;
+  padding: 40px 0 24px;
+}
+
+#dhce-contact-map .dhce-cmap-label {
+  display: block;
+  font-size: 11px;
+  font-weight: 700;
+  color: #82bb41;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+#dhce-contact-map .dhce-cmap-label-bar h2 {
+  font-size: clamp(1.3rem, 2.5vw, 1.8rem);
+  font-weight: 800;
+  color: #006271;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+
+#dhce-contact-map .dhce-cmap-frame {
+  width: 100%;
+  height: 420px;
+  border: none;
+  display: block;
+}
+</style>
+
+<section id="dhce-contact-map">
+  <div class="dhce-cmap-label-bar">
+    <span class="dhce-cmap-label">Our Location</span>
+    <h2>Find Us at Coolmine Industrial Estate, Dublin 15</h2>
+  </div>
+  <iframe
+    class="dhce-cmap-frame"
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2379.123456789!2d-6.3820!3d53.3850!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670e5b5b5b5b5b%3A0x0!2sCoolmine+Industrial+Estate%2C+Dublin+15%2C+Ireland!5e0!3m2!1sen!2sie!4v1234567890"
+    allowfullscreen=""
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade"
+    title="DHCE Office Location — Coolmine Industrial Estate, Dublin 15">
+  </iframe>
+</section>
+
+
+<!-- ══ 4. CTA ═════════════════════════════════════════════════ -->
+<style>
+#dhce-contact-cta *,
+#dhce-contact-cta *::before,
+#dhce-contact-cta *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+#dhce-contact-cta {
+  position: relative;
+  width: 100vw;
+  left: 50%;
+  transform: translateX(-50%);
+  overflow: hidden;
+  background: #012f37;
+  padding: 90px 24px;
+}
+
+#dhce-contact-cta .dhce-cc-inner {
+  width: 92%;
+  max-width: 1060px;
+  margin: 0 auto;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 12px;
+  padding: 56px 48px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+#dhce-contact-cta .dhce-cc-text .dhce-cc-label {
+  display: block;
+  font-size: 11px;
+  font-weight: 700;
+  color: #82bb41;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+#dhce-contact-cta .dhce-cc-text h2 {
+  font-size: clamp(1.4rem, 2.5vw, 1.9rem);
+  font-weight: 800;
+  color: #fefeff;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+  margin-bottom: 12px;
+}
+
+#dhce-contact-cta .dhce-cc-text p {
+  font-size: 0.95rem;
+  color: rgba(254,254,255,0.7);
+  line-height: 1.75;
+  max-width: 480px;
+}
+
+#dhce-contact-cta .dhce-cc-btns {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  flex-shrink: 0;
+}
+
+#dhce-contact-cta .dhce-btn-primary {
+  display: inline-block;
+  background: #82bb41;
+  color: #fefeff;
+  font-size: 0.9rem;
+  font-weight: 700;
+  padding: 14px 30px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background 0.2s, transform 0.2s;
+  box-shadow: 0 4px 18px rgba(130,187,65,0.35);
+  white-space: nowrap;
+}
+
+#dhce-contact-cta .dhce-btn-primary:hover {
+  background: #74a938;
+  transform: translateY(-2px);
+  color: #fefeff;
+  text-decoration: none;
+}
+
+#dhce-contact-cta .dhce-btn-secondary {
+  display: inline-block;
+  background: transparent;
+  color: #fefeff;
+  font-size: 0.9rem;
+  font-weight: 700;
+  padding: 14px 30px;
+  border-radius: 6px;
+  border: 2px solid rgba(254,254,255,0.3);
+  text-decoration: none;
+  transition: border-color 0.2s, background 0.2s, transform 0.2s;
+  white-space: nowrap;
+}
+
+#dhce-contact-cta .dhce-btn-secondary:hover {
+  border-color: rgba(254,254,255,0.65);
+  background: rgba(255,255,255,0.07);
+  transform: translateY(-2px);
+  color: #fefeff;
+  text-decoration: none;
+}
+
+@media (max-width: 760px) {
+  #dhce-contact-cta .dhce-cc-inner { flex-direction: column; padding: 40px 28px; text-align: center; }
+  #dhce-contact-cta .dhce-cc-btns { justify-content: center; }
+  #dhce-contact-cta .dhce-cc-text p { max-width: 100%; }
+}
+</style>
+
+<section id="dhce-contact-cta">
+  <div class="dhce-cc-inner">
+    <div class="dhce-cc-text">
+      <span class="dhce-cc-label">Ready to Get Certified</span>
+      <h2>Skip the Queue and Start Your Application Today</h2>
+      <p>If you already know you want to get halal certified, you can go straight to our application form. Our team will review your submission and be in touch within one working day.</p>
+    </div>
+    <div class="dhce-cc-btns">
+      <a href="/enterprise/apply/" class="dhce-btn-primary">Start Your Application</a>
+      <a href="/enterprise/certification/" class="dhce-btn-secondary">View Certification Info</a>
+    </div>
+  </div>
+</section>

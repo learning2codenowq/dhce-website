@@ -1,0 +1,632 @@
+<!-- DHCE FAQS PAGE -->
+
+<!-- ══ 1. HERO ═══════════════════════════════════════════════ -->
+<style>
+#dhce-faq-hero *,
+#dhce-faq-hero *::before,
+#dhce-faq-hero *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+#dhce-faq-hero {
+  position: relative;
+  width: 100vw;
+  left: 50%;
+  transform: translateX(-50%);
+  overflow: hidden;
+  background: #006271;
+  padding: 90px 24px;
+  text-align: center;
+}
+
+#dhce-faq-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    radial-gradient(circle at 20% 50%, rgba(130,187,65,0.10) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(255,255,255,0.04) 0%, transparent 40%);
+  pointer-events: none;
+}
+
+#dhce-faq-hero .dhce-fh-inner {
+  position: relative;
+  z-index: 1;
+  width: 92%;
+  max-width: 1060px;
+  margin: 0 auto;
+}
+
+#dhce-faq-hero .dhce-fh-label {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  color: #82bb41;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+
+#dhce-faq-hero h1 {
+  font-size: clamp(2rem, 4.5vw, 3.2rem);
+  font-weight: 800;
+  color: #fefeff;
+  letter-spacing: -0.03em;
+  line-height: 1.15;
+  margin-bottom: 20px;
+  max-width: 760px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#dhce-faq-hero h1 em {
+  font-style: normal;
+  color: #82bb41;
+}
+
+#dhce-faq-hero p {
+  font-size: 1.05rem;
+  color: rgba(254,254,255,0.7);
+  max-width: 580px;
+  margin: 0 auto;
+  line-height: 1.75;
+}
+</style>
+
+<section id="dhce-faq-hero">
+  <div class="dhce-fh-inner">
+    <span class="dhce-fh-label">FAQs</span>
+    <h1>Frequently Asked Questions</h1>
+    <p>Find answers to the most common questions about halal certification, Islamic food principles, and how DHCE can help your business access the global halal market.</p>
+  </div>
+</section>
+
+
+<!-- ══ 2. FAQ ACCORDION ══════════════════════════════════════ -->
+<style>
+#dhce-faq-main *,
+#dhce-faq-main *::before,
+#dhce-faq-main *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+#dhce-faq-main {
+  position: relative;
+  width: 100vw;
+  left: 50%;
+  transform: translateX(-50%);
+  overflow: hidden;
+  background: #fefeff;
+  padding: 90px 24px;
+}
+
+#dhce-faq-main .dhce-fm-inner {
+  width: 92%;
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+/* Tab buttons */
+#dhce-faq-main .dhce-fm-tabs {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 48px;
+  flex-wrap: wrap;
+}
+
+#dhce-faq-main .dhce-fm-tab {
+  padding: 10px 22px;
+  border-radius: 100px;
+  border: 2px solid rgba(0,98,113,0.2);
+  background: transparent;
+  color: #006271;
+  font-size: 0.88rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s, border-color 0.2s, color 0.2s;
+  font-family: inherit;
+}
+
+#dhce-faq-main .dhce-fm-tab:hover {
+  border-color: #006271;
+  background: rgba(0,98,113,0.05);
+}
+
+#dhce-faq-main .dhce-fm-tab.dhce-active {
+  background: #006271;
+  border-color: #006271;
+  color: #fefeff;
+}
+
+/* Section heading */
+#dhce-faq-main .dhce-fm-section {
+  display: none;
+}
+
+#dhce-faq-main .dhce-fm-section.dhce-active {
+  display: block;
+}
+
+#dhce-faq-main .dhce-fm-section-label {
+  display: block;
+  font-size: 11px;
+  font-weight: 700;
+  color: #82bb41;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+#dhce-faq-main .dhce-fm-section h2 {
+  font-size: clamp(1.4rem, 2.5vw, 1.9rem);
+  font-weight: 800;
+  color: #006271;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+  margin-bottom: 32px;
+}
+
+/* Accordion items */
+#dhce-faq-main .dhce-faq-item {
+  border-bottom: 1px solid rgba(0,98,113,0.12);
+}
+
+#dhce-faq-main .dhce-faq-item:first-of-type {
+  border-top: 1px solid rgba(0,98,113,0.12);
+}
+
+#dhce-faq-main .dhce-faq-question {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 22px 0;
+  cursor: pointer;
+  list-style: none;
+  user-select: none;
+}
+
+#dhce-faq-main .dhce-faq-question::-webkit-details-marker { display: none; }
+
+#dhce-faq-main .dhce-faq-question h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #006271;
+  line-height: 1.4;
+  flex: 1;
+}
+
+#dhce-faq-main .dhce-faq-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: rgba(0,98,113,0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: background 0.2s, transform 0.2s;
+}
+
+#dhce-faq-main .dhce-faq-icon svg {
+  width: 16px;
+  height: 16px;
+  stroke: #006271;
+  fill: none;
+  stroke-width: 2.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  transition: transform 0.25s ease;
+}
+
+#dhce-faq-main details[open] .dhce-faq-icon {
+  background: #006271;
+}
+
+#dhce-faq-main details[open] .dhce-faq-icon svg {
+  stroke: #fefeff;
+  transform: rotate(45deg);
+}
+
+#dhce-faq-main .dhce-faq-answer {
+  padding: 0 0 24px 0;
+  font-size: 0.92rem;
+  color: #555;
+  line-height: 1.8;
+}
+
+#dhce-faq-main .dhce-faq-answer p {
+  margin-bottom: 12px;
+}
+
+#dhce-faq-main .dhce-faq-answer p:last-child {
+  margin-bottom: 0;
+}
+
+#dhce-faq-main .dhce-faq-answer ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+#dhce-faq-main .dhce-faq-answer ul li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 0.9rem;
+  color: #555;
+  line-height: 1.65;
+}
+
+#dhce-faq-main .dhce-faq-answer ul li::before {
+  content: '';
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #82bb41;
+  flex-shrink: 0;
+  margin-top: 7px;
+}
+</style>
+
+<section id="dhce-faq-main">
+  <div class="dhce-fm-inner">
+
+    <div class="dhce-fm-tabs">
+      <button class="dhce-fm-tab dhce-active" onclick="dhceFaqTab(this, 'dhce-faq-general')">General Questions</button>
+      <button class="dhce-fm-tab" onclick="dhceFaqTab(this, 'dhce-faq-certification')">Certification and Compliance</button>
+      <button class="dhce-fm-tab" onclick="dhceFaqTab(this, 'dhce-faq-market')">The Halal Market</button>
+    </div>
+
+    <!-- GENERAL QUESTIONS -->
+    <div id="dhce-faq-general" class="dhce-fm-section dhce-active">
+      <span class="dhce-fm-section-label">General Questions</span>
+      <h2>Understanding Halal and Haram</h2>
+
+      <details class="dhce-faq-item">
+        <summary class="dhce-faq-question">
+          <h3>What do Halal and Haram mean?</h3>
+          <div class="dhce-faq-icon"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div>
+        </summary>
+        <div class="dhce-faq-answer">
+          <p>Halal is an Arabic term meaning permissible or lawful under Islamic law (Shariah). In the context of food and consumer products, it refers to anything that a Muslim is permitted to consume, use, or engage with.</p>
+          <p>Haram is the opposite, meaning forbidden or prohibited. The following are considered Haram in food:</p>
+          <ul>
+            <li>Pork and all products derived from pork</li>
+            <li>Alcohol and any food or drink with alcoholic components</li>
+            <li>Meat from animals that died of natural causes</li>
+            <li>Meat from carnivorous animals</li>
+            <li>Blood and its by-products</li>
+            <li>Meat from animals not slaughtered according to Islamic law</li>
+            <li>Meat from predatory animals with fangs or birds with claws</li>
+          </ul>
+        </div>
+      </details>
+
+      <details class="dhce-faq-item">
+        <summary class="dhce-faq-question">
+          <h3>Does Halal and Haram only apply to food and drink?</h3>
+          <div class="dhce-faq-icon"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div>
+        </summary>
+        <div class="dhce-faq-answer">
+          <p>No. The concepts of Halal and Haram apply to virtually every aspect of a Muslim's life, not just food and drink. They extend to behaviour, financial dealings, relationships, and personal conduct.</p>
+          <p>In the context of business and consumer products, Halal principles apply to food, beverages, cosmetics, pharmaceuticals, packaging, logistics, and services. This is why halal certification spans multiple industries beyond food manufacturing.</p>
+        </div>
+      </details>
+
+      <details class="dhce-faq-item">
+        <summary class="dhce-faq-question">
+          <h3>What is the basis for Halal and Haram?</h3>
+          <div class="dhce-faq-icon"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div>
+        </summary>
+        <div class="dhce-faq-answer">
+          <p>The foundation for what is Halal and what is Haram comes from two primary sources: the Holy Quran, which is the direct word of God, and the Sunnah, which are the recorded sayings, teachings, and practices of the Prophet Muhammad (peace be upon him).</p>
+          <p>These two sources together form the basis of Islamic law (Shariah) and provide clear guidance on what is permitted and what is prohibited for Muslims in all aspects of life.</p>
+        </div>
+      </details>
+
+      <details class="dhce-faq-item">
+        <summary class="dhce-faq-question">
+          <h3>Are there different schools of thought on what is Halal?</h3>
+          <div class="dhce-faq-icon"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div>
+        </summary>
+        <div class="dhce-faq-answer">
+          <p>Yes. Within Islam there are several recognised schools of jurisprudence (fiqh), each of which may have slightly different interpretations on certain matters. The main Sunni schools are the Hanafi, Maliki, Shafi'i, and Hanbali, each named after the scholar who founded it. There are also recognised Shia schools, including the Jafari school.</p>
+          <p>One area where these schools differ is on the permissibility of certain sea animals. The Hanafi school, for example, holds that only sea fish are permitted, while other schools take a broader view. DHCE's certification process takes these differences into account and applies standards consistent with widely accepted Islamic jurisprudence.</p>
+        </div>
+      </details>
+
+      <details class="dhce-faq-item">
+        <summary class="dhce-faq-question">
+          <h3>Does Halal certification exclude non-Muslims?</h3>
+          <div class="dhce-faq-icon"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div>
+        </summary>
+        <div class="dhce-faq-answer">
+          <p>Not at all. Halal certification does not restrict non-Muslims from consuming or using certified products. In fact, a growing number of non-Muslim consumers actively seek out halal-certified goods because the standards require higher levels of hygiene, traceability, and ethical production.</p>
+          <p>For businesses, this means that halal certification not only opens the door to Muslim consumers worldwide but can also positively influence purchasing decisions among the broader consumer base.</p>
+        </div>
+      </details>
+
+      <details class="dhce-faq-item">
+        <summary class="dhce-faq-question">
+          <h3>What is Mashbooh?</h3>
+          <div class="dhce-faq-icon"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div>
+        </summary>
+        <div class="dhce-faq-answer">
+          <p>Mashbooh is an Arabic term meaning doubtful or questionable. It refers to things that are not clearly Halal or clearly Haram because their source or nature is uncertain.</p>
+          <p>Common examples in food manufacturing include certain enzymes, emulsifiers, gelatine, and flavourings whose origin (animal or plant) cannot be confirmed. As a precautionary principle, Muslims are advised to avoid Mashbooh items. DHCE's certification process includes verifying the source of all such ingredients to determine whether they are genuinely Halal.</p>
+        </div>
+      </details>
+
+      <details class="dhce-faq-item">
+        <summary class="dhce-faq-question">
+          <h3>Are plant-based foods automatically Halal?</h3>
+          <div class="dhce-faq-icon"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div>
+        </summary>
+        <div class="dhce-faq-answer">
+          <p>Generally yes. Foods and food products made entirely from plant-based raw materials are considered Halal, provided the production process itself meets Halal requirements. Fish, fruits, and vegetables in their natural state are also considered Halal.</p>
+          <p>However, the Halal status of plant-based products can be affected if ethanol is used during processing, if alcoholic fermentation occurs, or if the production line has come into contact with non-Halal substances. Certification verifies that none of these issues are present.</p>
+        </div>
+      </details>
+
+    </div>
+
+    <!-- CERTIFICATION AND COMPLIANCE -->
+    <div id="dhce-faq-certification" class="dhce-fm-section">
+      <span class="dhce-fm-section-label">Certification and Compliance</span>
+      <h2>Certification, Slaughter and Compliance</h2>
+
+      <details class="dhce-faq-item">
+        <summary class="dhce-faq-question">
+          <h3>Is milk and dairy Halal?</h3>
+          <div class="dhce-faq-icon"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div>
+        </summary>
+        <div class="dhce-faq-answer">
+          <p>Cow's milk in its natural form is considered Halal. However, the dairy industry commonly uses additives, flavour enhancers, preservatives, and aromas during production that may be derived from non-Halal sources. These ingredients are classified as critical and must be verified.</p>
+          <p>DHCE certification for dairy products includes a thorough review of all ingredients and additives used throughout the production process to confirm their Halal status before a certificate is issued.</p>
+        </div>
+      </details>
+
+      <details class="dhce-faq-item">
+        <summary class="dhce-faq-question">
+          <h3>What rules apply to the slaughter of animals under Islamic law?</h3>
+          <div class="dhce-faq-icon"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div>
+        </summary>
+        <div class="dhce-faq-answer">
+          <p>Islamic slaughter (Zabiha) follows specific requirements aimed at ending the animal's life in the most humane and dignified way possible. The key conditions are:</p>
+          <ul>
+            <li>The slaughterman must be a practicing Muslim who is knowledgeable in Islamic slaughter procedures</li>
+            <li>The animal must be a species permitted for consumption under Islamic law</li>
+            <li>The phrase Bismillah (In the Name of Allah) must be recited immediately before each slaughter</li>
+            <li>The knife must be sharp and the cut must sever the trachea, oesophagus, and both jugular veins in a single continuous motion</li>
+            <li>The animal must be alive and healthy at the time of slaughter</li>
+            <li>Animals must be treated with respect and must not witness the slaughter of other animals</li>
+          </ul>
+          <p>The use of stunning that does not kill the animal prior to slaughter is accepted by the majority of Islamic scholars, and is standard practice in certified facilities across Ireland and Europe.</p>
+        </div>
+      </details>
+
+      <details class="dhce-faq-item">
+        <summary class="dhce-faq-question">
+          <h3>What is the difference between Halal and Kosher?</h3>
+          <div class="dhce-faq-icon"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div>
+        </summary>
+        <div class="dhce-faq-answer">
+          <p>Halal and Kosher share some similarities in that both prohibit pork and require specific slaughter methods. However, there are important differences:</p>
+          <ul>
+            <li>Alcohol is strictly prohibited in Islam in all forms. In Judaism, wine produced or supervised by a Jew is permitted.</li>
+            <li>In Kosher law, meat and dairy cannot be consumed together, with required waiting periods between them. There is no such restriction in Islam.</li>
+            <li>If a Kosher production line is contaminated with non-Kosher substances, it can be recertified by a rabbi using a specific cleaning process. In Halal, cross-contamination with non-Halal substances requires the production to stop and be fully remediated before certification can continue.</li>
+            <li>Kosher has festival-specific rules such as Passover, which do not apply to Halal.</li>
+          </ul>
+        </div>
+      </details>
+
+      <details class="dhce-faq-item">
+        <summary class="dhce-faq-question">
+          <h3>What does a business need to do to get Halal certified by DHCE?</h3>
+          <div class="dhce-faq-icon"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div>
+        </summary>
+        <div class="dhce-faq-answer">
+          <p>The DHCE certification process takes 21 working days from application to certificate. To get started, a business needs to:</p>
+          <ul>
+            <li>Submit a completed application with details of the business, product range, and ingredients</li>
+            <li>Receive and accept a certification quote from DHCE</li>
+            <li>Sign the Halal Certification Agreement and Confidentiality Agreement</li>
+            <li>Undergo a two-level on-site audit conducted by two qualified DHCE auditors</li>
+            <li>Address and close any findings raised in the audit report</li>
+            <li>Receive final approval from the DHCE Decision Committee</li>
+          </ul>
+          <p>Full details are available on our Certification Procedure page.</p>
+        </div>
+      </details>
+
+    </div>
+
+    <!-- THE HALAL MARKET -->
+    <div id="dhce-faq-market" class="dhce-fm-section">
+      <span class="dhce-fm-section-label">The Halal Market</span>
+      <h2>Market Opportunity and Business Benefits</h2>
+
+      <details class="dhce-faq-item">
+        <summary class="dhce-faq-question">
+          <h3>Who buys Halal products?</h3>
+          <div class="dhce-faq-icon"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div>
+        </summary>
+        <div class="dhce-faq-answer">
+          <p>The primary consumers of Halal products are the world's 2 billion Muslims, spread across more than 112 countries. The largest markets for Halal goods are in Southeast Asia and the Middle East, with significant and growing demand also in Europe, North America, and sub-Saharan Africa.</p>
+          <p>Importantly, Halal products are not only consumed by Muslims. A growing segment of non-Muslim consumers in Europe and North America choose Halal-certified goods because they associate the certification with higher hygiene standards, ethical production, and quality assurance. In Europe, approximately 12% of Halal food purchases are made by non-Muslims.</p>
+        </div>
+      </details>
+
+      <details class="dhce-faq-item">
+        <summary class="dhce-faq-question">
+          <h3>Why should my business get Halal certified?</h3>
+          <div class="dhce-faq-icon"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div>
+        </summary>
+        <div class="dhce-faq-answer">
+          <p>The global Halal market is valued at approximately $2.7 trillion in 2025 and is projected to grow to $6 trillion by 2034. For businesses in food, cosmetics, and pharmaceuticals, Halal certification is increasingly not optional but required by importers, retailers, and distributors in Muslim-majority markets.</p>
+          <p>Key reasons to get certified include:</p>
+          <ul>
+            <li>Access to 2 billion Muslim consumers across more than 112 countries</li>
+            <li>Meet the import requirements of high-value markets including Malaysia, Singapore, the UAE, and Saudi Arabia</li>
+            <li>Differentiate your products and build trust with consumers who prioritise ethical, quality-assured production</li>
+            <li>Strengthen your supply chain credentials and become a preferred supplier to Halal-certified manufacturers</li>
+            <li>Position your business to compete in one of the fastest-growing global trade sectors</li>
+          </ul>
+        </div>
+      </details>
+
+      <details class="dhce-faq-item">
+        <summary class="dhce-faq-question">
+          <h3>Is the Halal market only relevant for Muslim-majority countries?</h3>
+          <div class="dhce-faq-icon"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div>
+        </summary>
+        <div class="dhce-faq-answer">
+          <p>No. While Muslim-majority countries are the largest importers of Halal-certified goods, the Halal market is genuinely global. Muslim communities exist in significant numbers across Europe, North America, and Australia, all of which represent active Halal consumer markets.</p>
+          <p>For Irish and European businesses, the opportunity is twofold. There is a domestic Halal consumer base that is growing steadily, and there is a significant export opportunity to Muslim-majority markets in Southeast Asia and the Middle East where Irish food and pharmaceutical products are well regarded. DHCE certification opens both markets simultaneously.</p>
+        </div>
+      </details>
+
+    </div>
+
+  </div>
+</section>
+
+<script>
+function dhceFaqTab(btn, sectionId) {
+  var tabs = document.querySelectorAll('#dhce-faq-main .dhce-fm-tab');
+  var sections = document.querySelectorAll('#dhce-faq-main .dhce-fm-section');
+  tabs.forEach(function(t) { t.classList.remove('dhce-active'); });
+  sections.forEach(function(s) { s.classList.remove('dhce-active'); });
+  btn.classList.add('dhce-active');
+  document.getElementById(sectionId).classList.add('dhce-active');
+}
+</script>
+
+
+<!-- ══ 3. CTA ═════════════════════════════════════════════════ -->
+<style>
+#dhce-faq-cta *,
+#dhce-faq-cta *::before,
+#dhce-faq-cta *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+#dhce-faq-cta {
+  position: relative;
+  width: 100vw;
+  left: 50%;
+  transform: translateX(-50%);
+  overflow: hidden;
+  background: #006271;
+  padding: 90px 24px;
+}
+
+#dhce-faq-cta .dhce-fc-inner {
+  width: 92%;
+  max-width: 1060px;
+  margin: 0 auto;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 12px;
+  padding: 56px 48px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+#dhce-faq-cta .dhce-fc-text .dhce-fc-label {
+  display: block;
+  font-size: 11px;
+  font-weight: 700;
+  color: #82bb41;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+#dhce-faq-cta .dhce-fc-text h2 {
+  font-size: clamp(1.4rem, 2.5vw, 1.9rem);
+  font-weight: 800;
+  color: #fefeff;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+  margin-bottom: 12px;
+}
+
+#dhce-faq-cta .dhce-fc-text p {
+  font-size: 0.95rem;
+  color: rgba(254,254,255,0.7);
+  line-height: 1.75;
+  max-width: 480px;
+}
+
+#dhce-faq-cta .dhce-fc-btns {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  flex-shrink: 0;
+}
+
+#dhce-faq-cta .dhce-btn-primary {
+  display: inline-block;
+  background: #82bb41;
+  color: #fefeff;
+  font-size: 0.9rem;
+  font-weight: 700;
+  padding: 14px 30px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background 0.2s, transform 0.2s;
+  box-shadow: 0 4px 18px rgba(130,187,65,0.35);
+  white-space: nowrap;
+}
+
+#dhce-faq-cta .dhce-btn-primary:hover {
+  background: #74a938;
+  transform: translateY(-2px);
+  color: #fefeff;
+  text-decoration: none;
+}
+
+#dhce-faq-cta .dhce-btn-secondary {
+  display: inline-block;
+  background: transparent;
+  color: #fefeff;
+  font-size: 0.9rem;
+  font-weight: 700;
+  padding: 14px 30px;
+  border-radius: 6px;
+  border: 2px solid rgba(254,254,255,0.3);
+  text-decoration: none;
+  transition: border-color 0.2s, background 0.2s, transform 0.2s;
+  white-space: nowrap;
+}
+
+#dhce-faq-cta .dhce-btn-secondary:hover {
+  border-color: rgba(254,254,255,0.65);
+  background: rgba(255,255,255,0.07);
+  transform: translateY(-2px);
+  color: #fefeff;
+  text-decoration: none;
+}
+
+@media (max-width: 760px) {
+  #dhce-faq-cta .dhce-fc-inner { flex-direction: column; padding: 40px 28px; text-align: center; }
+  #dhce-faq-cta .dhce-fc-btns { justify-content: center; }
+  #dhce-faq-cta .dhce-fc-text p { max-width: 100%; }
+}
+</style>
+
+<section id="dhce-faq-cta">
+  <div class="dhce-fc-inner">
+    <div class="dhce-fc-text">
+      <span class="dhce-fc-label">Still Have Questions</span>
+      <h2>Could Not Find the Answer You Were Looking For?</h2>
+      <p>Our team is happy to answer any questions you have about halal certification, our process, or whether DHCE is the right partner for your business. Get in touch and we will respond promptly.</p>
+    </div>
+    <div class="dhce-fc-btns">
+      <a href="/enterprise/contact/" class="dhce-btn-primary">Contact Our Team</a>
+      <a href="/enterprise/apply/" class="dhce-btn-secondary">Start Your Application</a>
+    </div>
+  </div>
+</section>
