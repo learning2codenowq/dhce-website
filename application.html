@@ -1,0 +1,591 @@
+<!-- DHCE APPLY NOW PAGE -->
+
+<!-- ══ 1. HERO ═══════════════════════════════════════════════ -->
+<style>
+#dhce-apply-hero *,
+#dhce-apply-hero *::before,
+#dhce-apply-hero *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+#dhce-apply-hero {
+  position: relative;
+  width: 100vw;
+  left: 50%;
+  transform: translateX(-50%);
+  overflow: hidden;
+  background: #006271;
+  padding: 90px 24px;
+  text-align: center;
+}
+
+#dhce-apply-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    radial-gradient(circle at 20% 50%, rgba(130,187,65,0.10) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(255,255,255,0.04) 0%, transparent 40%);
+  pointer-events: none;
+}
+
+#dhce-apply-hero .dhce-aph-inner {
+  position: relative;
+  z-index: 1;
+  width: 92%;
+  max-width: 1060px;
+  margin: 0 auto;
+}
+
+#dhce-apply-hero .dhce-aph-label {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  color: #82bb41;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+
+#dhce-apply-hero h1 {
+  font-size: clamp(2rem, 4.5vw, 3.2rem);
+  font-weight: 800;
+  color: #fefeff;
+  letter-spacing: -0.03em;
+  line-height: 1.15;
+  margin-bottom: 20px;
+  max-width: 760px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#dhce-apply-hero h1 em {
+  font-style: normal;
+  color: #82bb41;
+}
+
+#dhce-apply-hero p {
+  font-size: 1.05rem;
+  color: rgba(254,254,255,0.7);
+  max-width: 520px;
+  margin: 0 auto 32px;
+  line-height: 1.75;
+}
+
+#dhce-apply-hero .dhce-aph-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(130,187,65,0.15);
+  border: 1px solid rgba(130,187,65,0.35);
+  border-radius: 100px;
+  padding: 10px 24px;
+}
+
+#dhce-apply-hero .dhce-aph-badge span {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #82bb41;
+  letter-spacing: 0.04em;
+}
+</style>
+
+<section id="dhce-apply-hero">
+  <div class="dhce-aph-inner">
+    <span class="dhce-aph-label">Apply Now</span>
+    <h1>Start Your Halal Certification</h1>
+    <p>Getting certified with DHCE is straightforward. Follow the three steps below and our team will take it from there.</p>
+    <div class="dhce-aph-badge">
+      <span>21 Working Days from Application to Certificate</span>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══ 2. THREE STEPS ════════════════════════════════════════ -->
+<style>
+#dhce-apply-steps *,
+#dhce-apply-steps *::before,
+#dhce-apply-steps *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+#dhce-apply-steps {
+  position: relative;
+  width: 100vw;
+  left: 50%;
+  transform: translateX(-50%);
+  overflow: hidden;
+  background: #fefeff;
+  padding: 90px 24px;
+}
+
+#dhce-apply-steps .dhce-aps-inner {
+  width: 92%;
+  max-width: 780px;
+  margin: 0 auto;
+}
+
+#dhce-apply-steps .dhce-aps-list {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+#dhce-apply-steps .dhce-aps-list::before {
+  content: '';
+  position: absolute;
+  left: 31px;
+  top: 32px;
+  bottom: 32px;
+  width: 2px;
+  background: linear-gradient(to bottom, #82bb41, #006271);
+  z-index: 0;
+}
+
+#dhce-apply-steps .dhce-aps-row {
+  display: flex;
+  gap: 32px;
+  align-items: flex-start;
+  position: relative;
+  z-index: 1;
+  padding-bottom: 40px;
+}
+
+#dhce-apply-steps .dhce-aps-row:last-child {
+  padding-bottom: 0;
+}
+
+#dhce-apply-steps .dhce-aps-num {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: #006271;
+  color: #fefeff;
+  font-size: 1.3rem;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  border: 4px solid #fefeff;
+  box-shadow: 0 0 0 2px #006271, 0 4px 14px rgba(0,98,113,0.2);
+  position: relative;
+  z-index: 2;
+}
+
+#dhce-apply-steps .dhce-aps-row:last-child .dhce-aps-num {
+  background: #82bb41;
+  box-shadow: 0 0 0 2px #82bb41, 0 4px 18px rgba(130,187,65,0.35);
+}
+
+#dhce-apply-steps .dhce-aps-card {
+  flex: 1;
+  background: #fefeff;
+  border: 1px solid rgba(0,98,113,0.1);
+  border-radius: 10px;
+  padding: 32px 36px;
+  margin-top: 6px;
+  box-shadow: 0 2px 16px rgba(0,98,113,0.06);
+}
+
+#dhce-apply-steps .dhce-aps-row:last-child .dhce-aps-card {
+  background: rgba(130,187,65,0.05);
+  border-color: rgba(130,187,65,0.25);
+}
+
+#dhce-apply-steps .dhce-aps-card h2 {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: #006271;
+  letter-spacing: -0.02em;
+  margin-bottom: 10px;
+  line-height: 1.25;
+}
+
+#dhce-apply-steps .dhce-aps-row:last-child .dhce-aps-card h2 {
+  color: #74a938;
+}
+
+#dhce-apply-steps .dhce-aps-card p {
+  font-size: 0.92rem;
+  color: #666;
+  line-height: 1.75;
+  margin-bottom: 24px;
+}
+
+#dhce-apply-steps .dhce-aps-card p:last-of-type {
+  margin-bottom: 24px;
+}
+
+#dhce-apply-steps .dhce-aps-btns {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+#dhce-apply-steps .dhce-btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #82bb41;
+  color: #fefeff;
+  font-size: 0.88rem;
+  font-weight: 700;
+  padding: 12px 24px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background 0.2s, transform 0.2s;
+  box-shadow: 0 4px 14px rgba(130,187,65,0.35);
+  white-space: nowrap;
+}
+
+#dhce-apply-steps .dhce-btn-primary svg {
+  width: 16px;
+  height: 16px;
+  stroke: #fefeff;
+  fill: none;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  flex-shrink: 0;
+}
+
+#dhce-apply-steps .dhce-btn-primary:hover {
+  background: #74a938;
+  transform: translateY(-2px);
+  color: #fefeff;
+  text-decoration: none;
+}
+
+#dhce-apply-steps .dhce-btn-outline {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: transparent;
+  color: #006271;
+  font-size: 0.88rem;
+  font-weight: 700;
+  padding: 12px 24px;
+  border-radius: 6px;
+  border: 2px solid rgba(0,98,113,0.25);
+  text-decoration: none;
+  transition: border-color 0.2s, background 0.2s, transform 0.2s;
+  white-space: nowrap;
+}
+
+#dhce-apply-steps .dhce-btn-outline svg {
+  width: 16px;
+  height: 16px;
+  stroke: #006271;
+  fill: none;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  flex-shrink: 0;
+}
+
+#dhce-apply-steps .dhce-btn-outline:hover {
+  border-color: #006271;
+  background: rgba(0,98,113,0.05);
+  transform: translateY(-2px);
+  color: #006271;
+  text-decoration: none;
+}
+
+@media (max-width: 560px) {
+  #dhce-apply-steps .dhce-aps-list::before { left: 27px; }
+  #dhce-apply-steps .dhce-aps-num { width: 56px; height: 56px; font-size: 1.1rem; }
+  #dhce-apply-steps .dhce-aps-row { gap: 20px; }
+  #dhce-apply-steps .dhce-aps-card { padding: 24px 22px; }
+  #dhce-apply-steps .dhce-aps-btns { flex-direction: column; }
+}
+</style>
+
+<section id="dhce-apply-steps">
+  <div class="dhce-aps-inner">
+    <div class="dhce-aps-list">
+
+      <!-- Step 1 -->
+      <div class="dhce-aps-row">
+        <div class="dhce-aps-num">1</div>
+        <div class="dhce-aps-card">
+          <h2>Download the Application Form</h2>
+          <p>Start by downloading the official DHCE client application form. The form covers your business details, product range, ingredients, and production processes. Having this information ready before you begin will speed up the review process.</p>
+          <div class="dhce-aps-btns">
+            <a href="https://halalcertification.ie/wp-content/uploads/dhce-client-application-form.docx" class="dhce-btn-primary" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+              Download Form
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Step 2 -->
+      <div class="dhce-aps-row">
+        <div class="dhce-aps-num">2</div>
+        <div class="dhce-aps-card">
+          <h2>Complete the Form in Full</h2>
+          <p>Work through the form carefully and include as much detail as possible. The more information you provide about your products, ingredients, and processes, the faster our team can assess your application and prepare your certification quote.</p>
+          <p>If you have any questions while completing the form, our team is happy to help before you submit.</p>
+          <div class="dhce-aps-btns">
+            <a href="/enterprise/contact/" class="dhce-btn-outline">
+              <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              Contact Us with a Question
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Step 3 -->
+      <div class="dhce-aps-row">
+        <div class="dhce-aps-num">3</div>
+        <div class="dhce-aps-card">
+          <h2>Send Us Your Completed Form</h2>
+          <p>Once completed, email your application form to us at the address below. Our team will review it and come back to you within three working days with a tailored certification quote and your next steps.</p>
+          <div class="dhce-aps-btns">
+            <a href="mailto:info@halalcertification.ie" class="dhce-btn-primary">
+              <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              Send to info@halalcertification.ie
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ══ 3. REASSURANCE STRIP ══════════════════════════════════ -->
+<style>
+#dhce-apply-strip *,
+#dhce-apply-strip *::before,
+#dhce-apply-strip *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+#dhce-apply-strip {
+  position: relative;
+  width: 100vw;
+  left: 50%;
+  transform: translateX(-50%);
+  overflow: hidden;
+  background: #f4f9f4;
+  padding: 64px 24px;
+}
+
+#dhce-apply-strip .dhce-ast-inner {
+  width: 92%;
+  max-width: 1060px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+#dhce-apply-strip .dhce-ast-item {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+#dhce-apply-strip .dhce-ast-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 12px;
+  background: rgba(0,98,113,0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+#dhce-apply-strip .dhce-ast-icon svg {
+  width: 24px;
+  height: 24px;
+  stroke: #006271;
+  fill: none;
+  stroke-width: 1.75;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+#dhce-apply-strip .dhce-ast-text h3 {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #006271;
+  margin-bottom: 4px;
+  letter-spacing: -0.01em;
+}
+
+#dhce-apply-strip .dhce-ast-text p {
+  font-size: 0.84rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+@media (max-width: 760px) {
+  #dhce-apply-strip .dhce-ast-inner { grid-template-columns: 1fr; gap: 28px; max-width: 480px; margin: 0 auto; }
+}
+</style>
+
+<section id="dhce-apply-strip">
+  <div class="dhce-ast-inner">
+
+    <div class="dhce-ast-item">
+      <div class="dhce-ast-icon">
+        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+      </div>
+      <div class="dhce-ast-text">
+        <h3>21 Working Days</h3>
+        <p>From completed application to issued certificate, the full process takes just 21 working days.</p>
+      </div>
+    </div>
+
+    <div class="dhce-ast-item">
+      <div class="dhce-ast-icon">
+        <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+      </div>
+      <div class="dhce-ast-text">
+        <h3>Dedicated Team Support</h3>
+        <p>Our team guides you through every step, from the application form through to your on-site audit.</p>
+      </div>
+    </div>
+
+    <div class="dhce-ast-item">
+      <div class="dhce-ast-icon">
+        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+      </div>
+      <div class="dhce-ast-text">
+        <h3>Internationally Recognised Certificate</h3>
+        <p>Your DHCE certificate is accepted by JAKIM, MUIS, EIAC, WHFC, and IHAF, opening global halal markets.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ══ 4. CTA ═════════════════════════════════════════════════ -->
+<style>
+#dhce-apply-cta *,
+#dhce-apply-cta *::before,
+#dhce-apply-cta *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+#dhce-apply-cta {
+  position: relative;
+  width: 100vw;
+  left: 50%;
+  transform: translateX(-50%);
+  overflow: hidden;
+  background: #012f37;
+  padding: 90px 24px;
+}
+
+#dhce-apply-cta .dhce-act-inner {
+  width: 92%;
+  max-width: 1060px;
+  margin: 0 auto;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 12px;
+  padding: 56px 48px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+#dhce-apply-cta .dhce-act-text .dhce-act-label {
+  display: block;
+  font-size: 11px;
+  font-weight: 700;
+  color: #82bb41;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+#dhce-apply-cta .dhce-act-text h2 {
+  font-size: clamp(1.4rem, 2.5vw, 1.9rem);
+  font-weight: 800;
+  color: #fefeff;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+  margin-bottom: 12px;
+}
+
+#dhce-apply-cta .dhce-act-text p {
+  font-size: 0.95rem;
+  color: rgba(254,254,255,0.7);
+  line-height: 1.75;
+  max-width: 480px;
+}
+
+#dhce-apply-cta .dhce-act-btns {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  flex-shrink: 0;
+}
+
+#dhce-apply-cta .dhce-btn-primary {
+  display: inline-block;
+  background: #82bb41;
+  color: #fefeff;
+  font-size: 0.9rem;
+  font-weight: 700;
+  padding: 14px 30px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background 0.2s, transform 0.2s;
+  box-shadow: 0 4px 18px rgba(130,187,65,0.35);
+  white-space: nowrap;
+}
+
+#dhce-apply-cta .dhce-btn-primary:hover {
+  background: #74a938;
+  transform: translateY(-2px);
+  color: #fefeff;
+  text-decoration: none;
+}
+
+#dhce-apply-cta .dhce-btn-secondary {
+  display: inline-block;
+  background: transparent;
+  color: #fefeff;
+  font-size: 0.9rem;
+  font-weight: 700;
+  padding: 14px 30px;
+  border-radius: 6px;
+  border: 2px solid rgba(254,254,255,0.3);
+  text-decoration: none;
+  transition: border-color 0.2s, background 0.2s, transform 0.2s;
+  white-space: nowrap;
+}
+
+#dhce-apply-cta .dhce-btn-secondary:hover {
+  border-color: rgba(254,254,255,0.65);
+  background: rgba(255,255,255,0.07);
+  transform: translateY(-2px);
+  color: #fefeff;
+  text-decoration: none;
+}
+
+@media (max-width: 760px) {
+  #dhce-apply-cta .dhce-act-inner { flex-direction: column; padding: 40px 28px; text-align: center; }
+  #dhce-apply-cta .dhce-act-btns { justify-content: center; }
+  #dhce-apply-cta .dhce-act-text p { max-width: 100%; }
+}
+</style>
+
+<section id="dhce-apply-cta">
+  <div class="dhce-act-inner">
+    <div class="dhce-act-text">
+      <span class="dhce-act-label">Questions First?</span>
+      <h2>Not Sure Where to Start?</h2>
+      <p>If you have questions before submitting your application, our team is happy to help. You can also review the full certification procedure to understand exactly what to expect at each stage.</p>
+    </div>
+    <div class="dhce-act-btns">
+      <a href="/enterprise/contact/" class="dhce-btn-primary">Contact Our Team</a>
+      <a href="/enterprise/certification/procedure/" class="dhce-btn-secondary">View Certification Procedure</a>
+    </div>
+  </div>
+</section>
