@@ -1,0 +1,1145 @@
+<!-- DHCE APPEALS & COMPLAINTS PAGE -->
+
+<!-- ══ 1. HERO ═══════════════════════════════════════════════ -->
+<style>
+#dhce-appeal-hero *,
+#dhce-appeal-hero *::before,
+#dhce-appeal-hero *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+#dhce-appeal-hero {
+  position: relative;
+  width: 100vw;
+  left: 50%;
+  transform: translateX(-50%);
+  overflow: hidden;
+  background: #006271;
+  padding: 90px 24px;
+  text-align: center;
+}
+
+#dhce-appeal-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    radial-gradient(circle at 20% 50%, rgba(130,187,65,0.10) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(255,255,255,0.04) 0%, transparent 40%);
+  pointer-events: none;
+}
+
+#dhce-appeal-hero .dhce-ah-inner {
+  position: relative;
+  z-index: 1;
+  width: 92%;
+  max-width: 1060px;
+  margin: 0 auto;
+}
+
+#dhce-appeal-hero .dhce-ah-label {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  color: #82bb41;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+
+#dhce-appeal-hero h1 {
+  font-size: clamp(2rem, 4.5vw, 3.2rem);
+  font-weight: 800;
+  color: #fefeff;
+  letter-spacing: -0.03em;
+  line-height: 1.15;
+  margin-bottom: 20px;
+  max-width: 760px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#dhce-appeal-hero h1 em {
+  font-style: normal;
+  color: #82bb41;
+}
+
+#dhce-appeal-hero p {
+  font-size: 1.05rem;
+  color: rgba(254,254,255,0.7);
+  max-width: 580px;
+  margin: 0 auto;
+  line-height: 1.75;
+}
+</style>
+
+<section id="dhce-appeal-hero">
+  <div class="dhce-ah-inner">
+    <span class="dhce-ah-label">Transparency &amp; Accountability</span>
+    <h1>Appeals &amp; Complaints</h1>
+    <p>DHCE takes all concerns and complaints seriously. Feedback helps us maintain the high standards we are committed to and resolve issues in a fair, procedural, and transparent way.</p>
+  </div>
+</section>
+
+
+<!-- ══ 2. INTRO + DOWNLOAD ═══════════════════════════════════ -->
+<style>
+#dhce-appeal-intro *,
+#dhce-appeal-intro *::before,
+#dhce-appeal-intro *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+#dhce-appeal-intro {
+  position: relative;
+  width: 100vw;
+  left: 50%;
+  transform: translateX(-50%);
+  overflow: hidden;
+  background: #fefeff;
+  padding: 90px 24px;
+}
+
+#dhce-appeal-intro .dhce-ai-inner {
+  width: 92%;
+  max-width: 1060px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 72px;
+  align-items: center;
+}
+
+#dhce-appeal-intro .dhce-ai-label {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  color: #82bb41;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+
+#dhce-appeal-intro h2 {
+  font-size: clamp(1.7rem, 3.5vw, 2.4rem);
+  font-weight: 800;
+  color: #006271;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+#dhce-appeal-intro p {
+  font-size: 0.95rem;
+  color: #666;
+  line-height: 1.8;
+  margin-bottom: 16px;
+}
+
+#dhce-appeal-intro p:last-of-type { margin-bottom: 0; }
+
+#dhce-appeal-intro .dhce-ai-card {
+  background: #fefeff;
+  border: 1px solid rgba(0,98,113,0.12);
+  border-radius: 12px;
+  padding: 40px 36px;
+  box-shadow: 0 8px 32px rgba(0,98,113,0.10);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+#dhce-appeal-intro .dhce-ai-card-icon {
+  width: 64px;
+  height: 64px;
+  border-radius: 16px;
+  background: rgba(0,98,113,0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#dhce-appeal-intro .dhce-ai-card-icon svg {
+  width: 32px;
+  height: 32px;
+  stroke: #006271;
+  fill: none;
+  stroke-width: 1.75;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+#dhce-appeal-intro .dhce-ai-card h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #006271;
+  letter-spacing: -0.01em;
+  line-height: 1.3;
+}
+
+#dhce-appeal-intro .dhce-ai-card p {
+  font-size: 0.88rem;
+  color: #666;
+  line-height: 1.7;
+  margin-bottom: 0;
+}
+
+#dhce-appeal-intro .dhce-ai-card .dhce-btn-download {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: #82bb41;
+  color: #fefeff;
+  font-size: 0.9rem;
+  font-weight: 700;
+  padding: 14px 28px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background 0.2s, transform 0.2s;
+  box-shadow: 0 4px 18px rgba(130,187,65,0.35);
+  width: 100%;
+  justify-content: center;
+}
+
+#dhce-appeal-intro .dhce-ai-card .dhce-btn-download:hover {
+  background: #74a938;
+  transform: translateY(-2px);
+  color: #fefeff;
+  text-decoration: none;
+}
+
+#dhce-appeal-intro .dhce-ai-card .dhce-btn-download svg {
+  width: 18px;
+  height: 18px;
+  stroke: #fefeff;
+  fill: none;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  flex-shrink: 0;
+}
+
+#dhce-appeal-intro .dhce-ai-card .dhce-ai-note {
+  font-size: 0.8rem;
+  color: #999;
+  line-height: 1.5;
+}
+
+@media (max-width: 860px) {
+  #dhce-appeal-intro .dhce-ai-inner { grid-template-columns: 1fr; gap: 48px; }
+}
+</style>
+
+<section id="dhce-appeal-intro">
+  <div class="dhce-ai-inner">
+
+    <div class="dhce-ai-text">
+      <span class="dhce-ai-label">Our Commitment</span>
+      <h2>Your Feedback Matters to Us</h2>
+      <p>DHCE recognises that sometimes things go wrong and that actions or decisions may not always meet expectations. We are committed to resolving any concerns in a procedural and transparent way that is consistent with our quality standards, ethical values, and business objectives.</p>
+      <p>Our Appeals &amp; Complaints Procedure is available to anyone who uses or wishes to use DHCE services (including audit, inspection, and halal certification), as well as those involved in or affected by DHCE activities.</p>
+      <p>All complaints and appeals are handled with strict confidentiality and a commitment to fairness at every stage of the process.</p>
+    </div>
+
+    <div class="dhce-ai-card">
+      <div class="dhce-ai-card-icon">
+        <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+      </div>
+      <h3>Appeals &amp; Complaints Form</h3>
+      <p>Download our official form to submit a complaint or appeal in writing. Complete and return it to appeals@halalcertification.ie.</p>
+      <a href="http://halalcertification.ie/wp-content/uploads/2018/04/apeal-and-complaints-form.pdf" class="dhce-btn-download" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        Download Form (PDF)
+      </a>
+      <p class="dhce-ai-note">PDF format &bull; Return by email to appeals@halalcertification.ie</p>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ══ 3. DEFINITIONS ════════════════════════════════════════ -->
+<style>
+#dhce-appeal-defs *,
+#dhce-appeal-defs *::before,
+#dhce-appeal-defs *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+#dhce-appeal-defs {
+  position: relative;
+  width: 100vw;
+  left: 50%;
+  transform: translateX(-50%);
+  overflow: hidden;
+  background: #f4f9f4;
+  padding: 90px 24px;
+}
+
+#dhce-appeal-defs .dhce-ad-inner {
+  width: 92%;
+  max-width: 1060px;
+  margin: 0 auto;
+}
+
+#dhce-appeal-defs .dhce-ad-intro {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto 48px;
+}
+
+#dhce-appeal-defs .dhce-ad-label {
+  display: block;
+  font-size: 11px;
+  font-weight: 700;
+  color: #82bb41;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+
+#dhce-appeal-defs h2 {
+  font-size: clamp(1.7rem, 3.5vw, 2.4rem);
+  font-weight: 800;
+  color: #006271;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+  margin-bottom: 16px;
+}
+
+#dhce-appeal-defs .dhce-ad-intro p {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.75;
+}
+
+#dhce-appeal-defs .dhce-ad-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+#dhce-appeal-defs .dhce-ad-card {
+  background: #fefeff;
+  border-radius: 10px;
+  padding: 40px 36px;
+  border: 1px solid rgba(0,98,113,0.1);
+  box-shadow: 0 2px 16px rgba(0,98,113,0.06);
+  position: relative;
+  overflow: hidden;
+}
+
+#dhce-appeal-defs .dhce-ad-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 3px;
+  background: #82bb41;
+}
+
+#dhce-appeal-defs .dhce-ad-card-type {
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #82bb41;
+  background: rgba(130,187,65,0.12);
+  border-radius: 100px;
+  padding: 3px 12px;
+  margin-bottom: 16px;
+}
+
+#dhce-appeal-defs .dhce-ad-card h3 {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: #006271;
+  letter-spacing: -0.02em;
+  margin-bottom: 16px;
+  line-height: 1.2;
+}
+
+#dhce-appeal-defs .dhce-ad-card p {
+  font-size: 0.92rem;
+  color: #555;
+  line-height: 1.8;
+  font-style: italic;
+  border-left: 3px solid rgba(0,98,113,0.15);
+  padding-left: 16px;
+}
+
+@media (max-width: 640px) {
+  #dhce-appeal-defs .dhce-ad-grid { grid-template-columns: 1fr; }
+}
+</style>
+
+<section id="dhce-appeal-defs">
+  <div class="dhce-ad-inner">
+    <div class="dhce-ad-intro">
+      <span class="dhce-ad-label">Definitions</span>
+      <h2>Complaints vs Appeals: What Is the Difference?</h2>
+      <p>Understanding the distinction between a complaint and an appeal will help you submit the right type of request and ensure it is handled by the correct team.</p>
+    </div>
+    <div class="dhce-ad-grid">
+
+      <div class="dhce-ad-card">
+        <span class="dhce-ad-card-type">Complaint</span>
+        <h3>What Is a Complaint?</h3>
+        <p>A complaint is an expression of discontent by a person or persons receiving a service (including any decision) from the organisation, that cannot be immediately resolved at point of delivery, and about which the complainant desires a follow-up action is taken and a response is provided.</p>
+      </div>
+
+      <div class="dhce-ad-card">
+        <span class="dhce-ad-card-type">Appeal</span>
+        <h3>What Is an Appeal?</h3>
+        <p>An appeal is a formal request to DHCE to reconsider its certification decision following the conclusion of the certification procedure.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ══ 4. WHO CAN SUBMIT + HOW TO SUBMIT ════════════════════ -->
+<style>
+#dhce-appeal-submit *,
+#dhce-appeal-submit *::before,
+#dhce-appeal-submit *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+#dhce-appeal-submit {
+  position: relative;
+  width: 100vw;
+  left: 50%;
+  transform: translateX(-50%);
+  overflow: hidden;
+  background: #fefeff;
+  padding: 90px 24px;
+}
+
+#dhce-appeal-submit .dhce-as-inner {
+  width: 92%;
+  max-width: 1060px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: start;
+}
+
+#dhce-appeal-submit .dhce-as-block-label {
+  display: block;
+  font-size: 11px;
+  font-weight: 700;
+  color: #82bb41;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+
+#dhce-appeal-submit h2 {
+  font-size: clamp(1.4rem, 2.5vw, 1.9rem);
+  font-weight: 800;
+  color: #006271;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+  margin-bottom: 16px;
+}
+
+#dhce-appeal-submit .dhce-as-left p {
+  font-size: 0.92rem;
+  color: #666;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+#dhce-appeal-submit .dhce-as-eligible {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+#dhce-appeal-submit .dhce-as-eligible-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  font-size: 0.88rem;
+  color: #555;
+  line-height: 1.65;
+}
+
+#dhce-appeal-submit .dhce-as-eligible-item::before {
+  content: '';
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #82bb41;
+  flex-shrink: 0;
+  margin-top: 6px;
+}
+
+#dhce-appeal-submit .dhce-as-right {
+  background: #fefeff;
+  border: 1px solid rgba(0,98,113,0.12);
+  border-radius: 10px;
+  padding: 36px 32px;
+  box-shadow: 0 2px 16px rgba(0,98,113,0.07);
+}
+
+#dhce-appeal-submit .dhce-as-right h3 {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #006271;
+  margin-bottom: 20px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid rgba(0,98,113,0.1);
+  line-height: 1.3;
+}
+
+#dhce-appeal-submit .dhce-as-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-bottom: 24px;
+}
+
+#dhce-appeal-submit .dhce-as-field {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+#dhce-appeal-submit .dhce-as-field-num {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: rgba(0,98,113,0.08);
+  color: #006271;
+  font-size: 0.78rem;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+#dhce-appeal-submit .dhce-as-field p {
+  font-size: 0.87rem;
+  color: #555;
+  line-height: 1.65;
+}
+
+#dhce-appeal-submit .dhce-as-email-box {
+  background: rgba(0,98,113,0.05);
+  border-radius: 8px;
+  padding: 16px 20px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+#dhce-appeal-submit .dhce-as-email-box svg {
+  width: 20px;
+  height: 20px;
+  stroke: #006271;
+  fill: none;
+  stroke-width: 1.75;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  flex-shrink: 0;
+}
+
+#dhce-appeal-submit .dhce-as-email-box p {
+  font-size: 0.87rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+#dhce-appeal-submit .dhce-as-email-box a {
+  color: #006271;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+#dhce-appeal-submit .dhce-as-email-box a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 760px) {
+  #dhce-appeal-submit .dhce-as-inner { grid-template-columns: 1fr; gap: 40px; }
+}
+</style>
+
+<section id="dhce-appeal-submit">
+  <div class="dhce-as-inner">
+
+    <div class="dhce-as-left">
+      <span class="dhce-as-block-label">Eligibility</span>
+      <h2>Who Can Raise a Complaint or Appeal?</h2>
+      <p>DHCE's Appeals &amp; Complaints Procedure is open to anyone who uses or wishes to use our services, as well as those involved in or affected by our activities. You should register a complaint or appeal when you are dissatisfied with any aspect of DHCE's services.</p>
+      <div class="dhce-as-eligible">
+        <div class="dhce-as-eligible-item">Businesses applying for or holding DHCE halal certification</div>
+        <div class="dhce-as-eligible-item">Individuals who have undergone DHCE audit or inspection services</div>
+        <div class="dhce-as-eligible-item">Parties affected by a DHCE certification decision</div>
+        <div class="dhce-as-eligible-item">Any party with a concern related to DHCE activities or conduct</div>
+      </div>
+    </div>
+
+    <div class="dhce-as-right">
+      <h3>What to Include in Your Submission</h3>
+      <div class="dhce-as-fields">
+        <div class="dhce-as-field">
+          <div class="dhce-as-field-num">1</div>
+          <p>Your full name</p>
+        </div>
+        <div class="dhce-as-field">
+          <div class="dhce-as-field-num">2</div>
+          <p>Name and details of your organisation (if applicable)</p>
+        </div>
+        <div class="dhce-as-field">
+          <div class="dhce-as-field-num">3</div>
+          <p>Your phone number and email address</p>
+        </div>
+        <div class="dhce-as-field">
+          <div class="dhce-as-field-num">4</div>
+          <p>A clear description of the nature of your complaint or appeal</p>
+        </div>
+        <div class="dhce-as-field">
+          <div class="dhce-as-field-num">5</div>
+          <p>Any relevant supporting documents</p>
+        </div>
+        <div class="dhce-as-field">
+          <div class="dhce-as-field-num">6</div>
+          <p>Address your submission to the <strong>Managing Director</strong></p>
+        </div>
+      </div>
+      <div class="dhce-as-email-box">
+        <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        <p>Send by email to <a href="mailto:appeals@halalcertification.ie">appeals@halalcertification.ie</a></p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ══ 5. TWO-STAGE PROCESS ══════════════════════════════════ -->
+<style>
+#dhce-appeal-stages *,
+#dhce-appeal-stages *::before,
+#dhce-appeal-stages *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+#dhce-appeal-stages {
+  position: relative;
+  width: 100vw;
+  left: 50%;
+  transform: translateX(-50%);
+  overflow: hidden;
+  background: #f4f9f4;
+  padding: 90px 24px;
+}
+
+#dhce-appeal-stages .dhce-aps-inner {
+  width: 92%;
+  max-width: 1060px;
+  margin: 0 auto;
+}
+
+#dhce-appeal-stages .dhce-aps-intro {
+  text-align: center;
+  max-width: 640px;
+  margin: 0 auto 56px;
+}
+
+#dhce-appeal-stages .dhce-aps-label {
+  display: block;
+  font-size: 11px;
+  font-weight: 700;
+  color: #82bb41;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+
+#dhce-appeal-stages h2 {
+  font-size: clamp(1.7rem, 3.5vw, 2.4rem);
+  font-weight: 800;
+  color: #006271;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+  margin-bottom: 16px;
+}
+
+#dhce-appeal-stages .dhce-aps-intro p {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.75;
+}
+
+#dhce-appeal-stages .dhce-aps-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+#dhce-appeal-stages .dhce-aps-card {
+  background: #fefeff;
+  border-radius: 10px;
+  padding: 40px 36px;
+  border: 1px solid rgba(0,98,113,0.1);
+  box-shadow: 0 2px 16px rgba(0,98,113,0.06);
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+#dhce-appeal-stages .dhce-aps-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(0,98,113,0.12);
+}
+
+#dhce-appeal-stages .dhce-aps-stage-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 24px;
+}
+
+#dhce-appeal-stages .dhce-aps-stage-num {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: #006271;
+  color: #fefeff;
+  font-size: 1.1rem;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+#dhce-appeal-stages .dhce-aps-card:last-child .dhce-aps-stage-num {
+  background: #82bb41;
+}
+
+#dhce-appeal-stages .dhce-aps-stage-title {
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #82bb41;
+}
+
+#dhce-appeal-stages .dhce-aps-card h3 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #006271;
+  margin-bottom: 14px;
+  letter-spacing: -0.01em;
+  line-height: 1.3;
+}
+
+#dhce-appeal-stages .dhce-aps-card p {
+  font-size: 0.88rem;
+  color: #666;
+  line-height: 1.8;
+  margin-bottom: 24px;
+}
+
+#dhce-appeal-stages .dhce-aps-timelines {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#dhce-appeal-stages .dhce-aps-timeline-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: rgba(0,98,113,0.05);
+  border-radius: 6px;
+  padding: 10px 14px;
+}
+
+#dhce-appeal-stages .dhce-aps-timeline-item svg {
+  width: 16px;
+  height: 16px;
+  stroke: #006271;
+  fill: none;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  flex-shrink: 0;
+}
+
+#dhce-appeal-stages .dhce-aps-timeline-item span {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #006271;
+  line-height: 1.4;
+}
+
+@media (max-width: 640px) {
+  #dhce-appeal-stages .dhce-aps-grid { grid-template-columns: 1fr; }
+}
+</style>
+
+<section id="dhce-appeal-stages">
+  <div class="dhce-aps-inner">
+    <div class="dhce-aps-intro">
+      <span class="dhce-aps-label">The Process</span>
+      <h2>A Clear, Two-Stage Procedure</h2>
+      <p>All complaints and appeals follow a structured two-stage process with defined timelines at each stage, ensuring every concern receives a thorough and fair response.</p>
+    </div>
+    <div class="dhce-aps-grid">
+
+      <div class="dhce-aps-card">
+        <div class="dhce-aps-stage-badge">
+          <div class="dhce-aps-stage-num">1</div>
+          <span class="dhce-aps-stage-title">Stage One</span>
+        </div>
+        <h3>Internal Review by the Managing Director</h3>
+        <p>Your complaint or appeal is handled by a panel of at least two DHCE officials, headed by the Managing Director. Following a thorough investigation, a written response will be issued to you within 14 days of receipt.</p>
+        <div class="dhce-aps-timelines">
+          <div class="dhce-aps-timeline-item">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            <span>Acknowledgement within 5 working days of receipt</span>
+          </div>
+          <div class="dhce-aps-timeline-item">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            <span>Full written response within 14 days of receipt</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="dhce-aps-card">
+        <div class="dhce-aps-stage-badge">
+          <div class="dhce-aps-stage-num">2</div>
+          <span class="dhce-aps-stage-title">Stage Two</span>
+        </div>
+        <h3>Independent Appeals &amp; Complaints Committee</h3>
+        <p>If the Stage 1 response does not meet your expectations, you may escalate the matter within 7 days of receiving the Stage 1 response. The case is then passed to an independent Appeals &amp; Complaints Committee for further review. Their decision is final.</p>
+        <div class="dhce-aps-timelines">
+          <div class="dhce-aps-timeline-item">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            <span>Must be escalated within 7 days of Stage 1 response</span>
+          </div>
+          <div class="dhce-aps-timeline-item">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            <span>Final decision issued within 28 days by the Committee</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ══ 6. WHAT HAPPENS AFTER ─ 3 COLS ═══════════════════════ -->
+<style>
+#dhce-appeal-after *,
+#dhce-appeal-after *::before,
+#dhce-appeal-after *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+#dhce-appeal-after {
+  position: relative;
+  width: 100vw;
+  left: 50%;
+  transform: translateX(-50%);
+  overflow: hidden;
+  background: #fefeff;
+  padding: 90px 24px;
+}
+
+#dhce-appeal-after .dhce-aa-inner {
+  width: 92%;
+  max-width: 1060px;
+  margin: 0 auto;
+}
+
+#dhce-appeal-after .dhce-aa-intro {
+  text-align: center;
+  max-width: 640px;
+  margin: 0 auto 48px;
+}
+
+#dhce-appeal-after .dhce-aa-label {
+  display: block;
+  font-size: 11px;
+  font-weight: 700;
+  color: #82bb41;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+
+#dhce-appeal-after h2 {
+  font-size: clamp(1.7rem, 3.5vw, 2.4rem);
+  font-weight: 800;
+  color: #006271;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+  margin-bottom: 16px;
+}
+
+#dhce-appeal-after .dhce-aa-intro p {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.75;
+}
+
+#dhce-appeal-after .dhce-aa-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+#dhce-appeal-after .dhce-aa-card {
+  background: #fefeff;
+  border-radius: 10px;
+  padding: 36px 28px;
+  border: 1px solid rgba(0,98,113,0.1);
+  border-top: 3px solid #82bb41;
+  box-shadow: 0 2px 16px rgba(0,98,113,0.06);
+  transition: transform 0.2s, box-shadow 0.2s;
+  text-align: center;
+}
+
+#dhce-appeal-after .dhce-aa-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(0,98,113,0.1);
+}
+
+#dhce-appeal-after .dhce-aa-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 14px;
+  background: rgba(0,98,113,0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+}
+
+#dhce-appeal-after .dhce-aa-icon svg {
+  width: 26px;
+  height: 26px;
+  stroke: #006271;
+  fill: none;
+  stroke-width: 1.75;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+#dhce-appeal-after .dhce-aa-card h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #006271;
+  margin-bottom: 10px;
+  letter-spacing: -0.01em;
+  line-height: 1.3;
+}
+
+#dhce-appeal-after .dhce-aa-card p {
+  font-size: 0.87rem;
+  color: #666;
+  line-height: 1.75;
+}
+
+#dhce-appeal-after .dhce-aa-card .dhce-aa-timing {
+  display: inline-block;
+  margin-top: 16px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #82bb41;
+  background: rgba(130,187,65,0.1);
+  border-radius: 100px;
+  padding: 4px 12px;
+  letter-spacing: 0.04em;
+}
+
+@media (max-width: 860px) {
+  #dhce-appeal-after .dhce-aa-grid { grid-template-columns: 1fr; max-width: 480px; margin: 0 auto; }
+}
+</style>
+
+<section id="dhce-appeal-after">
+  <div class="dhce-aa-inner">
+    <div class="dhce-aa-intro">
+      <span class="dhce-aa-label">What to Expect</span>
+      <h2>What Happens After You Submit</h2>
+      <p>Once your complaint or appeal has been received, DHCE follows a consistent and transparent process to ensure it is handled properly at every step.</p>
+    </div>
+    <div class="dhce-aa-grid">
+
+      <div class="dhce-aa-card">
+        <div class="dhce-aa-icon">
+          <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        </div>
+        <h3>Acknowledgement</h3>
+        <p>DHCE will acknowledge receipt of your complaint or appeal in writing, confirming that it has been received and is being processed.</p>
+        <span class="dhce-aa-timing">Within 5 working days</span>
+      </div>
+
+      <div class="dhce-aa-card">
+        <div class="dhce-aa-icon">
+          <svg viewBox="0 0 24 24"><path d="M9 5H7a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2"/><rect x="9" y="3" width="6" height="4" rx="1"/><path d="M9 12l2 2 4-4"/></svg>
+        </div>
+        <h3>Full Response</h3>
+        <p>Following a thorough investigation, a full written response will be provided. If escalated to the independent committee, you will be notified in writing when this occurs.</p>
+        <span class="dhce-aa-timing">Within 14 days of receipt</span>
+      </div>
+
+      <div class="dhce-aa-card">
+        <div class="dhce-aa-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
+        </div>
+        <h3>Confidentiality</h3>
+        <p>DHCE will respect your confidentiality throughout. Details of your complaint or appeal will only be shared with the Appeals &amp; Complaints Committee where required, and you will be notified if a formal hearing is deemed necessary.</p>
+        <span class="dhce-aa-timing">Protected at all stages</span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ══ 7. CTA ═════════════════════════════════════════════════ -->
+<style>
+#dhce-appeal-cta *,
+#dhce-appeal-cta *::before,
+#dhce-appeal-cta *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+#dhce-appeal-cta {
+  position: relative;
+  width: 100vw;
+  left: 50%;
+  transform: translateX(-50%);
+  overflow: hidden;
+  background: #006271;
+  padding: 90px 24px;
+}
+
+#dhce-appeal-cta .dhce-ac-inner {
+  width: 92%;
+  max-width: 1060px;
+  margin: 0 auto;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 12px;
+  padding: 56px 48px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+#dhce-appeal-cta .dhce-ac-text .dhce-ac-label {
+  display: block;
+  font-size: 11px;
+  font-weight: 700;
+  color: #82bb41;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+#dhce-appeal-cta .dhce-ac-text h2 {
+  font-size: clamp(1.4rem, 2.5vw, 1.9rem);
+  font-weight: 800;
+  color: #fefeff;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+  margin-bottom: 12px;
+}
+
+#dhce-appeal-cta .dhce-ac-text p {
+  font-size: 0.95rem;
+  color: rgba(254,254,255,0.7);
+  line-height: 1.75;
+  max-width: 480px;
+}
+
+#dhce-appeal-cta .dhce-ac-btns {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  flex-shrink: 0;
+}
+
+#dhce-appeal-cta .dhce-btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #82bb41;
+  color: #fefeff;
+  font-size: 0.9rem;
+  font-weight: 700;
+  padding: 14px 30px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background 0.2s, transform 0.2s;
+  box-shadow: 0 4px 18px rgba(130,187,65,0.35);
+  white-space: nowrap;
+}
+
+#dhce-appeal-cta .dhce-btn-primary svg {
+  width: 16px;
+  height: 16px;
+  stroke: #fefeff;
+  fill: none;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+#dhce-appeal-cta .dhce-btn-primary:hover {
+  background: #74a938;
+  transform: translateY(-2px);
+  color: #fefeff;
+  text-decoration: none;
+}
+
+#dhce-appeal-cta .dhce-btn-secondary {
+  display: inline-block;
+  background: transparent;
+  color: #fefeff;
+  font-size: 0.9rem;
+  font-weight: 700;
+  padding: 14px 30px;
+  border-radius: 6px;
+  border: 2px solid rgba(254,254,255,0.3);
+  text-decoration: none;
+  transition: border-color 0.2s, background 0.2s, transform 0.2s;
+  white-space: nowrap;
+}
+
+#dhce-appeal-cta .dhce-btn-secondary:hover {
+  border-color: rgba(254,254,255,0.65);
+  background: rgba(255,255,255,0.07);
+  transform: translateY(-2px);
+  color: #fefeff;
+  text-decoration: none;
+}
+
+@media (max-width: 760px) {
+  #dhce-appeal-cta .dhce-ac-inner { flex-direction: column; padding: 40px 28px; text-align: center; }
+  #dhce-appeal-cta .dhce-ac-btns { justify-content: center; }
+  #dhce-appeal-cta .dhce-ac-text p { max-width: 100%; }
+}
+</style>
+
+<section id="dhce-appeal-cta">
+  <div class="dhce-ac-inner">
+    <div class="dhce-ac-text">
+      <span class="dhce-ac-label">Have a Concern?</span>
+      <h2>We Are Here to Help Resolve It</h2>
+      <p>If you have a concern, complaint, or wish to appeal a certification decision, download the form below and send it to our team. We aim to acknowledge all submissions within 5 working days.</p>
+    </div>
+    <div class="dhce-ac-btns">
+      <a href="http://halalcertification.ie/wp-content/uploads/2018/04/apeal-and-complaints-form.pdf" class="dhce-btn-primary" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        Download Form
+      </a>
+      <a href="/enterprise/contact/" class="dhce-btn-secondary">Contact Our Team</a>
+    </div>
+  </div>
+</section>
